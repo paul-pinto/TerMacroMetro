@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Análisis de Sentimiento · Reseñas en Español</title>
+  <link rel="stylesheet" href="/static/estilos.css" />
+</head>
+<body>
+  <header class="cabecera">
+    <h1>🧠 Análisis de Sentimiento</h1>
+    <p>Clasificador de reseñas de productos en español · TF-IDF + Regresión Logística</p>
+  </header>
+
+  <main class="contenedor">
+    <!-- Panel de predicción -->
+    <section class="tarjeta">
+      <h2>Escribe una reseña</h2>
+      <textarea id="entrada" rows="4"
+        placeholder="Ej: El celular es excelente, llegó rápido y funciona perfecto."></textarea>
+
+      <div class="acciones">
+        <button id="btn-analizar" class="btn-principal">Analizar sentimiento</button>
+        <button id="btn-limpiar" class="btn-secundario">Limpiar</button>
+      </div>
+
+      <p class="ejemplos-titulo">Prueba rápida:</p>
+      <div class="ejemplos" id="ejemplos"></div>
+
+      <!-- Resultado -->
+      <div id="resultado" class="resultado oculto">
+        <div class="etiqueta-resultado">
+          <span id="emoji-resultado" class="emoji"></span>
+          <div>
+            <div class="sentimiento" id="sentimiento-texto"></div>
+            <div class="confianza" id="confianza-texto"></div>
+          </div>
+        </div>
+        <div class="barras" id="barras"></div>
+      </div>
+
+      <div id="cargando" class="cargando oculto">Analizando…</div>
+      <div id="error" class="error oculto"></div>
+    </section>
+
+    <!-- Panel de información del modelo -->
+    <aside class="tarjeta lateral">
+      <h2>Métricas del modelo</h2>
+      <div id="metricas" class="metricas">Cargando métricas…</div>
+
+      <h3>Arquitectura del pipeline</h3>
+      <ol class="pipeline">
+        <li><strong>Preprocesamiento</strong><br><span>limpieza + normalización</span></li>
+        <li><strong>TF-IDF</strong><br><span>unigramas + bigramas</span></li>
+        <li><strong>Regresión Logística</strong><br><span>clasificador lineal</span></li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer class="pie">
+    Proyecto de ejemplo · Maestría en Ciencia de Datos e IA · Procesamiento de Lenguaje Natural
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Artefactos de Python
+__pycache__/
+*.pyc
+
+# Modelos y métricas generados (se recrean con `python -m src.entrenar`)
+modelos/*.joblib
+modelos/*.json
+
+# Sistema
+.DS_Store
