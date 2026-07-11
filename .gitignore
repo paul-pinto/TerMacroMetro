@@ -1,15 +1,56 @@
-# Entornos virtuales
-venv/
-.venv/
-env/
-
-# Artefactos de Python
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Modelos y métricas generados (se recrean con `python -m src.entrenar`)
-modelos/*.joblib
-modelos/*.json
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
 
-# Sistema
+# IDE and OS
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Hugging Face and model caches
+.cache/
+.cache/huggingface/
+huggingface/
+models/transformer_financial_es/
+
+# Temporary corpus files
+data/bolivia/noticias_bolivia_previous.csv
+data/bolivia/noticias_bolivia_current_test.csv
+data/bolivia/noticias_bolivia_previous_test.csv
+data/bolivia/noticias_bolivia_merged_test.csv
+
+# Runtime files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/

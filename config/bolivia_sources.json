@@ -1,0 +1,747 @@
+{
+  "version": 1,
+  "project": "TerMacroMetro",
+  "defaults": {
+    "enabled": true,
+    "request_timeout": 25,
+    "request_delay_seconds": 0.35,
+    "max_documents_per_source": 40,
+    "minimum_text_length": 180,
+    "minimum_economic_score": 2,
+    "verify_ssl": true,
+    "language": "es"
+  },
+  "balance": {
+    "maximum_source_share": 0.2,
+    "maximum_source_type_share": {
+      "official": 0.35,
+      "agency": 0.2,
+      "newspaper": 0.35,
+      "television": 0.25,
+      "regional": 0.35,
+      "business": 0.2
+    }
+  },
+  "sources": [
+    {
+      "id": "bcb",
+      "name": "BCB",
+      "source_type": "official",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://www.bcb.gob.bo/",
+      "collection_method": "listing",
+      "status": "pending_validation",
+      "source_weight": 1.0,
+      "max_documents": 10,
+      "tags": [
+        "monetary",
+        "reserves",
+        "exchange_rate",
+        "financial_system"
+      ],
+      "listing_urls": [
+        "https://www.bcb.gob.bo/?q=notas-prensa",
+        "https://www.bcb.gob.bo/?q=sala-prensa/notas-comunicados-prensa",
+        "https://www.bcb.gob.bo/?q=comunicados",
+        "https://www.bcb.gob.bo/?q=noticias-anteriores"
+      ],
+      "link_patterns": [
+        "?q=content/",
+        "/?q=content/"
+      ]
+    },
+    {
+      "id": "mefp",
+      "name": "MEFP",
+      "source_type": "official",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://www.economiayfinanzas.gob.bo/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 1.0,
+      "max_documents": 10,
+      "verify_ssl": false,
+      "tags": [
+        "fiscal",
+        "budget",
+        "public_debt",
+        "tax_policy"
+      ],
+      "listing_urls": [
+        "https://www.economiayfinanzas.gob.bo/notas-de-prensa",
+        "https://www.economiayfinanzas.gob.bo/"
+      ],
+      "link_patterns": [
+        "nota",
+        "prensa",
+        "econom"
+      ]
+    },
+    {
+      "id": "ine",
+      "name": "INE",
+      "source_type": "official",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://www.ine.gob.bo/",
+      "collection_method": "listing",
+      "status": "pending_validation",
+      "source_weight": 1.0,
+      "max_documents": 10,
+      "tags": [
+        "inflation",
+        "gdp",
+        "trade",
+        "employment",
+        "statistics"
+      ],
+      "listing_urls": [
+        "https://www.ine.gob.bo/index.php/comunicacion/notas-de-prensa/"
+      ],
+      "link_patterns": [
+        "/index.php/"
+      ]
+    },
+    {
+      "id": "sin",
+      "name": "SIN",
+      "source_type": "official",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://www.impuestos.gob.bo/",
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.95,
+      "max_documents": 40,
+      "tags": [
+        "taxes",
+        "revenue",
+        "tax_policy"
+      ]
+    },
+    {
+      "id": "aduana",
+      "name": "Aduana Nacional",
+      "source_type": "official",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://www.aduana.gob.bo/",
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.95,
+      "max_documents": 40,
+      "tags": [
+        "customs",
+        "imports",
+        "exports",
+        "foreign_trade"
+      ]
+    },
+    {
+      "id": "mopsv",
+      "name": "MOPSV",
+      "source_type": "official",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.9,
+      "max_documents": 35,
+      "tags": [
+        "transport",
+        "infrastructure",
+        "housing",
+        "public_investment"
+      ]
+    },
+    {
+      "id": "asfi",
+      "name": "ASFI",
+      "source_type": "official",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://www.asfi.gob.bo/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.95,
+      "max_documents": 10,
+      "tags": [
+        "banks",
+        "credit",
+        "financial_regulation",
+        "exchange_houses"
+      ],
+      "listing_urls": [
+        "https://www.asfi.gob.bo/p-gina-de-notas-de-prensa",
+        "https://www.asfi.gob.bo/la/notas-prensa-difundidas-asfi",
+        "https://www.asfi.gob.bo/pagina-de-comunicados"
+      ],
+      "link_patterns": [
+        "/node/",
+        "/la/",
+        "nota",
+        "comunicado"
+      ]
+    },
+    {
+      "id": "ibce",
+      "name": "IBCE",
+      "source_type": "business",
+      "department": "Santa Cruz",
+      "scope": "national",
+      "homepage": "https://ibce.org.bo/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.9,
+      "max_documents": 10,
+      "tags": [
+        "foreign_trade",
+        "exports",
+        "imports",
+        "logistics"
+      ],
+      "listing_urls": [
+        "https://ibce.org.bo/noticias.php",
+        "https://ibce.org.bo/",
+        "https://ibce.org.bo/publicaciones-buenas-noticias.php"
+      ],
+      "link_patterns": [
+        "noticias-detalle.php",
+        "idnot="
+      ]
+    },
+    {
+      "id": "abi",
+      "name": "ABI",
+      "source_type": "agency",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://abi.bo/",
+      "collection_method": "rss",
+      "status": "active",
+      "source_weight": 0.85,
+      "max_documents": 10,
+      "verify_ssl": false,
+      "tags": [
+        "national",
+        "government",
+        "economy"
+      ],
+      "feeds": [
+        "https://abi.bo/feed/",
+        "https://abi.bo/category/economia/feed/",
+        "https://abi.bo/rss-abi/"
+      ]
+    },
+    {
+      "id": "anf",
+      "name": "ANF",
+      "source_type": "agency",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://www.noticiasfides.com/",
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.85,
+      "max_documents": 40,
+      "tags": [
+        "national",
+        "economy",
+        "society"
+      ]
+    },
+    {
+      "id": "fides",
+      "name": "FIDES",
+      "source_type": "agency",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://www.radiofides.com/",
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.8,
+      "max_documents": 35,
+      "tags": [
+        "radio",
+        "national",
+        "economy"
+      ]
+    },
+    {
+      "id": "eldeber",
+      "name": "El Deber",
+      "source_type": "newspaper",
+      "department": "Santa Cruz",
+      "scope": "national",
+      "homepage": "https://eldeber.com.bo/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "national",
+        "business",
+        "economy"
+      ],
+      "listing_urls": [
+        "https://eldeber.com.bo/economia",
+        "https://eldeber.com.bo/tag/economia-boliviana"
+      ],
+      "link_patterns": [
+        "/economia/",
+        "/dinero/",
+        "/pais/"
+      ]
+    },
+    {
+      "id": "elmundo",
+      "name": "El Mundo",
+      "source_type": "newspaper",
+      "department": "Santa Cruz",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.7,
+      "max_documents": 35,
+      "tags": [
+        "santa_cruz",
+        "regional"
+      ]
+    },
+    {
+      "id": "eldia",
+      "name": "El Día",
+      "source_type": "newspaper",
+      "department": "Santa Cruz",
+      "scope": "national",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.7,
+      "max_documents": 35,
+      "tags": [
+        "santa_cruz",
+        "national",
+        "economy"
+      ]
+    },
+    {
+      "id": "eju",
+      "name": "Eju",
+      "source_type": "newspaper",
+      "department": "Santa Cruz",
+      "scope": "national",
+      "homepage": "https://eju.tv/",
+      "collection_method": "wordpress",
+      "status": "pending_validation",
+      "source_weight": 0.65,
+      "max_documents": 35,
+      "tags": [
+        "aggregator",
+        "national"
+      ]
+    },
+    {
+      "id": "economy",
+      "name": "Economy",
+      "source_type": "business",
+      "department": "Santa Cruz",
+      "scope": "national",
+      "homepage": "https://www.economy.com.bo/",
+      "collection_method": "rss",
+      "status": "active",
+      "source_weight": 0.85,
+      "max_documents": 10,
+      "tags": [
+        "business",
+        "finance",
+        "economy"
+      ],
+      "feeds": [
+        "https://www.economy.com.bo/rss/listado/",
+        "https://www.economy.com.bo/rss/"
+      ]
+    },
+    {
+      "id": "larazon",
+      "name": "La Razón",
+      "source_type": "newspaper",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": "https://larazon.bo/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "national",
+        "economy"
+      ],
+      "listing_urls": [
+        "https://larazon.bo/economia-y-empresa/",
+        "https://larazon.bo/"
+      ],
+      "link_patterns": [
+        "/economia-y-empresa/"
+      ]
+    },
+    {
+      "id": "lostiempos",
+      "name": "Los Tiempos",
+      "source_type": "newspaper",
+      "department": "Cochabamba",
+      "scope": "national",
+      "homepage": "https://www.lostiempos.com/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "cochabamba",
+        "national",
+        "economy"
+      ],
+      "listing_urls": [
+        "https://www.lostiempos.com/actualidad/economia",
+        "https://www.lostiempos.com/ultimas-noticias"
+      ],
+      "link_patterns": [
+        "/actualidad/economia/"
+      ]
+    },
+    {
+      "id": "opinion",
+      "name": "Opinión",
+      "source_type": "newspaper",
+      "department": "Cochabamba",
+      "scope": "national",
+      "homepage": "https://www.opinion.com.bo/",
+      "collection_method": "rss",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "cochabamba",
+        "national"
+      ],
+      "feeds": [
+        "https://www.opinion.com.bo/rss/listado/",
+        "https://www.opinion.com.bo/rss/section/7/"
+      ]
+    },
+    {
+      "id": "unitel",
+      "name": "Unitel",
+      "source_type": "television",
+      "department": "Santa Cruz",
+      "scope": "national",
+      "homepage": "https://unitel.bo/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "television",
+        "national"
+      ],
+      "listing_urls": [
+        "https://unitel.bo/noticias/economia"
+      ],
+      "link_patterns": [
+        "/noticias/economia/"
+      ]
+    },
+    {
+      "id": "reduno",
+      "name": "Red Uno",
+      "source_type": "television",
+      "department": "Santa Cruz",
+      "scope": "national",
+      "homepage": "https://www.reduno.com.bo/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "television",
+        "national"
+      ],
+      "listing_urls": [
+        "https://www.reduno.com.bo/economia",
+        "https://www.reduno.com.bo/tag/economia-bolivia"
+      ],
+      "link_patterns": [
+        "/economia/"
+      ]
+    },
+    {
+      "id": "pat",
+      "name": "PAT",
+      "source_type": "television",
+      "department": "Santa Cruz",
+      "scope": "national",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "television",
+        "national"
+      ]
+    },
+    {
+      "id": "atb",
+      "name": "ATB",
+      "source_type": "television",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "television",
+        "national"
+      ]
+    },
+    {
+      "id": "rtp",
+      "name": "RTP",
+      "source_type": "television",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "television",
+        "national"
+      ]
+    },
+    {
+      "id": "tvu",
+      "name": "TVU",
+      "source_type": "television",
+      "department": "Cochabamba",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "television",
+        "university",
+        "cochabamba"
+      ]
+    },
+    {
+      "id": "cadenaa",
+      "name": "Cadena A",
+      "source_type": "television",
+      "department": "La Paz",
+      "scope": "national",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "television",
+        "national"
+      ]
+    },
+    {
+      "id": "correodelsur",
+      "name": "Correo del Sur",
+      "source_type": "regional",
+      "department": "Chuquisaca",
+      "scope": "regional",
+      "homepage": "https://correodelsur.com/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "chuquisaca",
+        "regional"
+      ],
+      "listing_urls": [
+        "https://correodelsur.com/economia"
+      ],
+      "link_patterns": [
+        "/economia/"
+      ]
+    },
+    {
+      "id": "lapatria",
+      "name": "La Patria",
+      "source_type": "regional",
+      "department": "Oruro",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.7,
+      "max_documents": 35,
+      "tags": [
+        "oruro",
+        "regional"
+      ]
+    },
+    {
+      "id": "elpais",
+      "name": "El País",
+      "source_type": "regional",
+      "department": "Tarija",
+      "scope": "regional",
+      "homepage": "https://elpais.bo/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "tarija",
+        "regional"
+      ],
+      "listing_urls": [
+        "https://elpais.bo/etiquetas/noticias/Econom%C3%ADa",
+        "https://elpais.bo/"
+      ],
+      "link_patterns": [
+        "/economia/",
+        "/tarija/",
+        "/nacional/",
+        "/reportajes/"
+      ]
+    },
+    {
+      "id": "lavozdetarija",
+      "name": "La Voz de Tarija",
+      "source_type": "regional",
+      "department": "Tarija",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "tarija",
+        "regional"
+      ]
+    },
+    {
+      "id": "elperiodicotarija",
+      "name": "El Periódico Tarija",
+      "source_type": "regional",
+      "department": "Tarija",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "tarija",
+        "regional"
+      ]
+    },
+    {
+      "id": "elandaluz",
+      "name": "El Andaluz",
+      "source_type": "regional",
+      "department": "Tarija",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "tarija",
+        "regional"
+      ]
+    },
+    {
+      "id": "elfulgor",
+      "name": "El Fulgor",
+      "source_type": "regional",
+      "department": "Oruro",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.65,
+      "max_documents": 30,
+      "tags": [
+        "oruro",
+        "regional"
+      ]
+    },
+    {
+      "id": "elpotosi",
+      "name": "El Potosí",
+      "source_type": "regional",
+      "department": "Potosí",
+      "scope": "regional",
+      "homepage": "https://elpotosi.net/",
+      "collection_method": "listing",
+      "status": "active",
+      "source_weight": 0.7,
+      "max_documents": 10,
+      "tags": [
+        "potosi",
+        "regional"
+      ],
+      "listing_urls": [
+        "https://elpotosi.net/tags/economia",
+        "https://elpotosi.net/nacional"
+      ],
+      "link_patterns": [
+        "/nacional/",
+        "/local/"
+      ]
+    },
+    {
+      "id": "lapalabradelbeni",
+      "name": "La Palabra del Beni",
+      "source_type": "regional",
+      "department": "Beni",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.7,
+      "max_documents": 35,
+      "tags": [
+        "beni",
+        "regional"
+      ]
+    },
+    {
+      "id": "elprogresodepando",
+      "name": "El Progreso de Pando",
+      "source_type": "regional",
+      "department": "Pando",
+      "scope": "regional",
+      "homepage": null,
+      "collection_method": "discovery",
+      "status": "pending_discovery",
+      "source_weight": 0.7,
+      "max_documents": 35,
+      "tags": [
+        "pando",
+        "regional"
+      ]
+    }
+  ]
+}

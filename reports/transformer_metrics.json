@@ -1,0 +1,60 @@
+{
+  "model": "bardsai/finance-sentiment-es-base",
+  "device": "cpu",
+  "samples": 1069,
+  "accuracy": 0.6632366697848456,
+  "precision_macro": 0.6464036715975251,
+  "recall_macro": 0.6583299281866302,
+  "f1_macro": 0.6432892966187447,
+  "mean_confidence": 0.9880701099131239,
+  "classification_report": {
+    "negativo": {
+      "precision": 0.6559633027522935,
+      "recall": 0.5813008130081301,
+      "f1-score": 0.6163793103448276,
+      "support": 246.0
+    },
+    "neutral": {
+      "precision": 0.7874493927125507,
+      "recall": 0.6741767764298093,
+      "f1-score": 0.7264239028944911,
+      "support": 577.0
+    },
+    "positivo": {
+      "precision": 0.4957983193277311,
+      "recall": 0.7195121951219512,
+      "f1-score": 0.5870646766169154,
+      "support": 246.0
+    },
+    "accuracy": 0.6632366697848456,
+    "macro avg": {
+      "precision": 0.6464036715975251,
+      "recall": 0.6583299281866302,
+      "f1-score": 0.6432892966187447,
+      "support": 1069.0
+    },
+    "weighted avg": {
+      "precision": 0.6900763878641981,
+      "recall": 0.6632366697848456,
+      "f1-score": 0.6690306948201218,
+      "support": 1069.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      143,
+      46,
+      57
+    ],
+    [
+      65,
+      389,
+      123
+    ],
+    [
+      10,
+      59,
+      177
+    ]
+  ]
+}

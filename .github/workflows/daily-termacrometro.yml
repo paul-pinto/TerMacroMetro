@@ -1,0 +1,198 @@
+name: TerMacroMetro Daily Intelligence
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # 09:17 UTC = 05:17 en Bolivia
+    - cron: "17 9 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: termacrometro-daily-pipeline
+  cancel-in-progress: false
+
+jobs:
+  daily-update:
+    name: Collect, analyze and publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    env:
+      PYTHONUNBUFFERED: "1"
+      PYTHONHASHSEED: "42"
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+      TOKENIZERS_PARALLELISM: "false"
+      HF_HOME: "${{ github.workspace }}/.cache/huggingface"
+      HF_TOKEN: "${{ secrets.HF_TOKEN }}"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Restore Hugging Face cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/huggingface
+          key: ${{ runner.os }}-hf-finance-sentiment-es-v1
+          restore-keys: |
+            ${{ runner.os }}-hf-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Preserve historical corpus
+        shell: bash
+        run: |
+          mkdir -p data/bolivia
+
+          if [ -f data/bolivia/noticias_bolivia.csv ]; then
+            cp \
+              data/bolivia/noticias_bolivia.csv \
+              data/bolivia/noticias_bolivia_previous.csv
+          else
+            printf \
+              'id,titulo,texto,fuente,fecha,url,economic_score,collected_at\n' \
+              > data/bolivia/noticias_bolivia_previous.csv
+          fi
+
+      - name: Collect configured sources
+        run: |
+          python -m src.collect_configured_sources
+
+      - name: Merge with historical corpus
+        run: |
+          python -m src.merge_daily_corpus \
+            --previous data/bolivia/noticias_bolivia_previous.csv \
+            --current data/bolivia/noticias_bolivia_current.csv \
+            --output data/bolivia/noticias_bolivia.csv
+
+      - name: Clean Bolivia corpus
+        run: |
+          python -m src.clean_bolivia_corpus
+
+      - name: Train Bolivia LDA
+        run: |
+          python -m src.train_lda_bolivia
+
+      - name: Analyze Bolivia corpus
+        run: |
+          python -m src.analyze_bolivia_corpus
+
+      - name: Build daily intelligence snapshot
+        run: |
+          python -m src.build_daily_intelligence
+
+      - name: Build dashboard reports
+        run: |
+          python -m src.build_dashboard_timeseries
+
+      - name: Validate generated artifacts
+        run: |
+          python -m src.pipeline_quality_gate
+
+      - name: Run automated tests
+        env:
+          PULSOBO_DISABLE_TRANSFORMER: "1"
+        run: |
+          mkdir -p reports
+          python -m pytest -v | tee reports/pytest_results.txt
+
+      - name: Remove temporary files
+        shell: bash
+        run: |
+          rm -f \
+            data/bolivia/noticias_bolivia_previous.csv \
+            data/bolivia/noticias_bolivia_current.csv
+
+      - name: Show update summary
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("reports/bolivia_dashboard.json")
+
+          if not path.exists():
+              raise SystemExit(
+                  "Dashboard report was not generated."
+              )
+
+          data = json.loads(
+              path.read_text(encoding="utf-8")
+          )
+
+          print(
+              "Documents:",
+              data.get("total_documents"),
+          )
+
+          print(
+              "MacroScore:",
+              data.get(
+                  "pulsobo_index",
+                  {},
+              ).get("score"),
+          )
+
+          print(
+              "Level:",
+              data.get(
+                  "pulsobo_index",
+                  {},
+              ).get("level"),
+          )
+
+          print(
+              "Sources:",
+              len(data.get("sources", {})),
+          )
+          PY
+
+      - name: Commit generated updates
+        shell: bash
+        run: |
+          git config user.name "termacrometro-bot"
+          git config user.email \
+            "termacrometro-bot@users.noreply.github.com"
+
+          git add \
+            data/bolivia \
+            data/history \
+            reports/bolivia_dashboard.json \
+            reports/lda_bolivia_topics.json \
+            reports/pytest_results.txt \
+            models/lda_bolivia.joblib \
+            models/lda_bolivia_vectorizer.joblib
+
+          if git diff --cached --quiet; then
+            echo "No corpus changes detected."
+            exit 0
+          fi
+
+          git commit \
+            -m "data: actualización diaria de TerMacroMetro"
+
+          git push
+
+
+
+
+

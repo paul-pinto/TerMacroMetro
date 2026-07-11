@@ -1,138 +1,230 @@
-# 🧠 Análisis de Sentimiento de Reseñas en Español
+# TerMacroMetro
 
-Proyecto de ejemplo **completo y funcional** para la asignatura de **Procesamiento
-de Lenguaje Natural** (Maestría en Ciencia de Datos e IA). Implementa un pipeline
-clásico de PLN que clasifica reseñas de productos en tres categorías —
-**positivo**, **negativo** y **neutral** — y lo expone mediante una **API REST**
-y una **interfaz web**.
+> **Observatorio Inteligente de la Economía Boliviana**
 
-```
-Preprocesamiento  →  TF-IDF (1-2 gramas)  →  Regresión Logística
-```
-
-> Ver el diagrama y las decisiones de diseño en [`docs/ARQUITECTURA.md`](docs/ARQUITECTURA.md).
+TerMacroMetro es una plataforma de inteligencia económica basada en técnicas modernas de Procesamiento de Lenguaje Natural (NLP), Machine Learning e Inteligencia Artificial que recopila diariamente información económica de Bolivia para generar indicadores, modelado de temas, análisis de sentimiento y métricas propias sobre la situación económica nacional.
 
 ---
 
-## 🚀 Puesta en marcha (4 pasos)
+# Características
 
-Desde la carpeta `proyecto-analisis-sentimiento/`:
+- Recolección automática de noticias económicas
+- Integración de fuentes oficiales y medios nacionales
+- Clasificación automática de sentimiento
+- Modelado de temas mediante LDA
+- Detección de entidades económicas bolivianas
+- Índice de tensión económica
+- MacroScore (índice agregado)
+- Dashboard interactivo
+- API REST con FastAPI
+- Pipeline diario automatizado mediante GitHub Actions
+- Suite de pruebas automatizadas
 
-### 1. Crear el entorno e instalar dependencias
+---
+
+# Arquitectura
+
+```
+                ┌──────────────────────┐
+                │  Portales Económicos │
+                └──────────┬───────────┘
+                           │
+                    Recolección diaria
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │    Corpus Histórico  │
+                └──────────┬───────────┘
+                           │
+                   Limpieza y normalización
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │      NLP Engine      │
+                │──────────────────────│
+                │ Naive Bayes          │
+                │ Transformer          │
+                │ LDA                  │
+                └──────────┬───────────┘
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │ Indicadores propios  │
+                │──────────────────────│
+                │ MacroScore           │
+                │ Optimismo            │
+                │ Tensión Económica    │
+                └──────────┬───────────┘
+                           │
+                           ▼
+                ┌──────────────────────┐
+                │ Dashboard + API      │
+                └──────────────────────┘
+```
+
+---
+
+# Stack tecnológico
+
+- Python 3.11
+- FastAPI
+- Scikit-Learn
+- Transformers
+- PyTorch
+- Pandas
+- NumPy
+- BeautifulSoup
+- Feedparser
+- GitHub Actions
+
+---
+
+# Modelos
+
+## Clasificador clásico
+
+TF-IDF + Multinomial Naive Bayes
+
+Utilizado para clasificación rápida de sentimiento.
+
+---
+
+## Transformer
+
+Modelo financiero en español basado en BERT.
+
+---
+
+## Modelado de temas
+
+Latent Dirichlet Allocation (LDA)
+
+Permite detectar automáticamente los principales temas económicos presentes en el corpus.
+
+---
+
+# Indicadores
+
+## MacroScore
+
+Indicador agregado construido a partir de:
+
+- sentimiento
+- tensión
+- optimismo
+- distribución temática
+
+---
+
+## Optimismo Económico
+
+Mide la proporción de noticias favorables respecto al total.
+
+---
+
+## Índice de Tensión Económica
+
+Construido utilizando un léxico especializado para detectar presión económica.
+
+---
+
+# API
+
+| Método | Endpoint |
+|---------|----------|
+| GET | /api/health |
+| GET | /api/models |
+| GET | /api/dashboard |
+| GET | /api/history |
+| GET | /api/topics |
+| POST | /api/analyze |
+| POST | /api/analyze/batch |
+
+---
+
+# Instalación
 
 ```bash
-python3.11 -m venv venv
-source venv/bin/activate          # en Windows: venv\Scripts\activate
+git clone https://github.com/paul-pinto/termacrometro.git
+
+cd termacrometro
+
+python -m venv .venv
+
+source .venv/bin/activate
+```
+
+Instalar dependencias
+
+```bash
 pip install -r requirements.txt
 ```
 
-> Requiere Python 3.10–3.13 (scikit-learn aún no publica ruedas para 3.14).
-
-### 2. Generar el dataset de ejemplo
+Ejecutar
 
 ```bash
-python -m src.generar_dataset            # crea data/resenas.csv (900 reseñas)
-```
-
-### 3. Entrenar el modelo
-
-```bash
-python -m src.entrenar                    # crea modelos/modelo_sentimiento.joblib
-```
-
-### 4. Levantar la aplicación web + API
-
-```bash
-uvicorn api.app:app --reload
-```
-
-Abre 👉 **http://127.0.0.1:8000** en el navegador.
-La documentación interactiva de la API está en **http://127.0.0.1:8000/docs**.
-
----
-
-## 🗂️ Estructura
-
-```
-proyecto-analisis-sentimiento/
-├── data/resenas.csv          Dataset de reseñas etiquetadas (generado)
-├── src/
-│   ├── generar_dataset.py    Genera el dataset sintético reproducible
-│   ├── preprocesamiento.py   Limpieza y normalización del texto
-│   ├── entrenar.py           Entrena, evalúa y serializa el pipeline
-│   └── predecir.py           Carga el modelo y predice
-├── modelos/                  Modelo y métricas (.joblib / .json, generados)
-├── api/app.py                API REST con FastAPI + servidor de la web
-├── web/                      Interfaz web (index.html, estilos.css, app.js)
-├── docs/ARQUITECTURA.md      Diagrama y justificación de diseño
-├── requirements.txt
-└── README.md
+uvicorn api.observatory:app --reload
 ```
 
 ---
 
-## 🧪 Probar sin la web
+# Pipeline diario
 
-**Desde la terminal (CLI):**
+Todos los días GitHub Actions ejecuta automáticamente:
 
-```bash
-python -m src.predecir "El celular es excelente, lo recomiendo"
-python -m src.predecir            # modo interactivo
-```
-
-**Con la API (curl):**
-
-```bash
-curl -X POST http://127.0.0.1:8000/predecir \
-     -H "Content-Type: application/json" \
-     -d '{"texto":"La laptop es pésima, se dañó al segundo día"}'
-```
-
-Respuesta:
-
-```json
-{
-  "texto": "La laptop es pésima, se dañó al segundo día",
-  "sentimiento": "negativo",
-  "confianza": 0.87,
-  "probabilidades": { "negativo": 0.87, "neutral": 0.08, "positivo": 0.05 }
-}
-```
+1. Recolección de noticias
+2. Limpieza
+3. Actualización del corpus
+4. Entrenamiento LDA
+5. Inteligencia diaria
+6. Dashboard
+7. Validación
+8. Tests
 
 ---
 
-## 📊 Sobre el dataset
+# Estado del proyecto
 
-- **900 reseñas** balanceadas (300 por clase), generadas por plantillas + vocabulario.
-- Reproducible: usa una semilla fija (`--semilla 42`).
-- Ampliable: `python -m src.generar_dataset --n 1800` genera más ejemplos.
-
-> ⚠️ **Nota didáctica:** al ser un dataset sintético con plantillas, el modelo
-> alcanza ~100% de exactitud en la prueba. Esto es ideal para verificar que el
-> pipeline funciona, pero **no representa un problema real**. Para una práctica
-> más realista, sustituye `data/resenas.csv` por reseñas reales y observa cómo
-> baja la exactitud: es la mejor manera de discutir **sobreajuste** y
-> **generalización** en clase.
-
----
-
-## 🔌 Endpoints de la API
-
-| Método | Ruta               | Descripción                                  |
-|--------|--------------------|----------------------------------------------|
-| GET    | `/`                | Interfaz web                                 |
-| GET    | `/salud`           | Estado del servicio y del modelo             |
-| GET    | `/metricas`        | Métricas de evaluación del modelo            |
-| POST   | `/predecir`        | Predice el sentimiento de un texto           |
-| POST   | `/predecir_lote`   | Predice el sentimiento de una lista de textos|
-| GET    | `/docs`            | Documentación interactiva (Swagger UI)       |
+| Componente | Estado |
+|------------|--------|
+| API | ✅ |
+| Dashboard | ✅ |
+| Naive Bayes | ✅ |
+| Transformer | ✅ |
+| LDA | ✅ |
+| Automatización | ✅ |
+| Tests | ✅ |
 
 ---
 
-## 🎓 Ideas para ampliar (prácticas)
+# Roadmap
 
-1. Cambiar `LogisticRegression` por `LinearSVC` o `MultinomialNB` y comparar.
-2. Añadir lematización con spaCy (`es_core_news_sm`).
-3. Sustituir TF-IDF por embeddings (Word2Vec, FastText o transformers).
-4. Ajustar hiperparámetros con `GridSearchCV`.
-5. Entrenar con un corpus real en español y analizar los resultados.
+## v1.1
+
+- Más fuentes nacionales
+- Series temporales avanzadas
+- Radar económico
+
+## v1.2
+
+- Alertas inteligentes
+- Comparación entre medios
+- Tendencias por institución
+
+## v2.0
+
+- Modelo entrenado exclusivamente con noticias bolivianas
+- Sistema de consulta histórica
+- Reportes automáticos
+
+---
+
+# Licencia
+
+MIT License
+
+---
+
+**TerMacroMetro**
+
+Observatorio Inteligente de la Economía Boliviana
