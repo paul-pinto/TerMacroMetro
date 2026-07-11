@@ -1,0 +1,58 @@
+services:
+  termacrometro:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: termacrometro
+    restart: unless-stopped
+
+    expose:
+      - "8000"
+
+    environment:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+      TOKENIZERS_PARALLELISM: "false"
+      HF_HOME: "/app/.cache/huggingface"
+
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - termacrometro-models:/app/models/transformer_financial_es
+      - termacrometro-hf-cache:/app/.cache/huggingface
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "curl",
+          "-fsS",
+          "http://127.0.0.1:8000/api/health"
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+
+  nginx:
+    image: nginx:1.27-alpine
+
+    container_name: termacrometro-nginx
+    restart: unless-stopped
+
+    depends_on:
+      termacrometro:
+        condition: service_healthy
+
+    ports:
+      - "80:80"
+
+    volumes:
+      - ./deploy/nginx/termacrometro.conf:/etc/nginx/conf.d/default.conf:ro
+
+volumes:
+  termacrometro-models:
+  termacrometro-hf-cache:
