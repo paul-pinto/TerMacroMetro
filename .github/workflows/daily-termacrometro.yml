@@ -30,6 +30,8 @@ jobs:
       TOKENIZERS_PARALLELISM: "false"
       HF_HOME: "${{ github.workspace }}/.cache/huggingface"
       HF_TOKEN: "${{ secrets.HF_TOKEN }}"
+      TERMACROMETRO_MODEL_REPO: "bardsai/finance-sentiment-es-base"
+      TERMACROMETRO_MODEL_REVISION: "main"
 
     steps:
       - name: Checkout repository
@@ -44,18 +46,44 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
 
-      - name: Restore Hugging Face cache
+      - name: Restore Transformer and Hugging Face cache
         uses: actions/cache@v4
         with:
-          path: .cache/huggingface
-          key: ${{ runner.os }}-hf-finance-sentiment-es-v1
+          path: |
+            .cache/huggingface
+            models/transformer_financial_es
+          key: >-
+            ${{ runner.os }}-python311-termacrometro-transformer-v1
           restore-keys: |
-            ${{ runner.os }}-hf-
+            ${{ runner.os }}-python311-termacrometro-transformer-
+            ${{ runner.os }}-python311-
+            ${{ runner.os }}-
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
+
+      - name: Download and validate financial Transformer
+        run: |
+          python -m src.download_transformer \
+            --repo-id "${TERMACROMETRO_MODEL_REPO}" \
+            --revision "${TERMACROMETRO_MODEL_REVISION}" \
+            --target models/transformer_financial_es
+
+      - name: Verify Transformer files
+        shell: bash
+        run: |
+          test -f models/transformer_financial_es/config.json
+          test -f models/transformer_financial_es/model.safetensors
+
+          if [ ! -f models/transformer_financial_es/tokenizer.json ] && \
+             [ ! -f models/transformer_financial_es/vocab.txt ]; then
+            echo "Tokenizer files were not found."
+            exit 1
+          fi
+
+          du -sh models/transformer_financial_es
 
       - name: Preserve historical corpus
         shell: bash
@@ -68,13 +96,62 @@ jobs:
               data/bolivia/noticias_bolivia_previous.csv
           else
             printf \
-              'id,titulo,texto,fuente,fecha,url,economic_score,collected_at\n' \
+              'id,titulo,texto,fuente,fecha,url,economic_score,source_type,department,scope,source_weight,collected_at\n' \
               > data/bolivia/noticias_bolivia_previous.csv
           fi
 
       - name: Collect configured sources
         run: |
           python -m src.collect_configured_sources
+
+      - name: Validate current collection
+        shell: bash
+        run: |
+          test -s data/bolivia/noticias_bolivia_current.csv
+
+          python - <<'PY'
+          import pandas as pd
+          from pathlib import Path
+
+          path = Path(
+              "data/bolivia/noticias_bolivia_current.csv"
+          )
+
+          df = pd.read_csv(path)
+
+          if df.empty:
+              raise SystemExit(
+                  "The current collection is empty."
+              )
+
+          required = {
+              "id",
+              "titulo",
+              "texto",
+              "fuente",
+              "fecha",
+              "url",
+              "economic_score",
+              "source_type",
+              "department",
+              "scope",
+              "source_weight",
+              "collected_at",
+          }
+
+          missing = required - set(df.columns)
+
+          if missing:
+              raise SystemExit(
+                  f"Missing columns: {sorted(missing)}"
+              )
+
+          print("Current documents:", len(df))
+          print(
+              "Active sources with data:",
+              df["fuente"].nunique(),
+          )
+          PY
 
       - name: Merge with historical corpus
         run: |
@@ -112,7 +189,9 @@ jobs:
           PULSOBO_DISABLE_TRANSFORMER: "1"
         run: |
           mkdir -p reports
-          python -m pytest -v | tee reports/pytest_results.txt
+
+          python -m pytest -v \
+            | tee reports/pytest_results.txt
 
       - name: Remove temporary files
         shell: bash
@@ -128,7 +207,9 @@ jobs:
           import json
           from pathlib import Path
 
-          path = Path("reports/bolivia_dashboard.json")
+          path = Path(
+              "reports/bolivia_dashboard.json"
+          )
 
           if not path.exists():
               raise SystemExit(
@@ -136,7 +217,19 @@ jobs:
               )
 
           data = json.loads(
-              path.read_text(encoding="utf-8")
+              path.read_text(
+                  encoding="utf-8"
+              )
+          )
+
+          pulsobo = data.get(
+              "pulsobo_index",
+              {},
+          )
+
+          optimism = data.get(
+              "optimism_index",
+              {},
           )
 
           print(
@@ -146,30 +239,41 @@ jobs:
 
           print(
               "MacroScore:",
-              data.get(
-                  "pulsobo_index",
-                  {},
-              ).get("score"),
+              pulsobo.get("score"),
           )
 
           print(
-              "Level:",
-              data.get(
-                  "pulsobo_index",
-                  {},
-              ).get("level"),
+              "MacroScore level:",
+              pulsobo.get("level"),
+          )
+
+          print(
+              "Optimism:",
+              optimism.get("score"),
+          )
+
+          print(
+              "Optimism level:",
+              optimism.get("level"),
           )
 
           print(
               "Sources:",
-              len(data.get("sources", {})),
+              len(
+                  data.get(
+                      "sources",
+                      {},
+                  )
+              ),
           )
           PY
 
       - name: Commit generated updates
         shell: bash
         run: |
-          git config user.name "termacrometro-bot"
+          git config user.name \
+            "termacrometro-bot"
+
           git config user.email \
             "termacrometro-bot@users.noreply.github.com"
 
@@ -179,6 +283,7 @@ jobs:
             reports/bolivia_dashboard.json \
             reports/lda_bolivia_topics.json \
             reports/pytest_results.txt \
+            reports/source_collection_report.json \
             models/lda_bolivia.joblib \
             models/lda_bolivia_vectorizer.joblib
 
@@ -191,8 +296,3 @@ jobs:
             -m "data: actualización diaria de TerMacroMetro"
 
           git push
-
-
-
-
-
