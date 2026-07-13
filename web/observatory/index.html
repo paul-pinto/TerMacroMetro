@@ -11,7 +11,7 @@
         content="Observatorio inteligente de noticias económicas bolivianas"
     >
 
-    <title>TerMacróMetroBO | Observatorio Económico Inteligente</title>
+    <title>TerMacroMetro | Observatorio Económico Inteligente</title>
 
     <style>
         :root {
@@ -625,6 +625,113 @@
   }
 }
 /* === End TerMacroMetro footer === */
+
+/* === TerMacroMetro analysis controls === */
+
+.analysis-counter-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.45rem;
+}
+
+.analysis-char-counter {
+    color: #7fa99a;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.analysis-char-counter.is-near-limit {
+    color: #e8c875;
+}
+
+.analysis-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.analysis-example-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.analysis-primary-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.65rem;
+    margin-left: auto;
+}
+
+.analysis-clear-button {
+    min-height: 44px;
+    padding: 0.7rem 1.15rem;
+    border: 1px solid rgba(126, 226, 184, 0.28);
+    border-radius: 12px;
+    background: rgba(126, 226, 184, 0.08);
+    color: #a8cfc1;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.analysis-clear-button:hover,
+.analysis-clear-button:focus-visible {
+    border-color: rgba(126, 226, 184, 0.58);
+    background: rgba(126, 226, 184, 0.15);
+    color: #e4fff4;
+}
+
+.analysis-clear-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.42;
+}
+
+.analysis-primary-actions .loading-text {
+    max-width: 260px;
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .analysis-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .analysis-primary-actions {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 640px) {
+    .analysis-primary-actions {
+        flex-wrap: wrap;
+    }
+
+    .analysis-primary-actions .loading-text {
+        width: 100%;
+        max-width: none;
+        text-align: right;
+    }
+
+    .analysis-clear-button,
+    .analysis-primary-actions .primary-button {
+        flex: 1;
+    }
+}
+
+/* === End TerMacroMetro analysis controls === */
 </style>
 </head>
 
@@ -635,7 +742,7 @@
             <div class="brand-mark">BO</div>
 
             <div>
-                <p class="brand-title">TerMacróMetroBO</p>
+                <p class="brand-title">TerMacroMetro</p>
                 <p class="brand-subtitle">Observatorio Económico Inteligente</p>
             </div>
         </div>
@@ -1157,52 +1264,72 @@
                 </div>
 
                 <textarea
-                    id="newsText"
-                    maxlength="20000"
-                    placeholder="Ejemplo: El Banco Central informó que la escasez de divisas y la caída de las reservas aumentan la presión sobre la economía..."
-                ></textarea>
+    id="newsText"
+    maxlength="5000"
+    placeholder="Ejemplo: El Banco Central informó que la escasez de divisas y la caída de las reservas aumentan la presión sobre la economía..."
+></textarea>
 
-                <div class="actions">
-                    <div class="examples">
-                        <button
-                            class="example-button"
-                            data-example="negative"
-                            type="button"
-                        >
-                            Caso desfavorable
-                        </button>
+<div class="analysis-counter-row">
+    <span
+        id="analysisCharCounter"
+        class="analysis-char-counter"
+        aria-live="polite"
+    >
+        0 / 5.000 caracteres
+    </span>
+</div>
 
-                        <button
-                            class="example-button"
-                            data-example="positive"
-                            type="button"
-                        >
-                            Caso favorable
-                        </button>
+<div class="analysis-toolbar">
+    <div class="analysis-example-actions">
+        <button
+            class="example-button"
+            data-example="negative"
+            type="button"
+        >
+            Caso desfavorable
+        </button>
 
-                        <button
-                            class="example-button"
-                            data-example="mixed"
-                            type="button"
-                        >
-                            Caso mixto
-                        </button>
-                    </div>
+        <button
+            class="example-button"
+            data-example="positive"
+            type="button"
+        >
+            Caso favorable
+        </button>
 
-                    <span id="loadingText" class="loading-text">
-                        Procesando con Naive Bayes, Transformer y LDA...
-                    </span>
+        <button
+            class="example-button"
+            data-example="mixed"
+            type="button"
+        >
+            Caso mixto
+        </button>
+    </div>
 
-                    <button
-                        id="analyzeButton"
-                        class="primary-button"
-                        type="button"
-                    >
-                        Analizar noticia
-                    </button>
-                </div>
+    <div class="analysis-primary-actions">
+        <span id="loadingText" class="loading-text">
+            Procesando con Naive Bayes, Transformer y LDA...
+        </span>
 
-                <div id="errorBox" class="error-box"></div>
+        <button
+            id="clearAnalysisButton"
+            class="analysis-clear-button"
+            type="button"
+        >
+            Limpiar
+        </button>
+
+        <button
+            id="analyzeButton"
+            class="primary-button"
+            type="button"
+        >
+            Analizar noticia
+        </button>
+    </div>
+</div>
+
+<div id="errorBox" class="error-box"></div>
             </section>
 
             <section id="results" class="results">
@@ -1338,7 +1465,7 @@
 <footer class="site-footer">
   <div class="site-footer__brand">
     <div class="site-footer__title">
-      <strong>© 2026 TerMacróMetro</strong>
+      <strong>© 2026 TerMacroMetro</strong>
       <span>Observatorio Inteligente de la Economía Boliviana</span>
     </div>
 
@@ -1419,6 +1546,12 @@
 
     function renderTags(containerId, values, emptyText = "Sin detecciones") {
         const container = document.getElementById(containerId);
+
+        if (!container) {
+            console.warn(`No existe el contenedor #${containerId}`);
+            return;
+        }
+
         container.innerHTML = "";
 
         const normalized = Array.isArray(values)
@@ -1449,6 +1582,12 @@
 
     function renderProbabilities(probabilities) {
         const container = document.getElementById("probabilities");
+
+        if (!container) {
+            console.warn("No existe el contenedor #probabilities");
+            return;
+        }
+
         container.innerHTML = "";
 
         Object.entries(probabilities || {})
@@ -2449,26 +2588,91 @@
     loadDashboardData();
     loadHistoryData();
 </script>
+
+<script>
+/* === TerMacroMetro analysis auxiliary behavior === */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const textarea = document.getElementById("newsText");
+    const clearButton = document.getElementById("clearAnalysisButton");
+    const counter = document.getElementById("analysisCharCounter");
+    const errorBox = document.getElementById("errorBox");
+    const results = document.getElementById("results");
+    const loadingText = document.getElementById("loadingText");
+    const analyzeButton = document.getElementById("analyzeButton");
+
+    if (
+        !textarea ||
+        !clearButton ||
+        !counter ||
+        !analyzeButton
+    ) {
+        console.warn(
+            "No se pudieron inicializar los controles auxiliares."
+        );
+        return;
+    }
+
+    const maximumLength = 5000;
+
+    function updateAnalysisControls() {
+        const length = textarea.value.length;
+
+        counter.textContent =
+            `${length.toLocaleString("es-BO")} / ` +
+            `${maximumLength.toLocaleString("es-BO")} caracteres`;
+
+        counter.classList.toggle(
+            "is-near-limit",
+            length >= maximumLength * 0.85
+        );
+
+        clearButton.disabled = length === 0;
+    }
+
+    function clearAnalysisState() {
+        textarea.value = "";
+
+        if (errorBox) {
+            errorBox.textContent = "";
+            errorBox.style.display = "none";
+        }
+
+        /*
+         * Solo ocultamos la sección. Nunca eliminamos su HTML interno,
+         * porque renderResult() reutiliza esos elementos por ID.
+         */
+        if (results) {
+            results.classList.remove("visible");
+        }
+
+        if (loadingText) {
+            loadingText.style.display = "none";
+        }
+
+        analyzeButton.disabled = false;
+        analyzeButton.textContent = "Analizar noticia";
+
+        updateAnalysisControls();
+        textarea.focus();
+    }
+
+    clearButton.addEventListener("click", clearAnalysisState);
+
+    textarea.addEventListener("input", updateAnalysisControls);
+
+    document
+        .querySelectorAll("[data-example]")
+        .forEach((button) => {
+            button.addEventListener("click", () => {
+                window.requestAnimationFrame(updateAnalysisControls);
+            });
+        });
+
+    updateAnalysisControls();
+});
+
+/* === End TerMacroMetro analysis auxiliary behavior === */
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
