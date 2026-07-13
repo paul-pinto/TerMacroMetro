@@ -255,14 +255,16 @@ El workflow ejecuta automáticamente:
 
 # Documentación
 
-- Metodología
-- Arquitectura
-- API
-- Indicadores
-- Fuentes
-- Limitaciones
-- Filosofía de diseño
-- Roadmap
+- [Metodología](docs/METHODOLOGY.md)
+- [Arquitectura](docs/ARCHITECTURE.md)
+- [Referencia de la API](docs/API.md)
+- [Fuentes de datos](docs/DATA_SOURCES.md)
+- [Indicadores](docs/INDICATORS.md)
+- [Limitaciones](docs/LIMITATIONS.md)
+- [Filosofía de diseño](docs/DESIGN_PHILOSOPHY.md)
+- [Misión y visión](docs/MISSION_AND_VISION.md)
+- [Hoja de ruta](docs/ROADMAP.md)
+- [Licencia MIT](LICENSE)
 
 ---
 
