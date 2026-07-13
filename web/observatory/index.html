@@ -547,7 +547,85 @@
                 width: 100%;
             }
         }
-    </style>
+    /* === TerMacroMetro footer === */
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 2rem;
+  padding: 1.5rem 1rem 1.8rem;
+  border-top: 1px solid rgba(126, 226, 184, 0.16);
+  text-align: center;
+  color: #a8cfc1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.site-footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.site-footer__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.site-footer__title strong {
+  color: #f4f7f5;
+}
+
+.site-footer__author {
+  display: block;
+  color: #9fc8ba;
+}
+
+.site-footer__author strong {
+  color: #f4f7f5;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.site-footer__links a,
+.site-footer__links a:visited {
+  color: #7ee2b8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-footer__links a:hover,
+.site-footer__links a:focus-visible {
+  color: #b8f5dc;
+  text-decoration: underline;
+}
+
+.site-footer__version {
+  color: #7fa99a;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    font-size: 0.82rem;
+  }
+
+  .site-footer__title {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+/* === End TerMacroMetro footer === */
+</style>
 </head>
 
 <body>
@@ -1257,12 +1335,62 @@
     </section>
 </main>
 
-<footer>
-    <div class="container">
-        TerMacrómetroBO · Observatorio Económico Inteligente ·
-        Procesamiento de Lenguaje Natural ·
-        Maestría en Ciencia de Datos e Inteligencia Artificial · Universidad Católica Boliviana · 2026
+<footer class="site-footer">
+  <div class="site-footer__brand">
+    <div class="site-footer__title">
+      <strong>© 2026 TerMacróMetro</strong>
+      <span>Observatorio Inteligente de la Economía Boliviana</span>
     </div>
+
+    <div class="site-footer__author">
+      Desarrollado por
+      <strong>Jhonny Paul Pinto Phillips</strong>
+    </div>
+  </div>
+
+  <nav class="site-footer__links" aria-label="Enlaces del pie de página">
+    <a
+      href="https://github.com/paul-pinto/TerMacroMetro/blob/main/docs/METHODOLOGY.md"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Metodología
+    </a>
+
+    <span aria-hidden="true">·</span>
+
+    <a
+      href="/docs"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      API
+    </a>
+
+    <span aria-hidden="true">·</span>
+
+    <a
+      href="https://github.com/paul-pinto/TerMacroMetro"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+    </a>
+
+    <span aria-hidden="true">·</span>
+
+    <a
+      href="https://github.com/paul-pinto/TerMacroMetro/blob/main/LICENSE"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Licencia
+    </a>
+  </nav>
+
+  <div class="site-footer__version">
+    Versión 1.0.0
+  </div>
 </footer>
 
 <script>
@@ -2323,6 +2451,8 @@
 </script>
 </body>
 </html>
+
+
 
 
 
