@@ -1,6 +1,6 @@
 # API de TerMacroMetro
 
-**Versión:** 1.0.0
+**Versión:** 1.0.1
 
 **Última actualización:** Julio 2026
 
@@ -78,7 +78,7 @@ Respuesta
 ```json
 {
   "name": "TerMacroMetro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "status": "online"
 }
 ```
@@ -314,7 +314,7 @@ La API utiliza versionado semántico del proyecto.
 Versión actual
 
 ```
-1.0.0
+1.0.1
 ```
 
 Cambios incompatibles producirán una nueva versión mayor.
@@ -387,7 +387,7 @@ Su diseño desacoplado respecto al pipeline de procesamiento facilita el desplie
 
 ---
 
-**TerMacroMetro v1.0.0**
+**TerMacroMetro v1.0.1**
 
 **Observatorio Inteligente de la Economía Boliviana**
 

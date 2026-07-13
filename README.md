@@ -330,6 +330,6 @@ https://github.com/paul-pinto/TerMacroMetro
 
 Observatorio Inteligente de la Economía Boliviana
 
-Versión 1.0.0
+Versión 1.0.1
 
 </p>

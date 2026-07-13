@@ -9,6 +9,7 @@ from typing import Any
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from src.inference import EconomicAnalyzer
@@ -149,11 +150,24 @@ app = FastAPI(
         "en español, LDA, extracción de entidades e índice "
         "experimental de tensión textual."
     ),
-    version="1.0.0",
+    version="1.0.1",
     lifespan=lifespan,
 )
 
 
+
+app.mount(
+    "/assets",
+    StaticFiles(
+        directory=str(
+            Path(__file__).resolve().parents[1]
+            / "web"
+            / "observatory"
+            / "assets"
+        )
+    ),
+    name="assets",
+)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -212,7 +226,7 @@ def root() -> FileResponse:
 def api_root() -> dict[str, Any]:
     return {
         "name": "TerMacroMetro API",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "status": "online",
         "model_ready": getattr(
             app.state,
@@ -645,5 +659,9 @@ def history() -> dict[str, Any]:
         "count": len(records),
         "records": records,
     }
+
+
+
+
 
 

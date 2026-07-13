@@ -1,6 +1,6 @@
 # Metodología de TerMacroMetro
 
-**Versión:** 1.0.0
+**Versión:** 1.0.1
 
 **Última actualización:** Julio 2026
 
@@ -458,7 +458,7 @@ La arquitectura fue diseñada para evolucionar progresivamente incorporando nuev
 
 ---
 
-**TerMacroMetro v1.0.0**
+**TerMacroMetro v1.0.1**
 
 **Observatorio Inteligente de la Economía Boliviana**
 
