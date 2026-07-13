@@ -2,7 +2,7 @@
 platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.11.15/x64/bin/python
 cachedir: .pytest_cache
 rootdir: /home/runner/work/TerMacroMetro/TerMacroMetro
-plugins: anyio-4.14.1
+plugins: anyio-4.14.2
 collecting ... collected 20 items
 
 tests/test_api.py::test_health_endpoint PASSED                           [  5%]
@@ -32,4 +32,4 @@ tests/test_inference.py::test_detecta_contexto_boliviano PASSED          [100%]
     from starlette.testclient import TestClient as TestClient  # noqa
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 20 passed, 1 warning in 6.32s =========================
+======================== 20 passed, 1 warning in 5.86s =========================
