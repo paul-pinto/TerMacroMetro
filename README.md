@@ -1,156 +1,205 @@
 # TerMacroMetro
 
-> **Observatorio Inteligente de la Economía Boliviana**
+<p align="center">
 
-TerMacroMetro es una plataforma de inteligencia económica basada en técnicas modernas de Procesamiento de Lenguaje Natural (NLP), Machine Learning e Inteligencia Artificial que recopila diariamente información económica de Bolivia para generar indicadores, modelado de temas, análisis de sentimiento y métricas propias sobre la situación económica nacional.
+**Observatorio Inteligente de la Economía Boliviana**
+
+Procesamiento de Lenguaje Natural • Machine Learning • Deep Learning • Inteligencia Económica
+
+</p>
+
+---
+
+## Descripción
+
+TerMacroMetro es un observatorio inteligente que recopila, procesa y analiza automáticamente noticias económicas relacionadas con Bolivia mediante técnicas modernas de Procesamiento de Lenguaje Natural (NLP), Machine Learning y Deep Learning.
+
+El objetivo del proyecto consiste en transformar información pública dispersa en indicadores económicos experimentales capaces de describir el comportamiento del ecosistema informativo nacional.
+
+El sistema incorpora un pipeline completamente automatizado que diariamente:
+
+- recopila noticias;
+- actualiza el corpus histórico;
+- limpia y normaliza los documentos;
+- identifica entidades económicas;
+- descubre temas mediante LDA;
+- clasifica sentimiento utilizando dos enfoques diferentes;
+- construye indicadores agregados;
+- publica un dashboard actualizado.
 
 ---
 
 # Características
 
-- Recolección automática de noticias económicas
-- Integración de fuentes oficiales y medios nacionales
-- Clasificación automática de sentimiento
-- Modelado de temas mediante LDA
-- Detección de entidades económicas bolivianas
-- Índice de tensión económica
-- MacroScore (índice agregado)
-- Dashboard interactivo
-- API REST con FastAPI
-- Pipeline diario automatizado mediante GitHub Actions
-- Suite de pruebas automatizadas
+- Recolección automática desde múltiples fuentes.
+- Pipeline completamente automatizado mediante GitHub Actions.
+- Corpus histórico incremental.
+- Limpieza y deduplicación automática.
+- Extracción de entidades económicas bolivianas.
+- Modelado de temas mediante LDA.
+- Clasificación clásica mediante TF-IDF + Multinomial Naive Bayes.
+- Clasificación moderna mediante Transformer financiero.
+- API REST desarrollada con FastAPI.
+- Dashboard interactivo.
+- Serie temporal diaria.
+- Quality Gate.
+- Pruebas automatizadas.
 
 ---
 
 # Arquitectura
 
 ```
-                ┌──────────────────────┐
-                │  Portales Económicos │
-                └──────────┬───────────┘
-                           │
-                    Recolección diaria
-                           │
-                           ▼
-                ┌──────────────────────┐
-                │    Corpus Histórico  │
-                └──────────┬───────────┘
-                           │
-                   Limpieza y normalización
-                           │
-                           ▼
-                ┌──────────────────────┐
-                │      NLP Engine      │
-                │──────────────────────│
-                │ Naive Bayes          │
-                │ Transformer          │
-                │ LDA                  │
-                └──────────┬───────────┘
-                           │
-                           ▼
-                ┌──────────────────────┐
-                │ Indicadores propios  │
-                │──────────────────────│
-                │ MacroScore           │
-                │ Optimismo            │
-                │ Tensión Económica    │
-                └──────────┬───────────┘
-                           │
-                           ▼
-                ┌──────────────────────┐
-                │ Dashboard + API      │
-                └──────────────────────┘
+Fuentes públicas
+        │
+        ▼
+ Collectors
+        │
+        ▼
+ Corpus diario
+        │
+        ▼
+ Corpus histórico
+        │
+        ▼
+ Preprocesamiento
+        │
+        ▼
+ Extracción de entidades
+        │
+        ▼
+ LDA
+        │
+        ▼
+ Sentimiento
+        │
+        ▼
+ Indicadores
+        │
+        ▼
+ Dashboard
+        │
+        ▼
+ API
 ```
 
 ---
 
-# Stack tecnológico
+# Tecnologías utilizadas
+
+## Lenguaje
 
 - Python 3.11
-- FastAPI
+
+## Machine Learning
+
 - Scikit-Learn
-- Transformers
-- PyTorch
 - Pandas
-- NumPy
-- BeautifulSoup
-- Feedparser
+- Joblib
+
+## Deep Learning
+
+- Transformers
+- Hugging Face
+- PyTorch
+
+## NLP
+
+- TF-IDF
+- LDA
+- Tokenización
+- Extracción de entidades
+
+## Backend
+
+- FastAPI
+- Uvicorn
+
+## Automatización
+
 - GitHub Actions
 
 ---
 
-# Modelos
+# Modelos utilizados
 
-## Clasificador clásico
+## Modelo clásico
 
-TF-IDF + Multinomial Naive Bayes
+Representación
 
-Utilizado para clasificación rápida de sentimiento.
+- TF-IDF
+
+Clasificador
+
+- Multinomial Naive Bayes
 
 ---
 
-## Transformer
+## Modelo Transformer
 
-Modelo financiero en español basado en BERT.
+Modelo
+
+```
+bardsai/finance-sentiment-es-base
+```
+
+Distribución
+
+- Hugging Face
 
 ---
 
 ## Modelado de temas
 
-Latent Dirichlet Allocation (LDA)
+Algoritmo
 
-Permite detectar automáticamente los principales temas económicos presentes en el corpus.
-
----
-
-# Indicadores
-
-## MacroScore
-
-Indicador agregado construido a partir de:
-
-- sentimiento
-- tensión
-- optimismo
-- distribución temática
+- Latent Dirichlet Allocation (LDA)
 
 ---
 
-## Optimismo Económico
+# Estructura del proyecto
 
-Mide la proporción de noticias favorables respecto al total.
-
----
-
-## Índice de Tensión Económica
-
-Construido utilizando un léxico especializado para detectar presión económica.
-
----
-
-# API
-
-| Método | Endpoint |
-|---------|----------|
-| GET | /api/health |
-| GET | /api/models |
-| GET | /api/dashboard |
-| GET | /api/history |
-| GET | /api/topics |
-| POST | /api/analyze |
-| POST | /api/analyze/batch |
+```text
+api/
+config/
+data/
+docs/
+models/
+reports/
+src/
+tests/
+web/
+```
 
 ---
 
 # Instalación
 
+Clonar el repositorio
+
 ```bash
-git clone https://github.com/paul-pinto/termacrometro.git
+git clone https://github.com/paul-pinto/TerMacroMetro.git
 
-cd termacrometro
+cd TerMacroMetro
+```
 
+Crear entorno virtual
+
+```bash
 python -m venv .venv
+```
 
+Activar entorno
+
+Windows
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Linux
+
+```bash
 source .venv/bin/activate
 ```
 
@@ -160,71 +209,125 @@ Instalar dependencias
 pip install -r requirements.txt
 ```
 
-Ejecutar
+---
+
+# Ejecutar la API
 
 ```bash
-uvicorn api.observatory:app --reload
+python -m uvicorn api.observatory:app \
+    --host 127.0.0.1 \
+    --port 8000
+```
+
+---
+
+# Dashboard
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+# Swagger
+
+```
+http://127.0.0.1:8000/docs
 ```
 
 ---
 
 # Pipeline diario
 
-Todos los días GitHub Actions ejecuta automáticamente:
+El workflow ejecuta automáticamente:
 
-1. Recolección de noticias
+1. Recolección
 2. Limpieza
 3. Actualización del corpus
 4. Entrenamiento LDA
-5. Inteligencia diaria
-6. Dashboard
-7. Validación
-8. Tests
+5. Clasificación de sentimiento
+6. Construcción de indicadores
+7. Actualización del dashboard
+8. Control de calidad
+9. Publicación de resultados
 
 ---
 
-# Estado del proyecto
+# Documentación
 
-| Componente | Estado |
-|------------|--------|
-| API | ✅ |
-| Dashboard | ✅ |
-| Naive Bayes | ✅ |
-| Transformer | ✅ |
-| LDA | ✅ |
-| Automatización | ✅ |
-| Tests | ✅ |
+- Metodología
+- Arquitectura
+- API
+- Indicadores
+- Fuentes
+- Limitaciones
+- Filosofía de diseño
+- Roadmap
 
 ---
 
 # Roadmap
 
-## v1.1
+## v1.0
 
-- Más fuentes nacionales
-- Series temporales avanzadas
-- Radar económico
-
-## v1.2
-
-- Alertas inteligentes
-- Comparación entre medios
-- Tendencias por institución
+- Dashboard
+- API
+- LDA
+- Transformer
+- GitHub Actions
 
 ## v2.0
 
-- Modelo entrenado exclusivamente con noticias bolivianas
-- Sistema de consulta histórica
-- Reportes automáticos
+- Docker
+- Despliegue en DigitalOcean
+- Nginx
+- Dominio propio
+- Series temporales avanzadas
+- Nuevos indicadores
+
+## v3.0
+
+- API pública
+- Autenticación
+- Panel administrativo
+- Base de datos
+- Dashboard analítico
 
 ---
 
 # Licencia
 
-MIT License
+MIT License.
 
 ---
+
+# Autor
+
+**Jhonny Paul Pinto Phillips**
+
+Desarrollador principal de TerMacroMetro.
+
+---
+
+# Citar este proyecto
+
+```text
+Pinto Phillips, J. P. (2026).
+
+TerMacroMetro:
+Observatorio Inteligente de la Economía Boliviana.
+
+https://github.com/paul-pinto/TerMacroMetro
+```
+
+---
+
+<p align="center">
 
 **TerMacroMetro**
 
 Observatorio Inteligente de la Economía Boliviana
+
+Versión 1.0.0
+
+</p>
