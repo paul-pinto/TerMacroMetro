@@ -1203,7 +1203,7 @@
                         <h3>Matriz de confusión · Naive Bayes</h3>
 
                         <img
-                            src="/api/reports/naive-bayes-confusion"
+                            src="api/reports/naive-bayes-confusion"
                             alt="Matriz de confusión de Naive Bayes"
                             style="
                                 width: 100%;
@@ -1217,7 +1217,7 @@
                         <h3>Matriz de confusión · Transformer</h3>
 
                         <img
-                            src="/api/reports/transformer-confusion"
+                            src="api/reports/transformer-confusion"
                             alt="Matriz de confusión del Transformer"
                             style="
                                 width: 100%;
@@ -1487,7 +1487,7 @@
     <span aria-hidden="true">·</span>
 
     <a
-      href="/docs"
+      href="docs"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -1736,7 +1736,7 @@
         elements.loading.style.display = "inline";
 
         try {
-            const response = await fetch("/api/analyze", {
+            const response = await fetch("api/analyze", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -2171,7 +2171,7 @@
 
     async function loadHistoryData() {
         try {
-            const response = await fetch("/api/history");
+            const response = await fetch("api/history");
             const data = await response.json();
 
             if (!response.ok) {
@@ -2310,7 +2310,7 @@
 
     async function loadDashboardData() {
         try {
-            const response = await fetch("/api/dashboard");
+            const response = await fetch("api/dashboard");
             const data = await response.json();
 
             if (!response.ok) {
@@ -2448,8 +2448,8 @@
     async function loadSystemData() {
         try {
             const [healthResponse, modelResponse] = await Promise.all([
-                fetch("/api/health"),
-                fetch("/api/models")
+                fetch("api/health"),
+                fetch("api/models")
             ]);
 
             const health = await healthResponse.json();
@@ -2676,3 +2676,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
