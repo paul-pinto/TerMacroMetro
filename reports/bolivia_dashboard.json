@@ -1,14 +1,14 @@
 {
-  "total_documents": 218,
+  "total_documents": 232,
   "pulsobo_index": {
-    "score": 39.39,
+    "score": 39.21,
     "level": "bajo",
     "interpretation": "La tensión textual agregada del corpus es reducida.",
     "components": {
-      "stress_average": 57.13,
-      "unfavorable_percentage": 14.68,
-      "high_stress_percentage": 28.9,
-      "model_disagreement_percentage": 35.32
+      "stress_average": 56.96,
+      "unfavorable_percentage": 14.66,
+      "high_stress_percentage": 28.45,
+      "model_disagreement_percentage": 34.91
     },
     "weights": {
       "stress_average": 0.5,
@@ -21,210 +21,192 @@
   "sources": {
     "El Deber": {
       "count": 103,
-      "percentage": 47.25
+      "percentage": 44.4
+    },
+    "Economy": {
+      "count": 21,
+      "percentage": 9.05
+    },
+    "ABI": {
+      "count": 19,
+      "percentage": 8.19
     },
     "MEFP": {
       "count": 17,
-      "percentage": 7.8
-    },
-    "Economy": {
-      "count": 16,
-      "percentage": 7.34
-    },
-    "ABI": {
-      "count": 14,
-      "percentage": 6.42
+      "percentage": 7.33
     },
     "Unitel": {
-      "count": 13,
-      "percentage": 5.96
+      "count": 16,
+      "percentage": 6.9
     },
     "La Razón": {
       "count": 11,
-      "percentage": 5.05
+      "percentage": 4.74
     },
     "El País": {
       "count": 10,
-      "percentage": 4.59
+      "percentage": 4.31
     },
     "BCB": {
       "count": 9,
-      "percentage": 4.13
+      "percentage": 3.88
     },
     "ASFI": {
       "count": 9,
-      "percentage": 4.13
+      "percentage": 3.88
     },
     "Los Tiempos": {
-      "count": 8,
-      "percentage": 3.67
+      "count": 9,
+      "percentage": 3.88
     },
     "INE": {
       "count": 8,
-      "percentage": 3.67
+      "percentage": 3.45
     }
   },
   "tones": {
     "neutral": {
-      "count": 129,
-      "percentage": 59.17
+      "count": 139,
+      "percentage": 59.91
     },
     "favorable": {
-      "count": 57,
-      "percentage": 26.15
+      "count": 59,
+      "percentage": 25.43
     },
     "desfavorable": {
-      "count": 32,
-      "percentage": 14.68
+      "count": 34,
+      "percentage": 14.66
     }
   },
   "naive_bayes_tones": {
     "neutral": {
-      "count": 195,
-      "percentage": 89.45
+      "count": 209,
+      "percentage": 90.09
     },
     "desfavorable": {
       "count": 18,
-      "percentage": 8.26
+      "percentage": 7.76
     },
     "favorable": {
       "count": 5,
-      "percentage": 2.29
+      "percentage": 2.16
     }
   },
   "transformer_tones": {
     "neutral": {
-      "count": 129,
-      "percentage": 59.17
+      "count": 139,
+      "percentage": 59.91
     },
     "favorable": {
-      "count": 57,
-      "percentage": 26.15
+      "count": 59,
+      "percentage": 25.43
     },
     "desfavorable": {
-      "count": 32,
-      "percentage": 14.68
+      "count": 34,
+      "percentage": 14.66
     }
   },
   "topics": {
-    "Sector productivo, automotor y actividad empresarial": {
-      "count": 62,
-      "percentage": 28.44
-    },
     "Precios, alimentos y servicios básicos": {
-      "count": 57,
-      "percentage": 26.15
-    },
-    "Comercio exterior, desarrollo y empresas": {
-      "count": 36,
-      "percentage": 16.51
-    },
-    "Tipo de cambio, divisas y abastecimiento de combustibles": {
-      "count": 22,
-      "percentage": 10.09
-    },
-    "Producción, inversión y régimen cambiario": {
-      "count": 22,
-      "percentage": 10.09
+      "count": 63,
+      "percentage": 27.16
     },
     "Política fiscal, gestión pública y sistema financiero": {
-      "count": 19,
-      "percentage": 8.72
+      "count": 44,
+      "percentage": 18.97
+    },
+    "Producción, inversión y régimen cambiario": {
+      "count": 42,
+      "percentage": 18.1
+    },
+    "Comercio exterior, desarrollo y empresas": {
+      "count": 31,
+      "percentage": 13.36
+    },
+    "Sector productivo, automotor y actividad empresarial": {
+      "count": 28,
+      "percentage": 12.07
+    },
+    "Tipo de cambio, divisas y abastecimiento de combustibles": {
+      "count": 24,
+      "percentage": 10.34
     }
   },
   "entities": {
-    "BCB": 51,
-    "YPFB": 38,
+    "BCB": 52,
+    "YPFB": 39,
     "MEFP": 27,
     "ASFI": 13,
-    "INE": 10,
+    "INE": 11,
     "Aduana Nacional": 9,
-    "IBCE": 7,
+    "IBCE": 8,
+    "FMI": 6,
     "CAF": 6,
-    "FMI": 5,
     "Banco Mundial": 4,
     "SIN": 4,
     "BID": 3
   },
   "indicators": {
-    "tipo de cambio": 94,
-    "sistema financiero": 69,
-    "combustibles": 68,
-    "empleo": 52,
-    "hidrocarburos": 49,
-    "importaciones": 38,
-    "exportaciones": 35,
+    "tipo de cambio": 97,
+    "sistema financiero": 73,
+    "combustibles": 71,
+    "empleo": 56,
+    "hidrocarburos": 51,
+    "importaciones": 39,
+    "exportaciones": 36,
     "reservas internacionales": 26,
     "producto interno bruto": 18,
     "déficit fiscal": 17,
     "inflación": 14,
-    "salarios": 9,
+    "salarios": 10,
     "deuda pública": 7,
     "litio": 3,
     "balanza comercial": 1
   },
   "stress": {
-    "average": 57.13,
+    "average": 56.96,
     "minimum": 20.0,
     "maximum": 100.0,
     "levels": {
       "moderado": {
-        "count": 142,
-        "percentage": 65.14
+        "count": 152,
+        "percentage": 65.52
       },
       "alto": {
-        "count": 33,
-        "percentage": 15.14
+        "count": 36,
+        "percentage": 15.52
       },
       "crítico": {
         "count": 30,
-        "percentage": 13.76
+        "percentage": 12.93
       },
       "bajo": {
-        "count": 13,
-        "percentage": 5.96
+        "count": 14,
+        "percentage": 6.03
       }
     }
   },
   "model_agreement": {
-    "agreements": 141,
-    "disagreements": 77,
-    "agreement_rate": 64.68
+    "agreements": 151,
+    "disagreements": 81,
+    "agreement_rate": 65.09
   },
   "highest_stress_news": [
-    {
-      "titulo": "La crisis del combustible se profundiza: las filas se extienden a la gasolina y al GLP sin una solución a la vista",
-      "fuente": "El Deber",
-      "stress_score": 100,
-      "stress_nivel": "crítico",
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "desfavorable",
-      "url": "https://eldeber.com.bo/economia/crisis-combustible-profundiza-filas-extienden-gasolina-glp-solucion-vista_1783439341"
-    },
     {
       "titulo": "BCB afirma que la devaluación ocurrió en el gobierno de Arce y defiende el tipo de cambio flexible",
       "fuente": "El Deber",
       "stress_score": 100,
       "stress_nivel": "crítico",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "favorable",
       "url": "https://eldeber.com.bo/economia/bcb-afirma-devaluacion-ocurrio-gobierno-arce-defiende-tipo-cambio-flexible_1782839243"
-    },
-    {
-      "titulo": "Analista: Bolivia ya no produce suficiente gas para recuperar su mercado exportador",
-      "fuente": "Economy",
-      "stress_score": 100,
-      "stress_nivel": "crítico",
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "desfavorable",
-      "url": "https://www.economy.com.bo/articulo/business/analista-bolivia-produce-suficiente-gas-recuperar-mercado-exportador/20260707212318023179.html"
     },
     {
       "titulo": "Secretario de Economía: La devaluación del boliviano supera el 30%",
       "fuente": "El País",
       "stress_score": 100,
       "stress_nivel": "crítico",
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "url": "https://elpais.bo/tarija/20260629_secretario-de-economia-la-devaluacion-del-boliviano-supera-el-30.html"
     },
@@ -233,18 +215,27 @@
       "fuente": "MEFP",
       "stress_score": 100,
       "stress_nivel": "crítico",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "desfavorable",
       "url": "https://www.economiayfinanzas.gob.bo/memorias-economia-boliviana"
     },
     {
-      "titulo": "Tuto respalda el tipo de cambio flexible, pero pide un plan integral para evitar una nueva crisis",
+      "titulo": "La crisis del combustible se profundiza: las filas se extienden a la gasolina y al GLP sin una solución a la vista",
       "fuente": "El Deber",
       "stress_score": 100,
       "stress_nivel": "crítico",
-      "tema": "Sector productivo, automotor y actividad empresarial",
-      "tono_consolidado": "favorable",
-      "url": "https://eldeber.com.bo/economia/tuto-respalda-tipo-cambio-flexible-pide-plan-integral-evitar-nueva-crisis_1782924377"
+      "tema": "Producción, inversión y régimen cambiario",
+      "tono_consolidado": "desfavorable",
+      "url": "https://eldeber.com.bo/economia/crisis-combustible-profundiza-filas-extienden-gasolina-glp-solucion-vista_1783439341"
+    },
+    {
+      "titulo": "Crisis por GLP, gasolina y diésel asfixia a familias y choferes",
+      "fuente": "El Deber",
+      "stress_score": 100,
+      "stress_nivel": "crítico",
+      "tema": "Producción, inversión y régimen cambiario",
+      "tono_consolidado": "desfavorable",
+      "url": "https://eldeber.com.bo/economia/crisis-glp-gasolina-diesel-asfixia-familias-choferes_1783507404"
     },
     {
       "titulo": "Empresarios se reúnen en una cumbre extraordinaria para plantear un plan frente a la crisis",
@@ -256,38 +247,47 @@
       "url": "https://eldeber.com.bo/economia/empresarios-reunen-cumbre-extraordinaria-plantear-plan-frente-crisis_1782832087"
     },
     {
-      "titulo": "Crisis por GLP, gasolina y diésel asfixia a familias y choferes",
+      "titulo": "Tuto respalda el tipo de cambio flexible, pero pide un plan integral para evitar una nueva crisis",
       "fuente": "El Deber",
       "stress_score": 100,
       "stress_nivel": "crítico",
       "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "desfavorable",
-      "url": "https://eldeber.com.bo/economia/crisis-glp-gasolina-diesel-asfixia-familias-choferes_1783507404"
+      "tono_consolidado": "favorable",
+      "url": "https://eldeber.com.bo/economia/tuto-respalda-tipo-cambio-flexible-pide-plan-integral-evitar-nueva-crisis_1782924377"
     },
     {
-      "titulo": "Falta de diésel amenaza la seguridad alimentaria",
-      "fuente": "El Deber",
+      "titulo": "Analista: Bolivia ya no produce suficiente gas para recuperar su mercado exportador",
+      "fuente": "Economy",
       "stress_score": 100,
       "stress_nivel": "crítico",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "desfavorable",
-      "url": "https://eldeber.com.bo/economia/falta-diesel-amenaza-seguridad-alimentaria_1782815846"
+      "url": "https://www.economy.com.bo/articulo/business/analista-bolivia-produce-suficiente-gas-recuperar-mercado-exportador/20260707212318023179.html"
     },
     {
       "titulo": "Transporte rechaza nacionalizar autos &#39;chutos&#39; y advierte que agravaría la escasez de combustibles",
       "fuente": "El Deber",
       "stress_score": 100,
       "stress_nivel": "crítico",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "desfavorable",
       "url": "https://eldeber.com.bo/economia/transporte-rechaza-nacionalizar-autos-chutos-advierte-agravaria-escasez-combustibles_1783526172"
+    },
+    {
+      "titulo": "Falta de diésel amenaza la seguridad alimentaria",
+      "fuente": "El Deber",
+      "stress_score": 100,
+      "stress_nivel": "crítico",
+      "tema": "Producción, inversión y régimen cambiario",
+      "tono_consolidado": "desfavorable",
+      "url": "https://eldeber.com.bo/economia/falta-diesel-amenaza-seguridad-alimentaria_1782815846"
     }
   ],
   "news": [
     {
       "titulo": "Entre diciembre y julio, el Gobierno aplica 30 medidas para recuperar la estabilidad y el crecimiento del país",
       "fuente": "ABI",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "neutral",
       "stress_score": 26,
       "url": "https://abi.bo/entre-diciembre-y-julio-el-gobierno-aplica-30-medidas-para-recuperar-la-estabilidad-y-el-crecimiento-del-pais"
@@ -295,7 +295,7 @@
     {
       "titulo": "El Gobierno dice que ahora comienza la fase de inversión y reformas; anticipa la llegada de unos $us 3.000 millones",
       "fuente": "El Deber",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "favorable",
       "stress_score": 58,
       "url": "https://eldeber.com.bo/economia/gobierno-dice-ahora-comienza-fase-inversion-reformas-anticipa-llegada-us-3-000-millones_1783698333"
@@ -303,7 +303,7 @@
     {
       "titulo": "BCB afirma que la devaluación ocurrió en el gobierno de Arce y defiende el tipo de cambio flexible",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "favorable",
       "stress_score": 100,
       "url": "https://eldeber.com.bo/economia/bcb-afirma-devaluacion-ocurrio-gobierno-arce-defiende-tipo-cambio-flexible_1782839243"
@@ -311,7 +311,7 @@
     {
       "titulo": "PLAN ECONÓMICO CONSOLIDA RESULTADOS Y SIENTA LAS BASES PARA UNA NUEVA ETAPA DE CRECIMIENTO DE BOLIVIA",
       "fuente": "MEFP",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "neutral",
       "stress_score": 20,
       "url": "https://www.economiayfinanzas.gob.bo/index.php/node/22464"
@@ -319,7 +319,7 @@
     {
       "titulo": "La crisis del combustible se profundiza: las filas se extienden a la gasolina y al GLP sin una solución a la vista",
       "fuente": "El Deber",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "desfavorable",
       "stress_score": 100,
       "url": "https://eldeber.com.bo/economia/crisis-combustible-profundiza-filas-extienden-gasolina-glp-solucion-vista_1783439341"
@@ -327,7 +327,7 @@
     {
       "titulo": "Memorias de la Economía Boliviana",
       "fuente": "MEFP",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "desfavorable",
       "stress_score": 100,
       "url": "https://www.economiayfinanzas.gob.bo/memorias-economia-boliviana"
@@ -343,7 +343,7 @@
     {
       "titulo": "Secretario de Economía: La devaluación del boliviano supera el 30%",
       "fuente": "El País",
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "stress_score": 100,
       "url": "https://elpais.bo/tarija/20260629_secretario-de-economia-la-devaluacion-del-boliviano-supera-el-30.html"
@@ -351,7 +351,7 @@
     {
       "titulo": "Oxígeno financiero: Bolivia vuelca su mirada al FMI en busca de liquidez",
       "fuente": "La Razón",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "neutral",
       "stress_score": 35,
       "url": "https://larazon.bo/economia-y-empresa/2026/07/12/oxigeno-financiero-bolivia-vuelca-su-mirada-al-fmi-en-busca-de-liquidez"
@@ -359,7 +359,7 @@
     {
       "titulo": "Analista: Bolivia ya no produce suficiente gas para recuperar su mercado exportador",
       "fuente": "Economy",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "desfavorable",
       "stress_score": 100,
       "url": "https://www.economy.com.bo/articulo/business/analista-bolivia-produce-suficiente-gas-recuperar-mercado-exportador/20260707212318023179.html"
@@ -367,7 +367,7 @@
     {
       "titulo": "Bolivia reporta movimiento de 17 millones de dólares en primer día de nuevo tipo de cambio",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "favorable",
       "stress_score": 63,
       "url": "https://eldeber.com.bo/economia/bolivia-reporta-movimiento-17-millones-dolares-primer-dia-nuevo-tipo-cambio_1782854793"
@@ -375,7 +375,7 @@
     {
       "titulo": "Oficial: la crisis de combustibles se extenderá hasta fines de julio",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "neutral",
       "stress_score": 83,
       "url": "https://eldeber.com.bo/economia/oficial-crisis-combustibles-extendera-fines-julio_1783592698"
@@ -383,7 +383,7 @@
     {
       "titulo": "Tuto respalda el tipo de cambio flexible, pero pide un plan integral para evitar una nueva crisis",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "favorable",
       "stress_score": 100,
       "url": "https://eldeber.com.bo/economia/tuto-respalda-tipo-cambio-flexible-pide-plan-integral-evitar-nueva-crisis_1782924377"
@@ -391,7 +391,7 @@
     {
       "titulo": "El tipo de cambio flexible requiere más exportaciones y ajuste fiscal, según Cainco",
       "fuente": "La Razón",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "favorable",
       "stress_score": 46,
       "url": "https://larazon.bo/economia-y-empresa/2026/07/10/el-tipo-de-cambio-flexible-requiere-mas-exportaciones-y-ajuste-fiscal-segun-cainco"
@@ -399,7 +399,7 @@
     {
       "titulo": "Bolivia registra un superávit comercial de 1.393 millones de dólares entre enero y mayo",
       "fuente": "El Deber",
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "favorable",
       "stress_score": 53,
       "url": "https://eldeber.com.bo/economia/bolivia-registra-superavit-comercial-1-393-millones-dolares-enero-mayo_1783032283"
@@ -407,7 +407,7 @@
     {
       "titulo": "Gobierno ajustó el PGE 2026 para reducir la contratación de funcionarios y eliminar “ingresos ficticios”",
       "fuente": "El Deber",
-      "tema": "Producción, inversión y régimen cambiario",
+      "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "neutral",
       "stress_score": 52,
       "url": "https://eldeber.com.bo/economia/gobierno-ajusto-pge-2026-reducir-contratacion-funcionarios-eliminar-ingresos-ficticios_1783188983"
@@ -415,7 +415,7 @@
     {
       "titulo": "Tres factores marcan el rumbo de la importación privada de carburantes",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "neutral",
       "stress_score": 54,
       "url": "https://eldeber.com.bo/economia/tres-factores-marcan-rumbo-importacion-privada-carburantes_1783298286"
@@ -423,7 +423,7 @@
     {
       "titulo": "Un país del tamaño del Beni: Guyana recibe 14 veces más capital fresco que Bolivia",
       "fuente": "El Deber",
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "neutral",
       "stress_score": 34,
       "url": "https://eldeber.com.bo/economia/pais-tamano-beni-guyana-recibe-14-veces-capital-fresco-bolivia_1782759053"
@@ -431,7 +431,7 @@
     {
       "titulo": "Presentaciones del Presidente",
       "fuente": "BCB",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "stress_score": 56,
       "url": "https://www.bcb.gob.bo/?q=content/presentaciones-del-presidente"
@@ -439,7 +439,7 @@
     {
       "titulo": "Economista pide al gobierno explicar dónde está el ahorro por eliminar la subvención de hidrocarburos",
       "fuente": "El Deber",
-      "tema": "Producción, inversión y régimen cambiario",
+      "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "url": "https://eldeber.com.bo/economia/economista-pide-gobierno-explicar-donde-esta-ahorro-eliminar-subvencion-hidrocarburos_1783550027"
@@ -455,7 +455,7 @@
     {
       "titulo": "Gobierno: el nuevo tipo de cambio no afectará al 99,5% de los créditos bancarios",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "favorable",
       "stress_score": 73,
       "url": "https://eldeber.com.bo/economia/gobierno-nuevo-tipo-cambio-no-afectara-99-5-creditos-bancarios_1782852659"
@@ -463,7 +463,7 @@
     {
       "titulo": "El dólar flexible pone a prueba los precios en los mercados",
       "fuente": "El País",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "favorable",
       "stress_score": 92,
       "url": "https://elpais.bo/tarija/20260630_el-dolar-flexible-pone-a-prueba-los-precios-en-los-mercados.html"
@@ -479,7 +479,7 @@
     {
       "titulo": "BCB descarta el bolsín y anuncia control de ASFI a casas de cambio",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "stress_score": 57,
       "url": "https://eldeber.com.bo/economia/bcb-descarta-bolsin-anuncia-control-asfi-casas-cambio_1782902415"
@@ -487,7 +487,7 @@
     {
       "titulo": "Crisis por GLP, gasolina y diésel asfixia a familias y choferes",
       "fuente": "El Deber",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "desfavorable",
       "stress_score": 100,
       "url": "https://eldeber.com.bo/economia/crisis-glp-gasolina-diesel-asfixia-familias-choferes_1783507404"
@@ -503,7 +503,7 @@
     {
       "titulo": "Gobierno mantiene precios de los combustibles hasta enero de 2027",
       "fuente": "El Deber",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "favorable",
       "stress_score": 42,
       "url": "https://eldeber.com.bo/economia/gobierno-mantiene-precios-combustibles-enero-2027_1783680192"
@@ -511,7 +511,7 @@
     {
       "titulo": "Industriales farmacéuticos exigen medidas claves para acompañar el tipo de cambio flexible",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "url": "https://eldeber.com.bo/economia/industriales-farmaceuticos-exigen-medidas-claves-acompanar-tipo-cambio-flexible_1782943456"
@@ -519,20 +519,20 @@
     {
       "titulo": "Recuperación del comercio exterior se frena por diésel y trabas logísticas con Chile",
       "fuente": "El Deber",
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "desfavorable",
       "stress_score": 90,
       "url": "https://eldeber.com.bo/economia/recuperacion-comercio-exterior-frena-diesel-trabas-logisticas-chile_1783507712"
     }
   ],
   "optimism_index": {
-    "score": 59.69,
+    "score": 59.53,
     "level": "moderado",
     "interpretation": "Existen señales favorables, aunque conviven con presión e incertidumbre económica.",
     "components": {
-      "lexical_component": 79.74,
-      "favorable_percentage": 26.15,
-      "low_stress_percentage": 71.1
+      "lexical_component": 79.8,
+      "favorable_percentage": 25.43,
+      "low_stress_percentage": 71.55
     },
     "weights": {
       "lexical_component": 0.5,
@@ -542,64 +542,64 @@
     "disclaimer": "Indicador experimental basado en señales lingüísticas del corpus. No representa una medición macroeconómica oficial."
   },
   "optimism_signals": {
-    "producción": 127,
-    "desarrollo": 116,
-    "abastecimiento": 94,
-    "inversión": 80,
-    "exportaciones": 73,
-    "incremento": 70,
-    "crecimiento": 57,
+    "producción": 135,
+    "desarrollo": 127,
+    "abastecimiento": 96,
+    "inversión": 89,
+    "exportaciones": 75,
+    "incremento": 73,
+    "crecimiento": 64,
     "financiamiento": 54,
-    "recuperación": 48,
-    "empleo": 47,
-    "estabilidad": 46,
-    "capital": 40,
+    "empleo": 51,
+    "recuperación": 51,
+    "capital": 48,
+    "estabilidad": 47,
     "competitividad": 31,
-    "cooperación": 20,
+    "cooperación": 24,
     "mejora": 19
   },
   "daily_snapshot": {
-    "date": "2026-07-13",
-    "generated_at": "2026-07-13T12:21:54.811761+00:00",
-    "documents": 218,
-    "pulsobo_index": 39.39,
+    "date": "2026-07-14",
+    "generated_at": "2026-07-14T11:01:17.956477+00:00",
+    "documents": 232,
+    "pulsobo_index": 39.21,
     "pulsobo_level": "bajo",
-    "optimism_index": 59.69,
+    "optimism_index": 59.53,
     "optimism_level": "moderado",
-    "stress_average": 57.13,
-    "favorable_percentage": 26.15,
-    "neutral_percentage": 59.17,
-    "unfavorable_percentage": 14.68,
-    "top_topic": "Sector productivo, automotor y actividad empresarial",
+    "stress_average": 56.96,
+    "favorable_percentage": 25.43,
+    "neutral_percentage": 59.91,
+    "unfavorable_percentage": 14.66,
+    "top_topic": "Precios, alimentos y servicios básicos",
     "top_entity": "BCB",
     "top_indicator": "tipo de cambio",
     "top_topics": {
-      "Sector productivo, automotor y actividad empresarial": 62,
-      "Precios, alimentos y servicios básicos": 57,
-      "Comercio exterior, desarrollo y empresas": 36,
-      "Tipo de cambio, divisas y abastecimiento de combustibles": 22,
-      "Producción, inversión y régimen cambiario": 22
+      "Precios, alimentos y servicios básicos": 63,
+      "Política fiscal, gestión pública y sistema financiero": 44,
+      "Producción, inversión y régimen cambiario": 42,
+      "Comercio exterior, desarrollo y empresas": 31,
+      "Sector productivo, automotor y actividad empresarial": 28
     },
     "top_entities": {
-      "BCB": 51,
-      "YPFB": 38,
+      "BCB": 52,
+      "YPFB": 39,
       "MEFP": 27,
       "ASFI": 13,
-      "INE": 10
+      "INE": 11
     },
     "top_indicators": {
-      "tipo de cambio": 94,
-      "sistema financiero": 69,
-      "combustibles": 68,
-      "empleo": 52,
-      "hidrocarburos": 49
+      "tipo de cambio": 97,
+      "sistema financiero": 73,
+      "combustibles": 71,
+      "empleo": 56,
+      "hidrocarburos": 51
     },
     "top_optimism_signals": {
-      "producción": 127,
-      "desarrollo": 116,
-      "abastecimiento": 94,
-      "inversión": 80,
-      "exportaciones": 73
+      "producción": 135,
+      "desarrollo": 127,
+      "abastecimiento": 96,
+      "inversión": 89,
+      "exportaciones": 75
     }
   },
   "temporal_analysis": {
@@ -607,107 +607,107 @@
     "frequency": "monthly",
     "minimum_documents_per_period": 2,
     "minimum_date": "2025-01-01",
-    "maximum_date": "2026-07-13",
-    "parsed_documents": 62,
-    "dated_documents": 58,
+    "maximum_date": "2026-07-14",
+    "parsed_documents": 73,
+    "dated_documents": 69,
     "out_of_range_documents": 4,
-    "undated_documents": 156,
+    "undated_documents": 159,
     "series": [
       {
         "period": "2026-07",
-        "documents": 55,
-        "stress_average": 51.05,
-        "unfavorable_percentage": 10.91,
+        "documents": 66,
+        "stress_average": 51.35,
+        "unfavorable_percentage": 10.61,
         "high_stress_percentage": 18.18,
-        "model_disagreement_percentage": 43.64,
-        "pulsobo_index": 34.98
+        "model_disagreement_percentage": 39.39,
+        "pulsobo_index": 34.61
       }
     ]
   },
   "indicator_map": [
     {
       "name": "tipo de cambio",
-      "count": 94,
-      "percentage": 43.12
+      "count": 97,
+      "percentage": 41.81
     },
     {
       "name": "sistema financiero",
-      "count": 69,
-      "percentage": 31.65
+      "count": 73,
+      "percentage": 31.47
     },
     {
       "name": "combustibles",
-      "count": 68,
-      "percentage": 31.19
+      "count": 71,
+      "percentage": 30.6
     },
     {
       "name": "empleo",
-      "count": 52,
-      "percentage": 23.85
+      "count": 56,
+      "percentage": 24.14
     },
     {
       "name": "hidrocarburos",
-      "count": 49,
-      "percentage": 22.48
+      "count": 51,
+      "percentage": 21.98
     },
     {
       "name": "importaciones",
-      "count": 38,
-      "percentage": 17.43
+      "count": 39,
+      "percentage": 16.81
     },
     {
       "name": "exportaciones",
-      "count": 35,
-      "percentage": 16.06
+      "count": 36,
+      "percentage": 15.52
     },
     {
       "name": "reservas internacionales",
       "count": 26,
-      "percentage": 11.93
+      "percentage": 11.21
     },
     {
       "name": "producto interno bruto",
       "count": 18,
-      "percentage": 8.26
+      "percentage": 7.76
     },
     {
       "name": "déficit fiscal",
       "count": 17,
-      "percentage": 7.8
+      "percentage": 7.33
     },
     {
       "name": "inflación",
       "count": 14,
-      "percentage": 6.42
+      "percentage": 6.03
     },
     {
       "name": "salarios",
-      "count": 9,
-      "percentage": 4.13
+      "count": 10,
+      "percentage": 4.31
     },
     {
       "name": "deuda pública",
       "count": 7,
-      "percentage": 3.21
+      "percentage": 3.02
     },
     {
       "name": "litio",
       "count": 3,
-      "percentage": 1.38
+      "percentage": 1.29
     },
     {
       "name": "balanza comercial",
       "count": 1,
-      "percentage": 0.46
+      "percentage": 0.43
     }
   ],
   "source_analysis": {
     "ABI": {
-      "documents": 14,
+      "documents": 19,
       "favorable": 4,
-      "neutral": 9,
+      "neutral": 14,
       "desfavorable": 1,
-      "stress_average": 48.86
+      "stress_average": 50.26
     },
     "ASFI": {
       "documents": 9,
@@ -724,11 +724,11 @@
       "stress_average": 48.0
     },
     "Economy": {
-      "documents": 16,
-      "favorable": 6,
-      "neutral": 7,
-      "desfavorable": 3,
-      "stress_average": 56.75
+      "documents": 21,
+      "favorable": 7,
+      "neutral": 10,
+      "desfavorable": 4,
+      "stress_average": 55.29
     },
     "El Deber": {
       "documents": 103,
@@ -759,11 +759,11 @@
       "stress_average": 48.82
     },
     "Los Tiempos": {
-      "documents": 8,
+      "documents": 9,
       "favorable": 1,
-      "neutral": 6,
+      "neutral": 7,
       "desfavorable": 1,
-      "stress_average": 57.25
+      "stress_average": 57.22
     },
     "MEFP": {
       "documents": 17,
@@ -773,11 +773,11 @@
       "stress_average": 47.59
     },
     "Unitel": {
-      "documents": 13,
-      "favorable": 3,
-      "neutral": 9,
-      "desfavorable": 1,
-      "stress_average": 58.31
+      "documents": 16,
+      "favorable": 4,
+      "neutral": 10,
+      "desfavorable": 2,
+      "stress_average": 58.5
     }
   }
 }
