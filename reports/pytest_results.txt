@@ -3,27 +3,40 @@ platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /opt/hostedtoolc
 cachedir: .pytest_cache
 rootdir: /home/runner/work/TerMacroMetro/TerMacroMetro
 plugins: anyio-4.14.2
-collecting ... collected 20 items
+collecting ... collected 33 items
 
-tests/test_api.py::test_health_endpoint PASSED                           [  5%]
-tests/test_api.py::test_models_endpoint PASSED                           [ 10%]
-tests/test_api.py::test_dashboard_endpoint PASSED                        [ 15%]
-tests/test_api.py::test_analyze_endpoint PASSED                          [ 20%]
-tests/test_api.py::test_analyze_rejects_short_text PASSED                [ 25%]
-tests/test_dates.py::test_fecha_iso_no_invierte_mes_y_dia PASSED         [ 30%]
-tests/test_dates.py::test_fecha_iso_utc_se_convierte_a_bolivia PASSED    [ 35%]
-tests/test_dates.py::test_fecha_espanol PASSED                           [ 40%]
-tests/test_dates.py::test_fecha_numerica_dayfirst PASSED                 [ 45%]
-tests/test_entities_preprocessing.py::test_preprocesamiento_clasico_conserva_negacion PASSED [ 50%]
-tests/test_entities_preprocessing.py::test_preprocesamiento_lda_elimina_stopwords PASSED [ 55%]
-tests/test_entities_preprocessing.py::test_sin_minuscula_no_es_entidad PASSED [ 60%]
-tests/test_entities_preprocessing.py::test_sin_mayuscula_es_entidad PASSED [ 65%]
-tests/test_entities_preprocessing.py::test_nombre_completo_sin_es_entidad PASSED [ 70%]
-tests/test_entities_preprocessing.py::test_detecta_bcb_e_indicadores PASSED [ 75%]
-tests/test_entities_preprocessing.py::test_contexto_boliviano_incluye_stress PASSED [ 80%]
-tests/test_inference.py::test_analizador_rechaza_texto_corto PASSED      [ 85%]
-tests/test_inference.py::test_analizador_clasico_devuelve_estructura PASSED [ 90%]
-tests/test_inference.py::test_tema_pertenece_a_taxonomia_boliviana PASSED [ 95%]
+tests/test_api.py::test_health_endpoint PASSED                           [  3%]
+tests/test_api.py::test_models_endpoint PASSED                           [  6%]
+tests/test_api.py::test_dashboard_endpoint PASSED                        [  9%]
+tests/test_api.py::test_analyze_endpoint PASSED                          [ 12%]
+tests/test_api.py::test_analyze_rejects_short_text PASSED                [ 15%]
+tests/test_api_v2.py::test_v2_overview PASSED                            [ 18%]
+tests/test_api_v2.py::test_v2_events PASSED                              [ 21%]
+tests/test_api_v2.py::test_v2_topics PASSED                              [ 24%]
+tests/test_api_v2.py::test_v2_indicators PASSED                          [ 27%]
+tests/test_api_v2.py::test_v2_entities PASSED                            [ 30%]
+tests/test_api_v2.py::test_v2_emerging_signals PASSED                    [ 33%]
+tests/test_api_v2.py::test_v2_event_source_filter PASSED                 [ 36%]
+tests/test_dates.py::test_fecha_iso_no_invierte_mes_y_dia PASSED         [ 39%]
+tests/test_dates.py::test_fecha_iso_utc_se_convierte_a_bolivia PASSED    [ 42%]
+tests/test_dates.py::test_fecha_espanol PASSED                           [ 45%]
+tests/test_dates.py::test_fecha_numerica_dayfirst PASSED                 [ 48%]
+tests/test_entities_preprocessing.py::test_preprocesamiento_clasico_conserva_negacion PASSED [ 51%]
+tests/test_entities_preprocessing.py::test_preprocesamiento_lda_elimina_stopwords PASSED [ 54%]
+tests/test_entities_preprocessing.py::test_sin_minuscula_no_es_entidad PASSED [ 57%]
+tests/test_entities_preprocessing.py::test_sin_mayuscula_es_entidad PASSED [ 60%]
+tests/test_entities_preprocessing.py::test_nombre_completo_sin_es_entidad PASSED [ 63%]
+tests/test_entities_preprocessing.py::test_detecta_bcb_e_indicadores PASSED [ 66%]
+tests/test_entities_preprocessing.py::test_contexto_boliviano_incluye_stress PASSED [ 69%]
+tests/test_event_clustering.py::test_similar_news_are_clustered PASSED   [ 72%]
+tests/test_event_clustering.py::test_event_summary_counts_sources PASSED [ 75%]
+tests/test_event_clustering.py::test_unrelated_news_remain_separate PASSED [ 78%]
+tests/test_event_quality.py::test_all_documents_receive_event_id PASSED  [ 81%]
+tests/test_event_quality.py::test_event_document_sum_is_consistent PASSED [ 84%]
+tests/test_event_quality.py::test_event_summary_has_sources PASSED       [ 87%]
+tests/test_inference.py::test_analizador_rechaza_texto_corto PASSED      [ 90%]
+tests/test_inference.py::test_analizador_clasico_devuelve_estructura PASSED [ 93%]
+tests/test_inference.py::test_tema_pertenece_a_taxonomia_boliviana PASSED [ 96%]
 tests/test_inference.py::test_detecta_contexto_boliviano PASSED          [100%]
 
 =============================== warnings summary ===============================
@@ -32,4 +45,4 @@ tests/test_inference.py::test_detecta_contexto_boliviano PASSED          [100%]
     from starlette.testclient import TestClient as TestClient  # noqa
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 20 passed, 1 warning in 5.85s =========================
+======================== 33 passed, 1 warning in 6.34s =========================
