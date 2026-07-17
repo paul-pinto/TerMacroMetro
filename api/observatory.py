@@ -12,6 +12,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
+from api.v2 import router as v2_router
+
 from src.inference import EconomicAnalyzer
 
 
@@ -661,7 +663,4 @@ def history() -> dict[str, Any]:
     }
 
 
-
-
-
-
+app.include_router(v2_router)

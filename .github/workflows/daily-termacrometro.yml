@@ -172,13 +172,29 @@ jobs:
         run: |
           python -m src.analyze_bolivia_corpus
 
+      - name: Build operational corpus
+        run: |
+          python -m src.build_operational_corpus
+
+      - name: Build operational events
+        run: |
+          python -m src.build_operational_events
+
       - name: Build daily intelligence snapshot
         run: |
           python -m src.build_daily_intelligence
 
+      - name: Build event intelligence
+        run: |
+          python -m src.build_event_intelligence
+
       - name: Build dashboard reports
         run: |
           python -m src.build_dashboard_timeseries
+
+      - name: Event quality gate
+        run: |
+          python -m src.event_quality_gate
 
       - name: Validate generated artifacts
         run: |
@@ -278,9 +294,12 @@ jobs:
             "termacrometro-bot@users.noreply.github.com"
 
           git add \
+            data/bolivia/noticias_bolivia_operativas.csv \
             data/bolivia \
             data/history \
             reports/bolivia_dashboard.json \
+            reports/bolivia_events.json \
+            reports/event_relevance_ranking.json \
             reports/lda_bolivia_topics.json \
             reports/pytest_results.txt \
             reports/source_collection_report.json \
@@ -296,3 +315,10 @@ jobs:
             -m "data: actualización diaria de TerMacroMetro"
 
           git push
+
+
+
+
+
+
+
