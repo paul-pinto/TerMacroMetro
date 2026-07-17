@@ -9,11 +9,11 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-CURRENT_PATH = (
+OPERATIONAL_PATH = (
     PROJECT_ROOT
     / "data"
     / "bolivia"
-    / "noticias_bolivia_current.csv"
+    / "noticias_bolivia_operativas.csv"
 )
 
 CLEAN_PATH = (
@@ -54,15 +54,15 @@ def fail(message: str) -> None:
 
 
 def main() -> None:
-    if not CURRENT_PATH.exists():
+    if not OPERATIONAL_PATH.exists():
         fail(
-            f"No existe la recolección diaria: {CURRENT_PATH}"
+            f"No existe el corpus operativo: {OPERATIONAL_PATH}"
         )
 
-    current = pd.read_csv(CURRENT_PATH)
+    current = pd.read_csv(OPERATIONAL_PATH)
 
     if current.empty:
-        fail("La recolección diaria está vacía.")
+        fail("El corpus operativo está vacío.")
 
     missing = REQUIRED_METADATA - set(
         current.columns
@@ -152,7 +152,7 @@ def main() -> None:
         )
 
     print("[OK] Control de calidad aprobado.")
-    print(f"Recolección diaria: {len(current)}")
+    print(f"Corpus operativo: {len(current)}")
     print(f"Fuentes activas con datos: {source_count}")
     print(f"Corpus limpio: {len(clean)}")
     print(
@@ -167,4 +167,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
 

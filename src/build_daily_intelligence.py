@@ -9,10 +9,26 @@ from typing import Any
 
 import pandas as pd
 
+from src.relevance_ranking import (
+    build_relevance_rankings,
+)
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-ANALYZED_PATH = (
+# Corpus operativo: últimas 72 horas.
+# Se usa para métricas actuales, optimismo y tensión.
+OPERATIONAL_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "bolivia"
+    / "noticias_bolivia_operativas.csv"
+)
+
+# Corpus histórico analizado.
+# Se usa para comparar la ventana actual con la anterior
+# y calcular momentum.
+HISTORICAL_ANALYZED_PATH = (
     PROJECT_ROOT
     / "data"
     / "bolivia"
@@ -40,6 +56,9 @@ HISTORY_JSON_PATH = (
     HISTORY_DIR
     / "pulsobo_daily.json"
 )
+
+RELEVANCE_WINDOW_HOURS = 72
+RELEVANCE_LIMIT = 10
 
 
 OPTIMISM_LEXICON = {
@@ -104,7 +123,9 @@ def count_optimism_signals(
 
         if occurrences:
             detected[term] = occurrences
-            weighted_score += occurrences * weight
+            weighted_score += (
+                occurrences * weight
+            )
 
     return weighted_score, detected
 
@@ -112,12 +133,25 @@ def count_optimism_signals(
 def safe_json_list(
     value: object,
 ) -> list[str]:
+    if value is None:
+        return []
+
+    if isinstance(value, float) and pd.isna(value):
+        return []
+
+    if isinstance(value, list):
+        return [
+            str(item).strip()
+            for item in value
+            if str(item).strip()
+        ]
+
     try:
         result = json.loads(str(value))
 
         if isinstance(result, list):
             return [
-                str(item)
+                str(item).strip()
                 for item in result
                 if str(item).strip()
             ]
@@ -161,7 +195,10 @@ def build_optimism_index(
     )
 
     score = round(
-        max(0.0, min(100.0, score)),
+        max(
+            0.0,
+            min(100.0, score),
+        ),
         2,
     )
 
@@ -229,10 +266,140 @@ def top_counter(
     )
 
 
+def select_eligible_leader(
+    ranking: list[dict[str, Any]],
+    *,
+    dimension: str,
+) -> dict[str, Any] | None:
+    """
+    Evita que una señal aislada se convierta en líder.
+
+    Temas:
+      mínimo 2 documentos y 2 fuentes.
+
+    Indicadores:
+      mínimo 2 menciones y 2 fuentes.
+
+    Entidades:
+      mínimo 2 menciones o 2 fuentes.
+    """
+
+    for item in ranking:
+        current_count = int(
+            item.get("current_count", 0)
+        )
+
+        unique_sources = int(
+            item.get("unique_sources", 0)
+        )
+
+        if dimension in {
+            "topics",
+            "indicators",
+        }:
+            eligible = (
+                current_count >= 2
+                and unique_sources >= 2
+            )
+        elif dimension == "entities":
+            eligible = (
+                current_count >= 2
+                or unique_sources >= 2
+            )
+        else:
+            eligible = current_count >= 1
+
+        if eligible:
+            return item
+
+    return ranking[0] if ranking else None
+
+
+def build_relevance_payload(
+    historical_df: pd.DataFrame,
+) -> dict[str, Any]:
+    rankings = build_relevance_rankings(
+        historical_df,
+        window_hours=(
+            RELEVANCE_WINDOW_HOURS
+        ),
+        limit=RELEVANCE_LIMIT,
+    )
+
+    top_topic = select_eligible_leader(
+        rankings.get("topics", []),
+        dimension="topics",
+    )
+
+    top_indicator = select_eligible_leader(
+        rankings.get("indicators", []),
+        dimension="indicators",
+    )
+
+    top_entity = select_eligible_leader(
+        rankings.get("entities", []),
+        dimension="entities",
+    )
+
+    return {
+        "window_hours": (
+            RELEVANCE_WINDOW_HOURS
+        ),
+        "topics": rankings.get(
+            "topics",
+            [],
+        ),
+        "indicators": rankings.get(
+            "indicators",
+            [],
+        ),
+        "entities": rankings.get(
+            "entities",
+            [],
+        ),
+        "top_topic": top_topic,
+        "top_indicator": top_indicator,
+        "top_entity": top_entity,
+        "selection_policy": {
+            "topics": {
+                "minimum_mentions": 2,
+                "minimum_sources": 2,
+                "logic": "and",
+            },
+            "indicators": {
+                "minimum_mentions": 2,
+                "minimum_sources": 2,
+                "logic": "and",
+            },
+            "entities": {
+                "minimum_mentions": 2,
+                "minimum_sources": 2,
+                "logic": "or",
+            },
+        },
+    }
+
+
+def ranking_name(
+    item: dict[str, Any] | None,
+) -> str:
+    if not item:
+        return ""
+
+    return str(
+        item.get("name", "")
+    ).strip()
+
+
 def main() -> None:
-    if not ANALYZED_PATH.exists():
+    if not OPERATIONAL_PATH.exists():
         raise FileNotFoundError(
-            f"No existe: {ANALYZED_PATH}"
+            f"No existe: {OPERATIONAL_PATH}"
+        )
+
+    if not HISTORICAL_ANALYZED_PATH.exists():
+        raise FileNotFoundError(
+            f"No existe: {HISTORICAL_ANALYZED_PATH}"
         )
 
     if not DASHBOARD_PATH.exists():
@@ -240,8 +407,12 @@ def main() -> None:
             f"No existe: {DASHBOARD_PATH}"
         )
 
-    df = pd.read_csv(
-        ANALYZED_PATH
+    operational_df = pd.read_csv(
+        OPERATIONAL_PATH
+    )
+
+    historical_df = pd.read_csv(
+        HISTORICAL_ANALYZED_PATH
     )
 
     required = {
@@ -255,18 +426,21 @@ def main() -> None:
         "indicadores",
     }
 
-    missing = required - set(df.columns)
+    missing = (
+        required
+        - set(operational_df.columns)
+    )
 
     if missing:
         raise ValueError(
             f"Faltan columnas: {sorted(missing)}"
         )
 
-    total = len(df)
+    total = len(operational_df)
 
     if total == 0:
         raise RuntimeError(
-            "El corpus analizado está vacío."
+            "El corpus operativo está vacío."
         )
 
     optimism_scores: list[int] = []
@@ -275,13 +449,16 @@ def main() -> None:
     entities: Counter[str] = Counter()
     indicators: Counter[str] = Counter()
 
-    for _, row in df.iterrows():
+    for _, row in operational_df.iterrows():
         document = (
-            f"{row['titulo']}. {row['texto']}"
+            f"{row['titulo']}. "
+            f"{row['texto']}"
         )
 
         lexical_score, detected = (
-            count_optimism_signals(document)
+            count_optimism_signals(
+                document
+            )
         )
 
         optimism_scores.append(
@@ -296,45 +473,62 @@ def main() -> None:
             row.get("tema", "")
         ).strip()
 
-        if topic:
+        if topic and topic.lower() != "nan":
             topics[topic] += 1
 
         entities.update(
             safe_json_list(
-                row.get("entidades", "[]")
+                row.get(
+                    "entidades",
+                    "[]",
+                )
             )
         )
 
         indicators.update(
             safe_json_list(
-                row.get("indicadores", "[]")
+                row.get(
+                    "indicadores",
+                    "[]",
+                )
             )
         )
 
     favorable_count = int(
         (
-            df["tono_consolidado"]
+            operational_df[
+                "tono_consolidado"
+            ]
             == "favorable"
         ).sum()
     )
 
     unfavorable_count = int(
         (
-            df["tono_consolidado"]
+            operational_df[
+                "tono_consolidado"
+            ]
             == "desfavorable"
         ).sum()
     )
 
     neutral_count = int(
         (
-            df["tono_consolidado"]
+            operational_df[
+                "tono_consolidado"
+            ]
             == "neutral"
         ).sum()
     )
 
     low_stress_count = int(
-        df["stress_nivel"].isin(
-            ["bajo", "moderado"]
+        operational_df[
+            "stress_nivel"
+        ].isin(
+            [
+                "bajo",
+                "moderado",
+            ]
         ).sum()
     )
 
@@ -366,8 +560,18 @@ def main() -> None:
 
     optimism_index = build_optimism_index(
         lexical_average=lexical_average,
-        favorable_percentage=favorable_percentage,
-        low_stress_percentage=low_stress_percentage,
+        favorable_percentage=(
+            favorable_percentage
+        ),
+        low_stress_percentage=(
+            low_stress_percentage
+        ),
+    )
+
+    relevance_ranking = (
+        build_relevance_payload(
+            historical_df
+        )
     )
 
     with DASHBOARD_PATH.open(
@@ -387,14 +591,42 @@ def main() -> None:
         )
     )
 
+    dashboard["relevance_ranking"] = (
+        relevance_ranking
+    )
+
     generated_at = datetime.now(
         timezone.utc
     )
 
+    top_topic = relevance_ranking[
+        "top_topic"
+    ]
+
+    top_entity = relevance_ranking[
+        "top_entity"
+    ]
+
+    top_indicator = relevance_ranking[
+        "top_indicator"
+    ]
+
     snapshot = {
-        "date": generated_at.date().isoformat(),
-        "generated_at": generated_at.isoformat(),
+        "date": (
+            generated_at
+            .date()
+            .isoformat()
+        ),
+        "generated_at": (
+            generated_at.isoformat()
+        ),
         "documents": total,
+        "historical_documents": int(
+            len(historical_df)
+        ),
+        "operational_window_hours": (
+            RELEVANCE_WINDOW_HOURS
+        ),
         "pulsobo_index": float(
             dashboard.get(
                 "pulsobo_index",
@@ -413,15 +645,17 @@ def main() -> None:
                 "sin datos",
             )
         ),
-        "optimism_index": optimism_index[
-            "score"
-        ],
-        "optimism_level": optimism_index[
-            "level"
-        ],
+        "optimism_index": (
+            optimism_index["score"]
+        ),
+        "optimism_level": (
+            optimism_index["level"]
+        ),
         "stress_average": round(
             float(
-                df["stress_score"].mean()
+                operational_df[
+                    "stress_score"
+                ].mean()
             ),
             2,
         ),
@@ -434,30 +668,64 @@ def main() -> None:
         "unfavorable_percentage": (
             unfavorable_percentage
         ),
-        "top_topic": (
-            topics.most_common(1)[0][0]
-            if topics
-            else ""
+        "top_topic": ranking_name(
+            top_topic
         ),
-        "top_entity": (
-            entities.most_common(1)[0][0]
-            if entities
-            else ""
+        "top_entity": ranking_name(
+            top_entity
         ),
-        "top_indicator": (
-            indicators.most_common(1)[0][0]
-            if indicators
-            else ""
+        "top_indicator": ranking_name(
+            top_indicator
         ),
-        "top_topics": top_counter(topics),
-        "top_entities": top_counter(entities),
-        "top_indicators": top_counter(indicators),
-        "top_optimism_signals": top_counter(
-            optimism_terms
+        "top_topic_score": (
+            top_topic.get("score")
+            if top_topic
+            else None
+        ),
+        "top_topic_momentum": (
+            top_topic.get("momentum")
+            if top_topic
+            else None
+        ),
+        "top_entity_score": (
+            top_entity.get("score")
+            if top_entity
+            else None
+        ),
+        "top_entity_momentum": (
+            top_entity.get("momentum")
+            if top_entity
+            else None
+        ),
+        "top_indicator_score": (
+            top_indicator.get("score")
+            if top_indicator
+            else None
+        ),
+        "top_indicator_momentum": (
+            top_indicator.get("momentum")
+            if top_indicator
+            else None
+        ),
+        "top_topics": top_counter(
+            topics
+        ),
+        "top_entities": top_counter(
+            entities
+        ),
+        "top_indicators": top_counter(
+            indicators
+        ),
+        "top_optimism_signals": (
+            top_counter(
+                optimism_terms
+            )
         ),
     }
 
-    dashboard["daily_snapshot"] = snapshot
+    dashboard["daily_snapshot"] = (
+        snapshot
+    )
 
     with DASHBOARD_PATH.open(
         "w",
@@ -480,7 +748,12 @@ def main() -> None:
         for key, value in snapshot.items()
         if not isinstance(
             value,
-            dict,
+            (
+                dict,
+                list,
+                tuple,
+                set,
+            ),
         )
     }
 
@@ -522,7 +795,9 @@ def main() -> None:
             pd.notna(history_df),
             None,
         )
-        .to_dict(orient="records")
+        .to_dict(
+            orient="records"
+        )
     )
 
     with HISTORY_JSON_PATH.open(
@@ -537,8 +812,13 @@ def main() -> None:
         )
 
     print(
-        "Documentos:",
+        "Documentos operativos:",
         total,
+    )
+
+    print(
+        "Documentos históricos:",
+        len(historical_df),
     )
 
     print(
@@ -558,13 +838,21 @@ def main() -> None:
     )
 
     print(
-        "Favorable:",
-        favorable_percentage,
+        "Tema principal:",
+        snapshot["top_topic"],
+        f"({snapshot['top_topic_momentum']})",
     )
 
     print(
-        "Desfavorable:",
-        unfavorable_percentage,
+        "Indicador principal:",
+        snapshot["top_indicator"],
+        f"({snapshot['top_indicator_momentum']})",
+    )
+
+    print(
+        "Entidad principal:",
+        snapshot["top_entity"],
+        f"({snapshot['top_entity_momentum']})",
     )
 
     print(
@@ -575,4 +863,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
