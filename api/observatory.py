@@ -13,6 +13,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from api.v2 import router as v2_router
+from api.annotation import router as annotation_router
 
 from src.inference import EconomicAnalyzer
 
@@ -41,6 +42,14 @@ OBSERVATORY_INDEX_PATH = (
     PROJECT_ROOT
     / "web"
     / "observatory"
+    / "index.html"
+)
+
+
+ANNOTATION_INDEX_PATH = (
+    PROJECT_ROOT
+    / "web"
+    / "annotation"
     / "index.html"
 )
 
@@ -217,6 +226,45 @@ def root() -> FileResponse:
     return FileResponse(
         path=OBSERVATORY_INDEX_PATH,
         media_type="text/html",
+        filename=None,
+    )
+
+
+
+@app.get(
+    "/annotation/",
+    include_in_schema=False,
+)
+def annotation_interface() -> FileResponse:
+    if not ANNOTATION_INDEX_PATH.exists():
+        raise HTTPException(
+            status_code=404,
+            detail="No se encontró la interfaz de anotación.",
+        )
+
+    return FileResponse(
+        path=ANNOTATION_INDEX_PATH,
+        media_type="text/html",
+        filename=None,
+    )
+
+
+@app.get(
+    "/annotation/app.js",
+    include_in_schema=False,
+)
+def annotation_javascript() -> FileResponse:
+    script_path = ANNOTATION_INDEX_PATH.parent / "app.js"
+
+    if not script_path.exists():
+        raise HTTPException(
+            status_code=404,
+            detail="No se encontró el JavaScript de anotación.",
+        )
+
+    return FileResponse(
+        path=script_path,
+        media_type="application/javascript",
         filename=None,
     )
 
@@ -664,3 +712,4 @@ def history() -> dict[str, Any]:
 
 
 app.include_router(v2_router)
+app.include_router(annotation_router)

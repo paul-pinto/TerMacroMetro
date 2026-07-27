@@ -32,6 +32,7 @@ services:
       NUMEXPR_NUM_THREADS: "1"
       TOKENIZERS_PARALLELISM: "false"
       HF_HOME: "/app/.cache/huggingface"
+      TERMACROMETRO_ANNOTATION_KEY: ${TERMACROMETRO_ANNOTATION_KEY}
 
     volumes:
       - ./data:/app/data

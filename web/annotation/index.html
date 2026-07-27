@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <meta name="color-scheme" content="dark">
+  <title>Anotación | TerMacroMetro</title>
+
+  <style>
+    :root {
+      --bg: #080b10;
+      --panel: #10151d;
+      --panel-2: #151c26;
+      --border: #273142;
+      --text: #eef3f8;
+      --muted: #98a6b7;
+      --accent: #7fc8ff;
+      --positive: #3ddc97;
+      --neutral: #f7c948;
+      --negative: #ff6b6b;
+      --danger: #ff7676;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 60px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-start;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0 0 7px;
+      font-size: clamp(26px, 4vw, 42px);
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .auth {
+      max-width: 540px;
+      margin: 80px auto 0;
+    }
+
+    label {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      color: var(--text);
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 12px 14px;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--accent);
+    }
+
+    textarea {
+      min-height: 92px;
+      resize: vertical;
+    }
+
+    .button {
+      border: 0;
+      border-radius: 11px;
+      padding: 12px 17px;
+      cursor: pointer;
+      font-weight: 700;
+      color: #07101a;
+      background: var(--accent);
+    }
+
+    .button.secondary {
+      color: var(--text);
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+    }
+
+    .button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .auth-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 26px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .progress {
+      overflow: hidden;
+      height: 10px;
+      background: var(--panel-2);
+      border-radius: 99px;
+      margin: 14px 0 22px;
+    }
+
+    .progress > div {
+      width: 0;
+      height: 100%;
+      background: var(--accent);
+      transition: width 180ms ease;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .pill {
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      padding: 5px 9px;
+    }
+
+    .article-title {
+      font-size: clamp(23px, 3vw, 34px);
+      line-height: 1.16;
+      margin: 0 0 18px;
+    }
+
+    .article-text {
+      color: #d4dde7;
+      line-height: 1.72;
+      white-space: pre-wrap;
+      max-height: 410px;
+      overflow: auto;
+      padding-right: 10px;
+    }
+
+    .annotation {
+      margin-top: 18px;
+    }
+
+    .labels {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 12px 0 17px;
+    }
+
+    .label-button {
+      padding: 17px 12px;
+      border-radius: 13px;
+      border: 2px solid transparent;
+      background: var(--panel-2);
+      color: var(--text);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .label-button[data-label="positivo"].selected {
+      border-color: var(--positive);
+      color: var(--positive);
+    }
+
+    .label-button[data-label="neutral"].selected {
+      border-color: var(--neutral);
+      color: var(--neutral);
+    }
+
+    .label-button[data-label="negativo"].selected {
+      border-color: var(--negative);
+      color: var(--negative);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 180px;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 46px;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .check input {
+      width: auto;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .right-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .message {
+      min-height: 24px;
+      margin-top: 13px;
+      color: var(--muted);
+    }
+
+    .message.error {
+      color: var(--danger);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 760px) {
+      .status-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .labels,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header,
+      .actions {
+        flex-direction: column;
+      }
+
+      .right-actions {
+        width: 100%;
+      }
+
+      .right-actions button {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section id="authView" class="card auth">
+      <h1>Anotación TerMacroMetro</h1>
+      <p class="subtitle">
+        Validación humana para el modelo macroeconómico boliviano.
+      </p>
+
+      <div class="auth-grid" style="margin-top: 24px">
+        <div>
+          <label for="apiKey">Clave de anotación</label>
+          <input
+            id="apiKey"
+            type="password"
+            autocomplete="current-password"
+          >
+        </div>
+
+        <div>
+          <label for="annotator">Nombre del anotador</label>
+          <input
+            id="annotator"
+            type="text"
+            value="Jhonny Paul Pinto Phillips"
+          >
+        </div>
+
+        <button id="loginButton" class="button">
+          Ingresar
+        </button>
+
+        <div id="loginMessage" class="message"></div>
+      </div>
+    </section>
+
+    <section id="appView" class="hidden">
+      <header class="header">
+        <div>
+          <h1>Anotación macroeconómica</h1>
+          <p class="subtitle">
+            Clasificá el impacto para Bolivia, no el tono periodístico.
+          </p>
+        </div>
+
+        <button id="logoutButton" class="button secondary">
+          Cerrar sesión
+        </button>
+      </header>
+
+      <div class="status-grid">
+        <div class="metric">
+          <strong id="totalValue">0</strong>
+          <span>Total</span>
+        </div>
+        <div class="metric">
+          <strong id="annotatedValue">0</strong>
+          <span>Anotadas</span>
+        </div>
+        <div class="metric">
+          <strong id="pendingValue">0</strong>
+          <span>Pendientes</span>
+        </div>
+        <div class="metric">
+          <strong id="doubtfulValue">0</strong>
+          <span>Con duda</span>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <section id="emptyView" class="card hidden">
+        <h2>Lote completado</h2>
+        <p class="subtitle">
+          Ya no quedan noticias pendientes en este lote.
+        </p>
+      </section>
+
+      <section id="itemView" class="card hidden">
+        <div id="articleMeta" class="article-meta"></div>
+
+        <h2 id="articleTitle" class="article-title"></h2>
+
+        <div id="articleText" class="article-text"></div>
+
+        <div class="annotation">
+          <label>Sentimiento macroeconómico</label>
+
+          <div class="labels">
+            <button
+              class="label-button"
+              data-label="positivo"
+            >
+              Positivo
+            </button>
+
+            <button
+              class="label-button"
+              data-label="neutral"
+            >
+              Neutral
+            </button>
+
+            <button
+              class="label-button"
+              data-label="negativo"
+            >
+              Negativo
+            </button>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label for="comment">Comentario</label>
+              <textarea
+                id="comment"
+                placeholder="Justificación opcional o detalle del caso dudoso"
+              ></textarea>
+            </div>
+
+            <label class="check">
+              <input id="doubt" type="checkbox">
+              Marcar como dudoso
+            </label>
+          </div>
+
+          <div class="actions">
+            <button
+              id="openSourceButton"
+              class="button secondary"
+            >
+              Abrir fuente
+            </button>
+
+            <div class="right-actions">
+              <button
+                id="skipButton"
+                class="button secondary"
+              >
+                Saltar
+              </button>
+
+              <button
+                id="saveButton"
+                class="button"
+                disabled
+              >
+                Guardar y continuar
+              </button>
+            </div>
+          </div>
+
+          <div id="message" class="message"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

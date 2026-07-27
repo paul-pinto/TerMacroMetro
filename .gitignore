@@ -54,3 +54,12 @@ data/bolivia/noticias_bolivia_merged_test.csv
 build/
 dist/
 *.egg-info/
+
+# Local annotation workspace
+data/annotation/*.csv
+data/annotation/*.json
+!data/annotation/README.md
+reports/training_data_audit.json
+
+# Local backups
+backups/
