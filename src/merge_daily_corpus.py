@@ -9,6 +9,76 @@ from pathlib import Path
 import pandas as pd
 
 
+MOJIBAKE_TOKENS = (
+    "Ã",
+    "Â",
+    "â€",
+    "â€™",
+    "â€œ",
+    "â€\x9d",
+    "â€“",
+    "â€”",
+    "\ufffd",
+)
+
+
+def mojibake_score(value: str) -> int:
+    return sum(
+        value.count(token)
+        for token in MOJIBAKE_TOKENS
+    )
+
+
+def repair_mojibake(value: object) -> object:
+    if pd.isna(value):
+        return value
+
+    current = str(value)
+
+    for _ in range(3):
+        candidates = [current]
+
+        for encoding in ("latin-1", "cp1252"):
+            try:
+                candidates.append(
+                    current.encode(encoding).decode("utf-8")
+                )
+            except (
+                UnicodeEncodeError,
+                UnicodeDecodeError,
+            ):
+                pass
+
+        best = min(
+            candidates,
+            key=mojibake_score,
+        )
+
+        if mojibake_score(best) >= mojibake_score(current):
+            break
+
+        current = best
+
+    return current
+
+
+def repair_dataframe_encoding(
+    df: pd.DataFrame,
+) -> pd.DataFrame:
+    repaired = df.copy()
+
+    for column in repaired.columns:
+        if (
+            pd.api.types.is_object_dtype(repaired[column])
+            or pd.api.types.is_string_dtype(repaired[column])
+        ):
+            repaired[column] = repaired[column].map(
+                repair_mojibake
+            )
+
+    return repaired
+
+
 STANDARD_COLUMNS = [
     "id",
     "titulo",
@@ -370,6 +440,8 @@ def main() -> None:
         parents=True,
         exist_ok=True,
     )
+
+    merged = repair_dataframe_encoding(merged)
 
     merged.to_csv(
         args.output,
