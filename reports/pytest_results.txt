@@ -2,7 +2,7 @@
 platform linux -- Python 3.11.16, pytest-9.1.1, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.11.16/x64/bin/python
 cachedir: .pytest_cache
 rootdir: /home/runner/work/TerMacroMetro/TerMacroMetro
-plugins: anyio-4.15.0
+plugins: anyio-4.15.1
 collecting ... collected 33 items
 
 tests/test_api.py::test_health_endpoint PASSED                           [  3%]
@@ -49,4 +49,4 @@ tests/test_inference.py::test_detecta_contexto_boliviano PASSED          [100%]
     _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 33 passed, 2 warnings in 6.25s ========================
+======================== 33 passed, 2 warnings in 4.60s ========================
