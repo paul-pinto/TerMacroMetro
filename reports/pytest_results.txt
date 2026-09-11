@@ -48,5 +48,45 @@ tests/test_inference.py::test_detecta_contexto_boliviano PASSED          [100%]
   /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
     _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
 
+tests/test_api.py::test_health_endpoint
+tests/test_api.py::test_models_endpoint
+tests/test_api.py::test_dashboard_endpoint
+tests/test_api.py::test_analyze_endpoint
+tests/test_api.py::test_analyze_rejects_short_text
+tests/test_inference.py::test_analizador_rechaza_texto_corto
+  /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfTransformer from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+tests/test_api.py::test_health_endpoint
+tests/test_api.py::test_models_endpoint
+tests/test_api.py::test_dashboard_endpoint
+tests/test_api.py::test_analyze_endpoint
+tests/test_api.py::test_analyze_rejects_short_text
+tests/test_inference.py::test_analizador_rechaza_texto_corto
+  /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfVectorizer from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+tests/test_api.py::test_health_endpoint
+tests/test_api.py::test_models_endpoint
+tests/test_api.py::test_dashboard_endpoint
+tests/test_api.py::test_analyze_endpoint
+tests/test_api.py::test_analyze_rejects_short_text
+tests/test_inference.py::test_analizador_rechaza_texto_corto
+  /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator MultinomialNB from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+tests/test_api.py::test_health_endpoint
+tests/test_api.py::test_models_endpoint
+tests/test_api.py::test_dashboard_endpoint
+tests/test_api.py::test_analyze_endpoint
+tests/test_api.py::test_analyze_rejects_short_text
+tests/test_inference.py::test_analizador_rechaza_texto_corto
+  /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 33 passed, 2 warnings in 6.80s ========================
+======================= 33 passed, 26 warnings in 6.43s ========================
