@@ -1,14 +1,14 @@
 {
-  "total_documents": 1164,
+  "total_documents": 1177,
   "pulsobo_index": {
-    "score": 41.02,
+    "score": 40.87,
     "level": "moderado",
     "interpretation": "Existen señales mixtas con tensión económica relevante.",
     "components": {
-      "stress_average": 56.75,
-      "unfavorable_percentage": 19.16,
-      "high_stress_percentage": 29.47,
-      "model_disagreement_percentage": 39.52
+      "stress_average": 56.67,
+      "unfavorable_percentage": 18.95,
+      "high_stress_percentage": 29.23,
+      "model_disagreement_percentage": 39.25
     },
     "weights": {
       "stress_average": 0.5,
@@ -20,216 +20,203 @@
   },
   "sources": {
     "Unitel": {
-      "count": 489,
-      "percentage": 42.01
+      "count": 494,
+      "percentage": 41.97
     },
     "Economy": {
-      "count": 219,
-      "percentage": 18.81
+      "count": 222,
+      "percentage": 18.86
     },
     "Los Tiempos": {
-      "count": 170,
-      "percentage": 14.6
+      "count": 175,
+      "percentage": 14.87
     },
     "ABI": {
       "count": 103,
-      "percentage": 8.85
+      "percentage": 8.75
     },
     "El Deber": {
       "count": 103,
-      "percentage": 8.85
+      "percentage": 8.75
     },
     "La Razón": {
       "count": 24,
-      "percentage": 2.06
+      "percentage": 2.04
     },
     "MEFP": {
       "count": 17,
-      "percentage": 1.46
+      "percentage": 1.44
     },
     "ASFI": {
       "count": 12,
-      "percentage": 1.03
+      "percentage": 1.02
     },
     "El País": {
       "count": 10,
-      "percentage": 0.86
+      "percentage": 0.85
     },
     "BCB": {
       "count": 9,
-      "percentage": 0.77
+      "percentage": 0.76
     },
     "INE": {
       "count": 8,
-      "percentage": 0.69
+      "percentage": 0.68
     }
   },
   "tones": {
     "neutral": {
-      "count": 665,
-      "percentage": 57.13
+      "count": 676,
+      "percentage": 57.43
     },
     "favorable": {
-      "count": 276,
-      "percentage": 23.71
+      "count": 278,
+      "percentage": 23.62
     },
     "desfavorable": {
       "count": 223,
-      "percentage": 19.16
+      "percentage": 18.95
     }
   },
   "naive_bayes_tones": {
     "neutral": {
-      "count": 1080,
-      "percentage": 92.78
+      "count": 1093,
+      "percentage": 92.86
     },
     "desfavorable": {
       "count": 58,
-      "percentage": 4.98
+      "percentage": 4.93
     },
     "favorable": {
       "count": 26,
-      "percentage": 2.23
+      "percentage": 2.21
     }
   },
   "transformer_tones": {
     "neutral": {
-      "count": 665,
-      "percentage": 57.13
+      "count": 676,
+      "percentage": 57.43
     },
     "favorable": {
-      "count": 276,
-      "percentage": 23.71
+      "count": 278,
+      "percentage": 23.62
     },
     "desfavorable": {
       "count": 223,
-      "percentage": 19.16
+      "percentage": 18.95
     }
   },
   "topics": {
-    "Comercio exterior, desarrollo y empresas": {
-      "count": 364,
-      "percentage": 31.27
-    },
-    "Tipo de cambio, divisas y abastecimiento de combustibles": {
-      "count": 250,
-      "percentage": 21.48
+    "Política fiscal, gestión pública y sistema financiero": {
+      "count": 229,
+      "percentage": 19.46
     },
     "Sector productivo, automotor y actividad empresarial": {
-      "count": 185,
-      "percentage": 15.89
+      "count": 224,
+      "percentage": 19.03
+    },
+    "Comercio exterior, desarrollo y empresas": {
+      "count": 219,
+      "percentage": 18.61
+    },
+    "Tipo de cambio, divisas y abastecimiento de combustibles": {
+      "count": 209,
+      "percentage": 17.76
     },
     "Precios, alimentos y servicios básicos": {
-      "count": 169,
-      "percentage": 14.52
+      "count": 189,
+      "percentage": 16.06
     },
     "Producción, inversión y régimen cambiario": {
-      "count": 103,
-      "percentage": 8.85
-    },
-    "Política fiscal, gestión pública y sistema financiero": {
-      "count": 93,
-      "percentage": 7.99
+      "count": 107,
+      "percentage": 9.09
     }
   },
   "entities": {
     "YPFB": 304,
     "BCB": 232,
-    "FMI": 113,
+    "FMI": 115,
     "MEFP": 77,
     "INE": 55,
-    "BID": 41,
-    "Banco Mundial": 32,
-    "CAF": 29,
+    "BID": 42,
+    "Banco Mundial": 35,
+    "CAF": 30,
     "ASFI": 28,
     "IBCE": 22,
     "Aduana Nacional": 20,
     "SIN": 12
   },
   "indicators": {
-    "combustibles": 623,
-    "tipo de cambio": 462,
-    "hidrocarburos": 324,
-    "sistema financiero": 320,
-    "importaciones": 213,
-    "empleo": 203,
+    "combustibles": 630,
+    "tipo de cambio": 467,
+    "hidrocarburos": 325,
+    "sistema financiero": 324,
+    "importaciones": 215,
+    "empleo": 207,
     "reservas internacionales": 124,
     "exportaciones": 120,
-    "inflación": 76,
-    "déficit fiscal": 75,
-    "producto interno bruto": 59,
+    "inflación": 77,
+    "déficit fiscal": 76,
+    "producto interno bruto": 60,
     "deuda pública": 26,
-    "salarios": 21,
+    "salarios": 22,
     "balanza comercial": 15,
     "litio": 13
   },
   "stress": {
-    "average": 56.75,
+    "average": 56.67,
     "minimum": 0.0,
     "maximum": 100.0,
     "levels": {
       "moderado": {
-        "count": 752,
-        "percentage": 64.6
+        "count": 763,
+        "percentage": 64.83
       },
       "alto": {
         "count": 206,
-        "percentage": 17.7
+        "percentage": 17.5
       },
       "crítico": {
-        "count": 137,
-        "percentage": 11.77
+        "count": 138,
+        "percentage": 11.72
       },
       "bajo": {
-        "count": 69,
-        "percentage": 5.93
+        "count": 70,
+        "percentage": 5.95
       }
     }
   },
   "model_agreement": {
-    "agreements": 704,
-    "disagreements": 460,
-    "agreement_rate": 60.48
+    "agreements": 715,
+    "disagreements": 462,
+    "agreement_rate": 60.75
   },
   "highest_stress_news": [
+    {
+      "titulo": "La Paz: Transporte Libre evaluará en un ampliado si se suma al paro de choferes contra el fin de la subvención al diésel",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-24T14:21:32Z",
+      "age_hours": 0.12,
+      "stress_score": 77,
+      "stress_nivel": "crítico",
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "url": "https://unitel.bo/noticias/economia/la-paz-transporte-libre-evaluara-en-un-ampliado-si-se-suma-al-paro-de-choferes-contra-el-fin-de-la-subvencion-al-diesel-CP23687612"
+    },
     {
       "titulo": "Velasco plantea eliminar IVA e IT al diésel durante 90 días",
       "fuente": "Los Tiempos",
       "fecha": "2026-09-21T16:16:28-04:00",
       "published_at": "2026-09-21T20:16:28Z",
       "effective_at": "2026-09-21T20:16:28Z",
-      "age_hours": 42.14,
+      "age_hours": 66.2,
       "stress_score": 77,
       "stress_nivel": "crítico",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "neutral",
       "url": "https://www.lostiempos.com/actualidad/economia/20260921/velasco-plantea-eliminar-iva-e-it-al-diesel-90-dias"
-    },
-    {
-      "titulo": "Vocero: se quita la subvención del diésel, pero no se quita la protección al pueblo boliviano",
-      "fuente": "ABI",
-      "fecha": "2026-09-20T23:02:37+00:00",
-      "published_at": "2026-09-20T23:02:37Z",
-      "effective_at": "2026-09-20T23:02:37Z",
-      "age_hours": 63.37,
-      "stress_score": 74,
-      "stress_nivel": "alto",
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "neutral",
-      "url": "https://abi.bo/vocero-se-quita-la-subvencion-del-diesel-pero-no-se-quita-la-proteccion-al-pueblo-boliviano"
-    },
-    {
-      "titulo": "Estudiante de la UPEA crea la primera motocicleta híbrida a gas y gasolina en Bolivia",
-      "fuente": "ABI",
-      "fecha": "2026-09-21T13:35:00+00:00",
-      "published_at": "2026-09-21T13:35:00Z",
-      "effective_at": "2026-09-21T13:35:00Z",
-      "age_hours": 48.83,
-      "stress_score": 70,
-      "stress_nivel": "alto",
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
-      "tono_consolidado": "neutral",
-      "url": "https://abi.bo/estudiante-de-la-upea-crea-la-primera-motocicleta-hibrida-a-gas-y-gasolina-en-bolivia"
     },
     {
       "titulo": "Choferes de Bolivia realizan un ampliado este martes en Santa Cruz para definir una posición por el precio del diésel",
@@ -237,10 +224,10 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-09-22T14:06:33Z",
-      "age_hours": 24.31,
+      "age_hours": 48.37,
       "stress_score": 62,
       "stress_nivel": "alto",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "favorable",
       "url": "https://unitel.bo/noticias/economia/choferes-de-bolivia-realizan-un-ampliado-este-martes-en-santa-cruz-para-definir-una-posicion-por-el-precio-del-diesel-AD23642705"
     },
@@ -250,10 +237,10 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-09-21T15:56:26Z",
-      "age_hours": 46.48,
+      "age_hours": 70.54,
       "stress_score": 62,
       "stress_nivel": "alto",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "neutral",
       "url": "https://unitel.bo/noticias/economia/no-hay-bloqueos-en-el-pais-pero-hay-poca-demanda-de-pasajes-dicen-desde-la-terminal-bimodal-crucena-PF23625831"
     },
@@ -262,8 +249,8 @@
       "fuente": "ASFI",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-23T14:17:48Z",
-      "age_hours": 0.12,
+      "effective_at": "2026-09-24T14:20:00Z",
+      "age_hours": 0.14,
       "stress_score": 60,
       "stress_nivel": "alto",
       "tema": "Precios, alimentos y servicios básicos",
@@ -276,10 +263,10 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-09-22T14:06:34Z",
-      "age_hours": 24.31,
+      "age_hours": 48.37,
       "stress_score": 60,
       "stress_nivel": "alto",
-      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
       "tono_consolidado": "desfavorable",
       "url": "https://unitel.bo/noticias/economia/economista-sobre-estatales-deficitarias-hemos-perdido-10-meses-falta-voluntad-politica-para-hacer-ajustes-MD23642079"
     },
@@ -288,11 +275,11 @@
       "fuente": "ASFI",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-22T14:05:05Z",
-      "age_hours": 24.33,
+      "effective_at": "2026-09-24T14:20:01Z",
+      "age_hours": 0.14,
       "stress_score": 59,
       "stress_nivel": "moderado",
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "neutral",
       "url": "https://www.asfi.gob.bo/node/1368"
     },
@@ -302,10 +289,10 @@
       "fecha": "2026-09-21T14:45:56+00:00",
       "published_at": "2026-09-21T14:45:56Z",
       "effective_at": "2026-09-21T14:45:56Z",
-      "age_hours": 47.65,
+      "age_hours": 71.71,
       "stress_score": 59,
       "stress_nivel": "moderado",
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
       "tono_consolidado": "neutral",
       "url": "https://abi.bo/exministro-alvaro-rios-califica-de-tardia-pero-extremadamente-necesaria-la-eliminacion-de-la-subvencion-al-diesel"
     },
@@ -315,100 +302,113 @@
       "fecha": "2026-09-22T17:18:52-04:00",
       "published_at": "2026-09-22T21:18:52Z",
       "effective_at": "2026-09-22T21:18:52Z",
-      "age_hours": 17.1,
+      "age_hours": 41.16,
+      "stress_score": 58,
+      "stress_nivel": "moderado",
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "favorable",
+      "url": "https://www.lostiempos.com/actualidad/economia/20260922/productores-soya-advierten-mayor-costo-produccion-nuevo-precio-del"
+    },
+    {
+      "titulo": "Tras nuevo precio del diésel ¿A cuánto se vende el kilo de pollo en mercados del eje central?",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-22T14:06:33Z",
+      "age_hours": 48.37,
       "stress_score": 58,
       "stress_nivel": "moderado",
       "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "favorable",
-      "url": "https://www.lostiempos.com/actualidad/economia/20260922/productores-soya-advierten-mayor-costo-produccion-nuevo-precio-del"
+      "url": "https://unitel.bo/noticias/economia/tras-nuevo-precio-del-diesel-a-cuanto-se-vende-el-kilo-de-pollo-en-mercados-del-eje-central-FD23647417"
     }
   ],
   "news": [
     {
-      "titulo": "Santa Cruz: Asesor de la Federación de Transporte 16 de Noviembre cuestiona calidad del diésel",
+      "titulo": "La Paz: Transporte Libre evaluará en un ampliado si se suma al paro de choferes contra el fin de la subvención al diésel",
       "fuente": "Unitel",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-23T14:19:25Z",
-      "age_hours": 0.09,
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "effective_at": "2026-09-24T14:21:32Z",
+      "age_hours": 0.12,
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "neutral",
-      "stress_score": 55,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/santa-cruz-asesor-de-la-federacion-de-transporte-16-de-noviembre-cuestiona-calidad-del-diesel-NB23663493"
+      "stress_score": 77,
+      "stress_nivel": "crítico",
+      "url": "https://unitel.bo/noticias/economia/la-paz-transporte-libre-evaluara-en-un-ampliado-si-se-suma-al-paro-de-choferes-contra-el-fin-de-la-subvencion-al-diesel-CP23687612"
     },
     {
-      "titulo": "Transportistas de Oruro marcharán este miércoles contra la eliminación de la subvención al diésel",
+      "titulo": "Gobierno habilitará hasta Bs 800 millones para financiar a sectores productivos",
       "fuente": "Unitel",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-23T14:19:24Z",
-      "age_hours": 0.09,
-      "tema": "Precios, alimentos y servicios básicos",
-      "tono_consolidado": "neutral",
-      "stress_score": 54,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/transportistas-de-oruro-marcharan-este-miercoles-contra-la-eliminacion-de-la-subvencion-al-diesel-DB23663880"
-    },
-    {
-      "titulo": "El Gobierno activa la conversión a GNV con un fondo rotatorio para abaratar costos del transporte",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-23T14:19:24Z",
-      "age_hours": 0.09,
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "effective_at": "2026-09-24T14:21:32Z",
+      "age_hours": 0.12,
+      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/el-gobierno-activa-la-conversion-a-gnv-con-un-fondo-rotatorio-para-abaratar-costos-del-transporte-FA23670621"
+      "url": "https://unitel.bo/noticias/economia/gobierno-habilitara-hasta-bs-800-millones-para-financiar-a-sectores-productivos-EP23685472"
     },
     {
-      "titulo": "Fin de la subvención al diésel: Plan de conversión a GNV arranca con 400 cilindros en Santa Cruz",
+      "titulo": "Paz anuncia un paquete de financiamiento externo de hasta $us 10.000 millones de cuatro organismos",
       "fuente": "Unitel",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-23T14:19:24Z",
-      "age_hours": 0.09,
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "effective_at": "2026-09-24T14:21:31Z",
+      "age_hours": 0.12,
+      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/fin-de-la-subvencion-al-diesel-plan-de-conversion-a-gnv-arranca-con-400-cilindros-en-santa-cruz-EA23671371"
+      "url": "https://unitel.bo/noticias/economia/paz-anuncia-un-paquete-de-financiamiento-externo-de-hasta-us-10000-millones-de-cuatro-organismos-GO23692477"
     },
     {
-      "titulo": "La Paz: Cocineras de mercados reportan alza en el precio de insumos y familias dicen que ajustan su presupuesto",
+      "titulo": "ATT: Alza de pasajes no es lineal ni se equipara al incremento del precio del diésel; se alista mesa técnica con transportistas",
       "fuente": "Unitel",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-23T14:19:24Z",
-      "age_hours": 0.09,
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "effective_at": "2026-09-24T14:21:31Z",
+      "age_hours": 0.12,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/att-alza-de-pasajes-no-es-lineal-ni-se-equipara-al-incremento-del-precio-del-diesel-se-alista-mesa-tecnica-con-transportistas-CO23693098"
+    },
+    {
+      "titulo": "Conamaq instruye alza del 50% en el precio de su producción",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-24T14:21:31Z",
+      "age_hours": 0.12,
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "favorable",
       "stress_score": 50,
       "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/la-paz-cocineras-de-mercados-reportan-alza-en-el-precio-de-insumos-y-familias-dicen-que-ajustan-su-presupuesto-EB23664426"
+      "url": "https://unitel.bo/noticias/economia/conamaq-instruye-alza-del-50-en-el-precio-de-su-produccion-BP23687732"
     },
     {
-      "titulo": "Transporte urbano de Potosí logra acuerdo y se convierte en la segunda ciudad con tarifa transitoria tras el fin de la subvención al diésel",
-      "fuente": "Unitel",
+      "titulo": "¡ALERTA! ASFI DENUNCIA SUPLANTACIÓN DE IDENTIDAD PARA ESTAFAR A LA POBLACIÓN | ASFI",
+      "fuente": "ASFI",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-23T14:19:24Z",
-      "age_hours": 0.09,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "favorable",
-      "stress_score": 50,
+      "effective_at": "2026-09-24T14:20:01Z",
+      "age_hours": 0.14,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "neutral",
+      "stress_score": 59,
       "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/transporte-urbano-de-potosi-logra-acuerdo-y-se-convierte-en-la-segunda-ciudad-con-tarifa-transitoria-tras-el-fin-de-la-subvencion-al-diesel-HB23664298"
+      "url": "https://www.asfi.gob.bo/node/1368"
     },
     {
       "titulo": "ASFI: DS 5630 NO NECESITA REGLAMENTACIÓN Y DEBE SER CUMPLIDO DE INMEDIATO POR LAS ENTIDADES DE INTERMEDIACIÓN FINANCIERA | ASFI",
       "fuente": "ASFI",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-23T14:17:48Z",
-      "age_hours": 0.12,
+      "effective_at": "2026-09-24T14:20:00Z",
+      "age_hours": 0.14,
       "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "neutral",
       "stress_score": 60,
@@ -420,13 +420,208 @@
       "fuente": "ASFI",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-09-23T14:17:48Z",
-      "age_hours": 0.12,
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "effective_at": "2026-09-24T14:19:59Z",
+      "age_hours": 0.14,
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
       "url": "https://www.asfi.gob.bo/node/1402"
+    },
+    {
+      "titulo": "Derechos del Consumidor Financiero | ASFI",
+      "fuente": "ASFI",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-24T14:19:56Z",
+      "age_hours": 0.14,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://www.asfi.gob.bo/la/derechos-del-consumidor-financiero"
+    },
+    {
+      "titulo": "Cajeros automáticos para personas con discapacidad | ASFI",
+      "fuente": "ASFI",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-24T14:19:56Z",
+      "age_hours": 0.14,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://www.asfi.gob.bo/la/cajeros-automaticos-para-personas-discapacidad"
+    },
+    {
+      "titulo": "Empresarios alertan que el alza del diésel recaerá sobre el sector privados y presionará la liquidez",
+      "fuente": "Los Tiempos",
+      "fecha": "2026-09-24T08:52:07-04:00",
+      "published_at": "2026-09-24T12:52:07Z",
+      "effective_at": "2026-09-24T12:52:07Z",
+      "age_hours": 1.61,
+      "tema": "Producción, inversión y régimen cambiario",
+      "tono_consolidado": "favorable",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://www.lostiempos.com/actualidad/economia/20260924/empresarios-alertan-que-alza-del-diesel-recaera-sector-privados"
+    },
+    {
+      "titulo": "Paz afirma que $us 10.000 millones llegarán a Bolivia para obras integrales",
+      "fuente": "Los Tiempos",
+      "fecha": "2026-09-24T08:49:33-04:00",
+      "published_at": "2026-09-24T12:49:33Z",
+      "effective_at": "2026-09-24T12:49:33Z",
+      "age_hours": 1.65,
+      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://www.lostiempos.com/actualidad/economia/20260924/paz-afirma-que-us-10000-millones-llegaran-bolivia-obras-integrales"
+    },
+    {
+      "titulo": "Banco BISA inicia nueva etapa institucional con solidez y liderazgo financiero",
+      "fuente": "Economy",
+      "fecha": "2026-09-23T22:42:50-04:00",
+      "published_at": "2026-09-24T02:42:50Z",
+      "effective_at": "2026-09-24T02:42:50Z",
+      "age_hours": 11.76,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "neutral",
+      "stress_score": 42,
+      "stress_nivel": "moderado",
+      "url": "https://www.economy.com.bo/articulo/banca-finanzas/banco-bisa-inicia-nueva-etapa-institucional-solidez-liderazgo-financiero/20260923224250024185.html"
+    },
+    {
+      "titulo": "Crown presentó un portafolio de maquinaria y soluciones para los sectores productivos",
+      "fuente": "Economy",
+      "fecha": "2026-09-23T19:02:56-04:00",
+      "published_at": "2026-09-23T23:02:56Z",
+      "effective_at": "2026-09-23T23:02:56Z",
+      "age_hours": 15.43,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://www.economy.com.bo/articulo/life/crown-presento-portafolio-maquinaria-soluciones-sectores-productivos/20260923190256024181.html"
+    },
+    {
+      "titulo": "Paz afirma que $us 10.000 millones llegarán a Bolivia para obras y proyectos",
+      "fuente": "Los Tiempos",
+      "fecha": "2026-09-23T17:14:54-04:00",
+      "published_at": "2026-09-23T21:14:54Z",
+      "effective_at": "2026-09-23T21:14:54Z",
+      "age_hours": 17.23,
+      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://www.lostiempos.com/actualidad/economia/20260923/paz-afirma-que-us-10000-millones-llegaran-bolivia-obras-proyectos"
+    },
+    {
+      "titulo": "Banco Bisa inicia nueva etapa: Julio León Prado es presidente emérito y Marco Antonio Asbún es presidente del Directorio",
+      "fuente": "Los Tiempos",
+      "fecha": "2026-09-23T11:36:47-04:00",
+      "published_at": "2026-09-23T15:36:47Z",
+      "effective_at": "2026-09-23T15:36:47Z",
+      "age_hours": 22.86,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "neutral",
+      "stress_score": 42,
+      "stress_nivel": "moderado",
+      "url": "https://www.lostiempos.com/actualidad/economia/20260923/banco-bisa-inicia-nueva-etapa-julio-leon-prado-es-presidente-emerito"
+    },
+    {
+      "titulo": "Fundación IGUALES recibe reconocimiento de la Asamblea Legislativa Departamental de Santa Cruz",
+      "fuente": "Economy",
+      "fecha": "2026-09-23T11:13:41-04:00",
+      "published_at": "2026-09-23T15:13:41Z",
+      "effective_at": "2026-09-23T15:13:41Z",
+      "age_hours": 23.25,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "neutral",
+      "stress_score": 38,
+      "stress_nivel": "bajo",
+      "url": "https://www.economy.com.bo/articulo/gerencia/fundacion-iguales-recibe-reconocimiento-asamblea-legislativa-departamental-santa-cruz/20260923111341024172.html"
+    },
+    {
+      "titulo": "Santa Cruz: Asesor de la Federación de Transporte 16 de Noviembre cuestiona calidad del diésel",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-23T14:19:25Z",
+      "age_hours": 24.15,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "stress_score": 55,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/santa-cruz-asesor-de-la-federacion-de-transporte-16-de-noviembre-cuestiona-calidad-del-diesel-NB23663493"
+    },
+    {
+      "titulo": "Transportistas de Oruro marcharán este miércoles contra la eliminación de la subvención al diésel",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-23T14:19:24Z",
+      "age_hours": 24.15,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "stress_score": 54,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/transportistas-de-oruro-marcharan-este-miercoles-contra-la-eliminacion-de-la-subvencion-al-diesel-DB23663880"
+    },
+    {
+      "titulo": "El Gobierno activa la conversión a GNV con un fondo rotatorio para abaratar costos del transporte",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-23T14:19:24Z",
+      "age_hours": 24.15,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/el-gobierno-activa-la-conversion-a-gnv-con-un-fondo-rotatorio-para-abaratar-costos-del-transporte-FA23670621"
+    },
+    {
+      "titulo": "Fin de la subvención al diésel: Plan de conversión a GNV arranca con 400 cilindros en Santa Cruz",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-23T14:19:24Z",
+      "age_hours": 24.15,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/fin-de-la-subvencion-al-diesel-plan-de-conversion-a-gnv-arranca-con-400-cilindros-en-santa-cruz-EA23671371"
+    },
+    {
+      "titulo": "La Paz: Cocineras de mercados reportan alza en el precio de insumos y familias dicen que ajustan su presupuesto",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-23T14:19:24Z",
+      "age_hours": 24.15,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "favorable",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/la-paz-cocineras-de-mercados-reportan-alza-en-el-precio-de-insumos-y-familias-dicen-que-ajustan-su-presupuesto-EB23664426"
+    },
+    {
+      "titulo": "Transporte urbano de Potosí logra acuerdo y se convierte en la segunda ciudad con tarifa transitoria tras el fin de la subvención al diésel",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-09-23T14:19:24Z",
+      "age_hours": 24.15,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "favorable",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/transporte-urbano-de-potosi-logra-acuerdo-y-se-convierte-en-la-segunda-ciudad-con-tarifa-transitoria-tras-el-fin-de-la-subvencion-al-diesel-HB23664298"
     },
     {
       "titulo": "¿RETUVIERON FONDOS DE TU CUENTA? ASFI ACLARA QUIÉN ORDENA LA RETENCIÓN, CÓMO SE PROCESA Y QUIÉN DEBE NOTIFICARTE | ASFI",
@@ -434,8 +629,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-09-23T14:17:47Z",
-      "age_hours": 0.12,
-      "tema": "Precios, alimentos y servicios básicos",
+      "age_hours": 24.18,
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
@@ -447,12 +642,25 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-09-23T14:17:47Z",
-      "age_hours": 0.12,
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "age_hours": 24.18,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "neutral",
       "stress_score": 46,
       "stress_nivel": "moderado",
       "url": "https://www.asfi.gob.bo/node/1460"
+    },
+    {
+      "titulo": "Gobierno impulsa el cambio: más de 400 micros dejarán el diésel para funcionar con gas natural",
+      "fuente": "Los Tiempos",
+      "fecha": "2026-09-23T09:23:54-04:00",
+      "published_at": "2026-09-23T13:23:54Z",
+      "effective_at": "2026-09-23T13:23:54Z",
+      "age_hours": 25.08,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://www.lostiempos.com/actualidad/economia/20260923/gobierno-impulsa-cambio-mas-400-micros-dejaran-diesel-funcionar-gas"
     },
     {
       "titulo": "Ataques a refinerías rusas elevan el diésel a ‘niveles récord’ y ‘presionan a Bolivia’",
@@ -460,8 +668,8 @@
       "fecha": "2026-09-22T22:36:05+00:00",
       "published_at": "2026-09-22T22:36:05Z",
       "effective_at": "2026-09-22T22:36:05Z",
-      "age_hours": 15.81,
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "age_hours": 39.87,
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "favorable",
       "stress_score": 52,
       "stress_nivel": "moderado",
@@ -473,8 +681,8 @@
       "fecha": "2026-09-22T17:18:52-04:00",
       "published_at": "2026-09-22T21:18:52Z",
       "effective_at": "2026-09-22T21:18:52Z",
-      "age_hours": 17.1,
-      "tema": "Precios, alimentos y servicios básicos",
+      "age_hours": 41.16,
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "favorable",
       "stress_score": 58,
       "stress_nivel": "moderado",
@@ -486,8 +694,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-09-22T14:06:34Z",
-      "age_hours": 24.31,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "age_hours": 48.37,
+      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
       "tono_consolidado": "desfavorable",
       "stress_score": 60,
       "stress_nivel": "alto",
@@ -499,236 +707,28 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-09-22T14:06:34Z",
-      "age_hours": 24.31,
-      "tema": "Comercio exterior, desarrollo y empresas",
+      "age_hours": 48.37,
+      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
       "tono_consolidado": "favorable",
       "stress_score": 57,
       "stress_nivel": "moderado",
       "url": "https://unitel.bo/noticias/economia/velasco-plantea-abrir-el-mercado-a-petrolero-ante-limitaciones-de-ypfb-para-impulsar-el-potencial-del-sector-OD23642396"
-    },
-    {
-      "titulo": "Revilla busca acuerdos con transportistas de la zona rural sobre las tarifas ante el nuevo precio del diésel",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-22T14:06:34Z",
-      "age_hours": 24.31,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "favorable",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/revilla-busca-acuerdos-con-transportistas-de-la-zona-rural-sobre-las-tarifas-ante-el-nuevo-precio-del-diesel-MD23641926"
-    },
-    {
-      "titulo": "Ante propuesta de pasaje a Bs 6, Alcaldía cruceña descarta modificar la tarifa hasta tener un estudio técnico",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-22T14:06:34Z",
-      "age_hours": 24.31,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/ante-propuesta-de-pasaje-a-bs-6-alcaldia-crucena-descarta-modificar-la-tarifa-hasta-tener-un-estudio-tecnico-ND23640841"
-    },
-    {
-      "titulo": "Velasco: “Las dos obras de infraestructura más importantes de la historia cruceña se van a licitar este año”",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-22T14:06:34Z",
-      "age_hours": 24.31,
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
-      "tono_consolidado": "neutral",
-      "stress_score": 41,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/velasco-las-dos-obras-de-infraestructura-mas-importantes-de-la-historia-crucena-se-van-a-licitar-este-ano-CD23642022"
-    },
-    {
-      "titulo": "Choferes de Bolivia realizan un ampliado este martes en Santa Cruz para definir una posición por el precio del diésel",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-22T14:06:33Z",
-      "age_hours": 24.31,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "favorable",
-      "stress_score": 62,
-      "stress_nivel": "alto",
-      "url": "https://unitel.bo/noticias/economia/choferes-de-bolivia-realizan-un-ampliado-este-martes-en-santa-cruz-para-definir-una-posicion-por-el-precio-del-diesel-AD23642705"
-    },
-    {
-      "titulo": "Tras nuevo precio del diésel ¿A cuánto se vende el kilo de pollo en mercados del eje central?",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-22T14:06:33Z",
-      "age_hours": 24.31,
-      "tema": "Sector productivo, automotor y actividad empresarial",
-      "tono_consolidado": "favorable",
-      "stress_score": 58,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/tras-nuevo-precio-del-diesel-a-cuanto-se-vende-el-kilo-de-pollo-en-mercados-del-eje-central-FD23647417"
-    },
-    {
-      "titulo": "El Bono PEPE II se financiará con recursos del TGN y el crédito del BID, dice el Gobierno",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-22T14:06:33Z",
-      "age_hours": 24.31,
-      "tema": "Precios, alimentos y servicios básicos",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/el-bono-pepe-ii-se-financiara-con-recursos-del-tgn-y-el-credito-del-bid-dice-el-gobierno-FD23647398"
-    },
-    {
-      "titulo": "Senador Roca plantea privatizar “algunas” empresas estratégicas y crear un “impuesto para todos”, entre ellos cocaleros",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-22T14:06:33Z",
-      "age_hours": 24.31,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "neutral",
-      "stress_score": 46,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/senador-roca-plantea-privatizar-algunas-empresas-estrategicas-y-crear-un-impuesto-para-todos-entre-ellos-cocaleros-DD23647523"
-    },
-    {
-      "titulo": "¡ALERTA! ASFI DENUNCIA SUPLANTACIÓN DE IDENTIDAD PARA ESTAFAR A LA POBLACIÓN | ASFI",
-      "fuente": "ASFI",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-22T14:05:05Z",
-      "age_hours": 24.33,
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
-      "tono_consolidado": "neutral",
-      "stress_score": 59,
-      "stress_nivel": "moderado",
-      "url": "https://www.asfi.gob.bo/node/1368"
-    },
-    {
-      "titulo": "Reunión con Paz: Secretario Rubio dice que relación de Bolivia con EEUU ‘es fundamental",
-      "fuente": "Economy",
-      "fecha": "2026-09-22T08:18:27-04:00",
-      "published_at": "2026-09-22T12:18:27Z",
-      "effective_at": "2026-09-22T12:18:27Z",
-      "age_hours": 26.11,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://www.economy.com.bo/articulo/economia/reunion-paz-secretario-rubio-dice-que-relacion-bolivia-eeuu-es-fundamental/20260922081827024162.html"
-    },
-    {
-      "titulo": "Complejo Portuario Mejillones quiere ser el puerto estratégico para Bolivia",
-      "fuente": "Economy",
-      "fecha": "2026-09-22T08:15:13-04:00",
-      "published_at": "2026-09-22T12:15:13Z",
-      "effective_at": "2026-09-22T12:15:13Z",
-      "age_hours": 26.16,
-      "tema": "Tipo de cambio, divisas y abastecimiento de combustibles",
-      "tono_consolidado": "neutral",
-      "stress_score": 36,
-      "stress_nivel": "bajo",
-      "url": "https://www.economy.com.bo/articulo/business/complejo-portuario-mejillones-quiere-ser-puerto-estrategico-bolivia/20260922081513024160.html"
-    },
-    {
-      "titulo": "BCB fija en Bs 11,90 la cotización del dólar para este martes",
-      "fuente": "Los Tiempos",
-      "fecha": "2026-09-22T07:32:04-04:00",
-      "published_at": "2026-09-22T11:32:04Z",
-      "effective_at": "2026-09-22T11:32:04Z",
-      "age_hours": 26.88,
-      "tema": "Sector productivo, automotor y actividad empresarial",
-      "tono_consolidado": "favorable",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://www.lostiempos.com/actualidad/economia/20260922/bcb-fija-bs-1190-cotizacion-del-dolar-este-martes"
-    },
-    {
-      "titulo": "Velasco plantea eliminar IVA e IT al diésel durante 90 días",
-      "fuente": "Los Tiempos",
-      "fecha": "2026-09-21T16:16:28-04:00",
-      "published_at": "2026-09-21T20:16:28Z",
-      "effective_at": "2026-09-21T20:16:28Z",
-      "age_hours": 42.14,
-      "tema": "Precios, alimentos y servicios básicos",
-      "tono_consolidado": "neutral",
-      "stress_score": 77,
-      "stress_nivel": "crítico",
-      "url": "https://www.lostiempos.com/actualidad/economia/20260921/velasco-plantea-eliminar-iva-e-it-al-diesel-90-dias"
-    },
-    {
-      "titulo": "Pasajes interdepartamentales suben hasta 125% tras el alza del diésel",
-      "fuente": "Los Tiempos",
-      "fecha": "2026-09-21T16:03:03-04:00",
-      "published_at": "2026-09-21T20:03:03Z",
-      "effective_at": "2026-09-21T20:03:03Z",
-      "age_hours": 42.37,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "favorable",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://www.lostiempos.com/actualidad/economia/20260921/pasajes-interdepartamentales-suben-125-alza-del-diesel"
-    },
-    {
-      "titulo": "Diésel: Transporte urbano cruceño pide tarifa transitoria y dice que trabaja el 60% de unidades",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-21T15:56:27Z",
-      "age_hours": 46.48,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/diesel-transporte-urbano-cruceno-pide-tarifa-transitoria-y-dice-que-trabaja-el-60-de-unidades-EF23625054"
-    },
-    {
-      "titulo": "No hay bloqueos en el país, pero hay poca demanda de pasajes, dicen desde la Terminal Bimodal cruceña",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-21T15:56:26Z",
-      "age_hours": 46.48,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "neutral",
-      "stress_score": 62,
-      "stress_nivel": "alto",
-      "url": "https://unitel.bo/noticias/economia/no-hay-bloqueos-en-el-pais-pero-hay-poca-demanda-de-pasajes-dicen-desde-la-terminal-bimodal-crucena-PF23625831"
-    },
-    {
-      "titulo": "“No está en la agenda”: Gobierno descarta quitar la subvención a la gasolina y al gas y destaca plan de transición energética",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-09-21T15:56:26Z",
-      "age_hours": 46.48,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "neutral",
-      "stress_score": 55,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/no-esta-en-la-agenda-gobierno-descarta-quitar-la-subvencion-a-la-gasolina-y-al-gas-y-destaca-plan-de-transicion-energetica-DF23626342"
     }
   ],
   "temporal_quality": {
-    "historical_documents": 1164,
-    "operational_documents": 54,
-    "excluded_documents": 1110,
+    "historical_documents": 1177,
+    "operational_documents": 52,
+    "excluded_documents": 1125,
     "recent_window_hours": 72,
     "date_quality": {
-      "published": 529,
-      "inferred_collected": 520,
+      "published": 537,
+      "inferred_collected": 525,
       "missing": 115
     },
     "exclusion_reasons": {
-      "outside_operational_window": 995,
+      "outside_operational_window": 1010,
       "missing_date": 115,
-      "recent": 54
+      "recent": 52
     }
   },
   "operational_window": {
@@ -736,42 +736,42 @@
     "description": "Indicadores actuales calculados sobre noticias publicadas o recolectadas durante las últimas 72 horas."
   },
   "event_analysis": {
-    "documents": 54,
-    "events": 51,
-    "compression_ratio": 5.56,
+    "documents": 52,
+    "events": 49,
+    "compression_ratio": 5.77,
     "similarity_threshold": 0.48,
-    "multi_source_events": 2,
+    "multi_source_events": 1,
     "items": [
       {
-        "event_id": "evt-cffc8eb6b1e2",
-        "event_title": "Diésel: Gobierno logra acuerdo con tres sectores del transporte cruceño",
+        "event_id": "evt-baa93977f792",
+        "event_title": "Banco Bisa inicia nueva etapa: Julio León Prado es presidente emérito y Marco Antonio Asbún es presidente del Directorio",
         "documents": 2,
         "unique_sources": 2,
-        "sources": "[\"ABI\", \"Economy\"]",
-        "effective_at": "2026-09-21T11:41:10+00:00",
-        "average_stress": 54.0,
-        "maximum_stress": 54.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "YPFB",
-        "representative_source": "Economy",
-        "representative_url": "https://www.economy.com.bo/articulo/business/subvencion-diesel-bolivia-supera-precios-casi-todos-paises-region/20260921074110024147.html",
-        "representative_tone": "favorable"
+        "sources": "[\"Economy\", \"Los Tiempos\"]",
+        "effective_at": "2026-09-24T02:42:50+00:00",
+        "average_stress": 42.0,
+        "maximum_stress": 42.0,
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_indicator": "sistema financiero",
+        "dominant_entity": "",
+        "representative_source": "Los Tiempos",
+        "representative_url": "https://www.lostiempos.com/actualidad/economia/20260923/banco-bisa-inicia-nueva-etapa-julio-leon-prado-es-presidente-emerito",
+        "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-3e6ad7d938b7",
-        "event_title": "YPFB descarta cambios en el precio de las gasolinas y pide evitar la especulación ante el retiro de la subvención",
+        "event_id": "evt-27da32713877",
+        "event_title": "Paz afirma que $us 10.000 millones llegarán a Bolivia para obras integrales",
         "documents": 2,
-        "unique_sources": 2,
-        "sources": "[\"ABI\", \"Economy\"]",
-        "effective_at": "2026-09-21T11:30:11+00:00",
+        "unique_sources": 1,
+        "sources": "[\"Los Tiempos\"]",
+        "effective_at": "2026-09-24T12:49:33+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "YPFB",
-        "representative_source": "ABI",
-        "representative_url": "https://abi.bo/ypfb-descarta-cambios-en-el-precio-de-las-gasolinas-y-pide-evitar-la-especulacion-ante-el-retiro-de-la-subvencion",
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "dominant_indicator": "tipo de cambio",
+        "dominant_entity": "Banco Mundial",
+        "representative_source": "Los Tiempos",
+        "representative_url": "https://www.lostiempos.com/actualidad/economia/20260924/paz-afirma-que-us-10000-millones-llegaran-bolivia-obras-integrales",
         "representative_tone": "neutral"
       },
       {
@@ -783,11 +783,27 @@
         "effective_at": "2026-09-23T14:19:24+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
         "representative_url": "https://unitel.bo/noticias/economia/el-gobierno-activa-la-conversion-a-gnv-con-un-fondo-rotatorio-para-abaratar-costos-del-transporte-FA23670621",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-27e12a8d8318",
+        "event_title": "La Paz: Transporte Libre evaluará en un ampliado si se suma al paro de choferes contra el fin de la subvención al diésel",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Unitel\"]",
+        "effective_at": "2026-09-24T14:21:32+00:00",
+        "average_stress": 77.0,
+        "maximum_stress": 77.0,
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_indicator": "inflación",
+        "dominant_entity": "",
+        "representative_source": "Unitel",
+        "representative_url": "https://unitel.bo/noticias/economia/la-paz-transporte-libre-evaluara-en-un-ampliado-si-se-suma-al-paro-de-choferes-contra-el-fin-de-la-subvencion-al-diesel-CP23687612",
         "representative_tone": "neutral"
       },
       {
@@ -799,43 +815,11 @@
         "effective_at": "2026-09-21T20:16:28+00:00",
         "average_stress": 77.0,
         "maximum_stress": 77.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "inflación",
         "dominant_entity": "",
         "representative_source": "Los Tiempos",
         "representative_url": "https://www.lostiempos.com/actualidad/economia/20260921/velasco-plantea-eliminar-iva-e-it-al-diesel-90-dias",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-10b79c66f233",
-        "event_title": "Vocero: se quita la subvención del diésel, pero no se quita la protección al pueblo boliviano",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"ABI\"]",
-        "effective_at": "2026-09-20T23:02:37+00:00",
-        "average_stress": 74.0,
-        "maximum_stress": 74.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
-        "dominant_indicator": "inflación",
-        "dominant_entity": "",
-        "representative_source": "ABI",
-        "representative_url": "https://abi.bo/vocero-se-quita-la-subvencion-del-diesel-pero-no-se-quita-la-proteccion-al-pueblo-boliviano",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-2dd8375e517c",
-        "event_title": "Estudiante de la UPEA crea la primera motocicleta híbrida a gas y gasolina en Bolivia",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"ABI\"]",
-        "effective_at": "2026-09-21T13:35:00+00:00",
-        "average_stress": 70.0,
-        "maximum_stress": 70.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "",
-        "representative_source": "ABI",
-        "representative_url": "https://abi.bo/estudiante-de-la-upea-crea-la-primera-motocicleta-hibrida-a-gas-y-gasolina-en-bolivia",
         "representative_tone": "neutral"
       },
       {
@@ -847,7 +831,7 @@
         "effective_at": "2026-09-22T14:06:33+00:00",
         "average_stress": 62.0,
         "maximum_stress": 62.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "Unitel",
@@ -863,7 +847,7 @@
         "effective_at": "2026-09-21T15:56:26+00:00",
         "average_stress": 62.0,
         "maximum_stress": 62.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "Unitel",
@@ -871,12 +855,12 @@
         "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-68db690222a8",
+        "event_id": "evt-7fd95551a200",
         "event_title": "ASFI: DS 5630 NO NECESITA REGLAMENTACIÓN Y DEBE SER CUMPLIDO DE INMEDIATO POR LAS ENTIDADES DE INTERMEDIACIÓN FINANCIERA | ASFI",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"ASFI\"]",
-        "effective_at": "2026-09-23T14:17:48+00:00",
+        "effective_at": "2026-09-24T14:20:00+00:00",
         "average_stress": 60.0,
         "maximum_stress": 60.0,
         "dominant_topic": "Precios, alimentos y servicios básicos",
@@ -895,7 +879,7 @@
         "effective_at": "2026-09-22T14:06:34+00:00",
         "average_stress": 60.0,
         "maximum_stress": 60.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -903,15 +887,15 @@
         "representative_tone": "desfavorable"
       },
       {
-        "event_id": "evt-92cc5e139a20",
+        "event_id": "evt-f89aa9e17185",
         "event_title": "¡ALERTA! ASFI DENUNCIA SUPLANTACIÓN DE IDENTIDAD PARA ESTAFAR A LA POBLACIÓN | ASFI",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"ASFI\"]",
-        "effective_at": "2026-09-22T14:05:05+00:00",
+        "effective_at": "2026-09-24T14:20:01+00:00",
         "average_stress": 59.0,
         "maximum_stress": 59.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
@@ -927,7 +911,7 @@
         "effective_at": "2026-09-21T14:45:56+00:00",
         "average_stress": 59.0,
         "maximum_stress": 59.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "",
         "representative_source": "ABI",
@@ -943,7 +927,7 @@
         "effective_at": "2026-09-22T21:18:52+00:00",
         "average_stress": 58.0,
         "maximum_stress": 58.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "",
         "representative_source": "Los Tiempos",
@@ -959,28 +943,12 @@
         "effective_at": "2026-09-22T14:06:33+00:00",
         "average_stress": 58.0,
         "maximum_stress": 58.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "Unitel",
         "representative_url": "https://unitel.bo/noticias/economia/tras-nuevo-precio-del-diesel-a-cuanto-se-vende-el-kilo-de-pollo-en-mercados-del-eje-central-FD23647417",
         "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-e041cb9139e8",
-        "event_title": "Cisterneros garantizan el despacho de combustible y descartan medidas de presión",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"ABI\"]",
-        "effective_at": "2026-09-21T13:07:06+00:00",
-        "average_stress": 58.0,
-        "maximum_stress": 58.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "YPFB",
-        "representative_source": "ABI",
-        "representative_url": "https://abi.bo/cisterneros-garantizan-el-despacho-de-combustible-y-descartan-medidas-de-presion",
-        "representative_tone": "neutral"
       },
       {
         "event_id": "evt-d4ef4b65d3a2",
@@ -991,7 +959,7 @@
         "effective_at": "2026-09-22T14:06:34+00:00",
         "average_stress": 57.0,
         "maximum_stress": 57.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "Unitel",
@@ -1007,7 +975,7 @@
         "effective_at": "2026-09-21T15:54:19+00:00",
         "average_stress": 56.0,
         "maximum_stress": 56.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "ABI",
@@ -1023,7 +991,7 @@
         "effective_at": "2026-09-23T14:19:25+00:00",
         "average_stress": 55.0,
         "maximum_stress": 55.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "Unitel",
@@ -1039,28 +1007,12 @@
         "effective_at": "2026-09-21T15:56:26+00:00",
         "average_stress": 55.0,
         "maximum_stress": 55.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
         "representative_url": "https://unitel.bo/noticias/economia/no-esta-en-la-agenda-gobierno-descarta-quitar-la-subvencion-a-la-gasolina-y-al-gas-y-destaca-plan-de-transicion-energetica-DF23626342",
         "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-0eeaba0a2da0",
-        "event_title": "El precio del pollo sube en los mercados de Santa Cruz y La Paz",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Los Tiempos\"]",
-        "effective_at": "2026-09-20T15:56:49+00:00",
-        "average_stress": 55.0,
-        "maximum_stress": 55.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
-        "dominant_indicator": "inflación",
-        "dominant_entity": "",
-        "representative_source": "Los Tiempos",
-        "representative_url": "https://www.lostiempos.com/actualidad/economia/20260920/precio-del-pollo-sube-mercados-santa-cruz-paz",
-        "representative_tone": "favorable"
       },
       {
         "event_id": "evt-8f0a9dd1efc6",
@@ -1071,7 +1023,7 @@
         "effective_at": "2026-09-23T14:19:24+00:00",
         "average_stress": 54.0,
         "maximum_stress": 54.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -1087,27 +1039,11 @@
         "effective_at": "2026-09-21T15:55:55+00:00",
         "average_stress": 54.0,
         "maximum_stress": 54.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Producción, inversión y régimen cambiario",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
         "representative_url": "https://www.asfi.gob.bo/node/1393",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-8458e2758ac9",
-        "event_title": "Sin la subvención al diésel, Bolivia supera precios de casi todos los países de la región",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"La Razón\"]",
-        "effective_at": "2026-09-20T21:40:53+00:00",
-        "average_stress": 54.0,
-        "maximum_stress": 54.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "BCB",
-        "representative_source": "La Razón",
-        "representative_url": "https://larazon.bo/economia-y-empresa/2026/09/20/sin-la-subvencion-al-diesel-bolivia-supera-precios-de-casi-todos-los-paises-de-la-region",
         "representative_tone": "neutral"
       },
       {
@@ -1119,12 +1055,156 @@
         "effective_at": "2026-09-22T22:36:05+00:00",
         "average_stress": 52.0,
         "maximum_stress": 52.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Producción, inversión y régimen cambiario",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "La Razón",
         "representative_url": "https://larazon.bo/economia-y-empresa/2026/09/22/ataques-a-refinerias-rusas-elevan-el-diesel-a-niveles-record-y-presionan-a-bolivia",
         "representative_tone": "favorable"
+      },
+      {
+        "event_id": "evt-39bd0ae4c80f",
+        "event_title": "Gobierno habilitará hasta Bs 800 millones para financiar a sectores productivos",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Unitel\"]",
+        "effective_at": "2026-09-24T14:21:32+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "dominant_indicator": "déficit fiscal",
+        "dominant_entity": "FMI",
+        "representative_source": "Unitel",
+        "representative_url": "https://unitel.bo/noticias/economia/gobierno-habilitara-hasta-bs-800-millones-para-financiar-a-sectores-productivos-EP23685472",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-8d1412082e25",
+        "event_title": "Paz anuncia un paquete de financiamiento externo de hasta $us 10.000 millones de cuatro organismos",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Unitel\"]",
+        "effective_at": "2026-09-24T14:21:31+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "dominant_indicator": "tipo de cambio",
+        "dominant_entity": "FMI",
+        "representative_source": "Unitel",
+        "representative_url": "https://unitel.bo/noticias/economia/paz-anuncia-un-paquete-de-financiamiento-externo-de-hasta-us-10000-millones-de-cuatro-organismos-GO23692477",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-d992987a7b02",
+        "event_title": "ATT: Alza de pasajes no es lineal ni se equipara al incremento del precio del diésel; se alista mesa técnica con transportistas",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Unitel\"]",
+        "effective_at": "2026-09-24T14:21:31+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_indicator": "combustibles",
+        "dominant_entity": "Banco Mundial",
+        "representative_source": "Unitel",
+        "representative_url": "https://unitel.bo/noticias/economia/att-alza-de-pasajes-no-es-lineal-ni-se-equipara-al-incremento-del-precio-del-diesel-se-alista-mesa-tecnica-con-transportistas-CO23693098",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-eec08f62f862",
+        "event_title": "Conamaq instruye alza del 50% en el precio de su producción",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Unitel\"]",
+        "effective_at": "2026-09-24T14:21:31+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_indicator": "tipo de cambio",
+        "dominant_entity": "",
+        "representative_source": "Unitel",
+        "representative_url": "https://unitel.bo/noticias/economia/conamaq-instruye-alza-del-50-en-el-precio-de-su-produccion-BP23687732",
+        "representative_tone": "favorable"
+      },
+      {
+        "event_id": "evt-bb92b0bdaec4",
+        "event_title": "ASFI DESPLIEGA RIGUROSO CONTROL EN CASAS DE CAMBIO PARA EL CUMPLIMIENTO DEL TIPO DE CAMBIO OFICIAL | ASFI",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"ASFI\"]",
+        "effective_at": "2026-09-24T14:19:59+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_indicator": "tipo de cambio",
+        "dominant_entity": "BCB",
+        "representative_source": "ASFI",
+        "representative_url": "https://www.asfi.gob.bo/node/1402",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-0976106a658b",
+        "event_title": "Derechos del Consumidor Financiero | ASFI",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"ASFI\"]",
+        "effective_at": "2026-09-24T14:19:56+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_indicator": "sistema financiero",
+        "dominant_entity": "ASFI",
+        "representative_source": "ASFI",
+        "representative_url": "https://www.asfi.gob.bo/la/derechos-del-consumidor-financiero",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-3d5d88473eb8",
+        "event_title": "Cajeros automáticos para personas con discapacidad | ASFI",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"ASFI\"]",
+        "effective_at": "2026-09-24T14:19:56+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_indicator": "sistema financiero",
+        "dominant_entity": "ASFI",
+        "representative_source": "ASFI",
+        "representative_url": "https://www.asfi.gob.bo/la/cajeros-automaticos-para-personas-discapacidad",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-af2c793b22ad",
+        "event_title": "Empresarios alertan que el alza del diésel recaerá sobre el sector privados y presionará la liquidez",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Los Tiempos\"]",
+        "effective_at": "2026-09-24T12:52:07+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_indicator": "tipo de cambio",
+        "dominant_entity": "",
+        "representative_source": "Los Tiempos",
+        "representative_url": "https://www.lostiempos.com/actualidad/economia/20260924/empresarios-alertan-que-alza-del-diesel-recaera-sector-privados",
+        "representative_tone": "favorable"
+      },
+      {
+        "event_id": "evt-15bd19db1271",
+        "event_title": "Crown presentó un portafolio de maquinaria y soluciones para los sectores productivos",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Economy\"]",
+        "effective_at": "2026-09-23T23:02:56+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_indicator": "combustibles",
+        "dominant_entity": "",
+        "representative_source": "Economy",
+        "representative_url": "https://www.economy.com.bo/articulo/life/crown-presento-portafolio-maquinaria-soluciones-sectores-productivos/20260923190256024181.html",
+        "representative_tone": "neutral"
       },
       {
         "event_id": "evt-af48997307b4",
@@ -1135,7 +1215,7 @@
         "effective_at": "2026-09-23T14:19:24+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -1151,28 +1231,12 @@
         "effective_at": "2026-09-23T14:19:24+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "",
         "representative_source": "Unitel",
         "representative_url": "https://unitel.bo/noticias/economia/transporte-urbano-de-potosi-logra-acuerdo-y-se-convierte-en-la-segunda-ciudad-con-tarifa-transitoria-tras-el-fin-de-la-subvencion-al-diesel-HB23664298",
         "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-8053458f4ce0",
-        "event_title": "ASFI DESPLIEGA RIGUROSO CONTROL EN CASAS DE CAMBIO PARA EL CUMPLIMIENTO DEL TIPO DE CAMBIO OFICIAL | ASFI",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"ASFI\"]",
-        "effective_at": "2026-09-23T14:17:48+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "BCB",
-        "representative_source": "ASFI",
-        "representative_url": "https://www.asfi.gob.bo/node/1402",
-        "representative_tone": "neutral"
       },
       {
         "event_id": "evt-cb86ddf3354f",
@@ -1183,11 +1247,27 @@
         "effective_at": "2026-09-23T14:17:47+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Producción, inversión y régimen cambiario",
         "dominant_indicator": "salarios",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
         "representative_url": "https://www.asfi.gob.bo/node/1465",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-8e690c639d71",
+        "event_title": "Gobierno impulsa el cambio: más de 400 micros dejarán el diésel para funcionar con gas natural",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Los Tiempos\"]",
+        "effective_at": "2026-09-23T13:23:54+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_indicator": "combustibles",
+        "dominant_entity": "",
+        "representative_source": "Los Tiempos",
+        "representative_url": "https://www.lostiempos.com/actualidad/economia/20260923/gobierno-impulsa-cambio-mas-400-micros-dejaran-diesel-funcionar-gas",
         "representative_tone": "neutral"
       },
       {
@@ -1199,7 +1279,7 @@
         "effective_at": "2026-09-22T14:06:34+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -1215,7 +1295,7 @@
         "effective_at": "2026-09-22T14:06:34+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -1231,7 +1311,7 @@
         "effective_at": "2026-09-22T14:06:33+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "BID",
         "representative_source": "Unitel",
@@ -1263,7 +1343,7 @@
         "effective_at": "2026-09-22T11:32:04+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "BCB",
         "representative_source": "Los Tiempos",
@@ -1279,7 +1359,7 @@
         "effective_at": "2026-09-21T20:03:03+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Los Tiempos",
@@ -1295,7 +1375,7 @@
         "effective_at": "2026-09-21T15:56:27+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -1311,7 +1391,7 @@
         "effective_at": "2026-09-21T15:56:26+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "Unitel",
@@ -1327,7 +1407,7 @@
         "effective_at": "2026-09-21T15:56:25+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "Unitel",
@@ -1367,86 +1447,6 @@
         "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-3a1e51cf63e8",
-        "event_title": "Bolivia y Paraguay plantean corredor de 1.222 kilómetros para ampliar el comercio y la conexión con el Atlántico",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Economy\"]",
-        "effective_at": "2026-09-21T14:07:28+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "hidrocarburos",
-        "dominant_entity": "",
-        "representative_source": "Economy",
-        "representative_url": "https://www.economy.com.bo/articulo/business/bolivia-paraguay-plantean-corredor-1222-kilometros-ampliar-comercio-conexion-atlantico/20260921100728024153.html",
-        "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-cbc514448179",
-        "event_title": "El alza del diésel no se ‘trasladará’ por completo a los precios, según el vocero",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Economy\"]",
-        "effective_at": "2026-09-21T11:38:13+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "",
-        "representative_source": "Economy",
-        "representative_url": "https://www.economy.com.bo/articulo/economia/alza-diesel-trasladara-completo-precios-vocero/20260921073813024145.html",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-b03c962d1dac",
-        "event_title": "Aduana habilita depósitos transitorios para agilizar importación de combustibles",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Economy\"]",
-        "effective_at": "2026-09-21T11:33:25+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "Aduana Nacional",
-        "representative_source": "Economy",
-        "representative_url": "https://www.economy.com.bo/articulo/business/aduana-habilita-depositos-transitorios-agilizar-importacion-combustibles/20260921073325024143.html",
-        "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-c49ae438b404",
-        "event_title": "Ministro Zamora: levantar la subvención del diésel le hubiera tocado al gobierno que sea",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"ABI\"]",
-        "effective_at": "2026-09-20T21:46:21+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "",
-        "representative_source": "ABI",
-        "representative_url": "https://abi.bo/ministro-zamora-levantar-la-subvencion-del-diesel-le-hubiera-tocado-al-gobierno-que-sea",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-54ce52ae2f0a",
-        "event_title": "Ministro Zamora propone a los transportistas acelerar la conversión a GNV",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Los Tiempos\"]",
-        "effective_at": "2026-09-20T20:07:36+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "",
-        "representative_source": "Los Tiempos",
-        "representative_url": "https://www.lostiempos.com/actualidad/economia/20260920/ministro-zamora-propone-transportistas-acelerar-conversion-gnv",
-        "representative_tone": "neutral"
-      },
-      {
         "event_id": "evt-c5d04e0f55ed",
         "event_title": "ASFI Y BID FORTALECEN LA PROTECCIÓN DEL CONSUMIDOR CON EXPERIENCIA Y CONOCIMIENTO INTERNACIONAL | ASFI",
         "documents": 1,
@@ -1455,7 +1455,7 @@
         "effective_at": "2026-09-23T14:17:47+00:00",
         "average_stress": 46.0,
         "maximum_stress": 46.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
@@ -1471,44 +1471,12 @@
         "effective_at": "2026-09-22T14:06:33+00:00",
         "average_stress": 46.0,
         "maximum_stress": 46.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
         "dominant_indicator": "déficit fiscal",
         "dominant_entity": "YPFB",
         "representative_source": "Unitel",
         "representative_url": "https://unitel.bo/noticias/economia/senador-roca-plantea-privatizar-algunas-empresas-estrategicas-y-crear-un-impuesto-para-todos-entre-ellos-cocaleros-DD23647523",
         "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-977824768e1c",
-        "event_title": "Santa Cruz, el departamento que mueve la economía de Bolivia",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Los Tiempos\"]",
-        "effective_at": "2026-09-21T12:55:53+00:00",
-        "average_stress": 46.0,
-        "maximum_stress": 46.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "MEFP",
-        "representative_source": "Los Tiempos",
-        "representative_url": "https://www.lostiempos.com/actualidad/economia/20260921/santa-cruz-departamento-que-mueve-economia-bolivia",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-b8c2b2f376e8",
-        "event_title": "La Defensoría alerta sobre el impacto que tendrá el fin de la subvención al diésel en sectores vulnerables",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Los Tiempos\"]",
-        "effective_at": "2026-09-20T19:38:03+00:00",
-        "average_stress": 42.0,
-        "maximum_stress": 42.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "",
-        "representative_source": "Los Tiempos",
-        "representative_url": "https://www.lostiempos.com/actualidad/economia/20260920/defensoria-alerta-impacto-que-tendra-fin-subvencion-al-diesel-sectores",
-        "representative_tone": "desfavorable"
       },
       {
         "event_id": "evt-591a66077aa3",
@@ -1519,11 +1487,27 @@
         "effective_at": "2026-09-22T14:06:34+00:00",
         "average_stress": 41.0,
         "maximum_stress": 41.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
         "representative_url": "https://unitel.bo/noticias/economia/velasco-las-dos-obras-de-infraestructura-mas-importantes-de-la-historia-crucena-se-van-a-licitar-este-ano-CD23642022",
+        "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-312cc322c6c6",
+        "event_title": "Fundación IGUALES recibe reconocimiento de la Asamblea Legislativa Departamental de Santa Cruz",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Economy\"]",
+        "effective_at": "2026-09-23T15:13:41+00:00",
+        "average_stress": 38.0,
+        "maximum_stress": 38.0,
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_indicator": "producto interno bruto",
+        "dominant_entity": "",
+        "representative_source": "Economy",
+        "representative_url": "https://www.economy.com.bo/articulo/gerencia/fundacion-iguales-recibe-reconocimiento-asamblea-legislativa-departamental-santa-cruz/20260923111341024172.html",
         "representative_tone": "neutral"
       },
       {
@@ -1535,62 +1519,46 @@
         "effective_at": "2026-09-22T12:15:13+00:00",
         "average_stress": 36.0,
         "maximum_stress": 36.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
         "dominant_indicator": "exportaciones",
         "dominant_entity": "",
         "representative_source": "Economy",
         "representative_url": "https://www.economy.com.bo/articulo/business/complejo-portuario-mejillones-quiere-ser-puerto-estrategico-bolivia/20260922081513024160.html",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-0514a984cf03",
-        "event_title": "“Pasaporte al Crecimiento”, la ruta innovadora de Banco FIE que acompaña el desarrollo de los negocios y emprendimientos en Expocruz 2026",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Economy\"]",
-        "effective_at": "2026-09-21T11:11:23+00:00",
-        "average_stress": 18.0,
-        "maximum_stress": 18.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "sistema financiero",
-        "dominant_entity": "",
-        "representative_source": "Economy",
-        "representative_url": "https://www.economy.com.bo/articulo/banca-finanzas/pasaporte-crecimiento-ruta-innovadora-banco-fie-que-acompana-desarrollo-negocios-emprendimientos-expocruz-2026/20260921071123024139.html",
         "representative_tone": "neutral"
       }
     ]
   },
   "top_economic_events": [
     {
-      "event_id": "evt-cffc8eb6b1e2",
-      "event_title": "Diésel: Gobierno logra acuerdo con tres sectores del transporte cruceño",
+      "event_id": "evt-baa93977f792",
+      "event_title": "Banco Bisa inicia nueva etapa: Julio León Prado es presidente emérito y Marco Antonio Asbún es presidente del Directorio",
       "documents": 2,
       "unique_sources": 2,
-      "sources": "[\"ABI\", \"Economy\"]",
-      "effective_at": "2026-09-21T11:41:10+00:00",
-      "average_stress": 54.0,
-      "maximum_stress": 54.0,
-      "dominant_topic": "Comercio exterior, desarrollo y empresas",
-      "dominant_indicator": "combustibles",
-      "dominant_entity": "YPFB",
-      "representative_source": "Economy",
-      "representative_url": "https://www.economy.com.bo/articulo/business/subvencion-diesel-bolivia-supera-precios-casi-todos-paises-region/20260921074110024147.html",
-      "representative_tone": "favorable"
+      "sources": "[\"Economy\", \"Los Tiempos\"]",
+      "effective_at": "2026-09-24T02:42:50+00:00",
+      "average_stress": 42.0,
+      "maximum_stress": 42.0,
+      "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+      "dominant_indicator": "sistema financiero",
+      "dominant_entity": "",
+      "representative_source": "Los Tiempos",
+      "representative_url": "https://www.lostiempos.com/actualidad/economia/20260923/banco-bisa-inicia-nueva-etapa-julio-leon-prado-es-presidente-emerito",
+      "representative_tone": "neutral"
     },
     {
-      "event_id": "evt-3e6ad7d938b7",
-      "event_title": "YPFB descarta cambios en el precio de las gasolinas y pide evitar la especulación ante el retiro de la subvención",
+      "event_id": "evt-27da32713877",
+      "event_title": "Paz afirma que $us 10.000 millones llegarán a Bolivia para obras integrales",
       "documents": 2,
-      "unique_sources": 2,
-      "sources": "[\"ABI\", \"Economy\"]",
-      "effective_at": "2026-09-21T11:30:11+00:00",
+      "unique_sources": 1,
+      "sources": "[\"Los Tiempos\"]",
+      "effective_at": "2026-09-24T12:49:33+00:00",
       "average_stress": 50.0,
       "maximum_stress": 50.0,
-      "dominant_topic": "Comercio exterior, desarrollo y empresas",
-      "dominant_indicator": "combustibles",
-      "dominant_entity": "YPFB",
-      "representative_source": "ABI",
-      "representative_url": "https://abi.bo/ypfb-descarta-cambios-en-el-precio-de-las-gasolinas-y-pide-evitar-la-especulacion-ante-el-retiro-de-la-subvencion",
+      "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
+      "dominant_indicator": "tipo de cambio",
+      "dominant_entity": "Banco Mundial",
+      "representative_source": "Los Tiempos",
+      "representative_url": "https://www.lostiempos.com/actualidad/economia/20260924/paz-afirma-que-us-10000-millones-llegaran-bolivia-obras-integrales",
       "representative_tone": "neutral"
     },
     {
@@ -1602,11 +1570,27 @@
       "effective_at": "2026-09-23T14:19:24+00:00",
       "average_stress": 50.0,
       "maximum_stress": 50.0,
-      "dominant_topic": "Comercio exterior, desarrollo y empresas",
+      "dominant_topic": "Sector productivo, automotor y actividad empresarial",
       "dominant_indicator": "combustibles",
       "dominant_entity": "",
       "representative_source": "Unitel",
       "representative_url": "https://unitel.bo/noticias/economia/el-gobierno-activa-la-conversion-a-gnv-con-un-fondo-rotatorio-para-abaratar-costos-del-transporte-FA23670621",
+      "representative_tone": "neutral"
+    },
+    {
+      "event_id": "evt-27e12a8d8318",
+      "event_title": "La Paz: Transporte Libre evaluará en un ampliado si se suma al paro de choferes contra el fin de la subvención al diésel",
+      "documents": 1,
+      "unique_sources": 1,
+      "sources": "[\"Unitel\"]",
+      "effective_at": "2026-09-24T14:21:32+00:00",
+      "average_stress": 77.0,
+      "maximum_stress": 77.0,
+      "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+      "dominant_indicator": "inflación",
+      "dominant_entity": "",
+      "representative_source": "Unitel",
+      "representative_url": "https://unitel.bo/noticias/economia/la-paz-transporte-libre-evaluara-en-un-ampliado-si-se-suma-al-paro-de-choferes-contra-el-fin-de-la-subvencion-al-diesel-CP23687612",
       "representative_tone": "neutral"
     },
     {
@@ -1618,43 +1602,11 @@
       "effective_at": "2026-09-21T20:16:28+00:00",
       "average_stress": 77.0,
       "maximum_stress": 77.0,
-      "dominant_topic": "Precios, alimentos y servicios básicos",
+      "dominant_topic": "Sector productivo, automotor y actividad empresarial",
       "dominant_indicator": "inflación",
       "dominant_entity": "",
       "representative_source": "Los Tiempos",
       "representative_url": "https://www.lostiempos.com/actualidad/economia/20260921/velasco-plantea-eliminar-iva-e-it-al-diesel-90-dias",
-      "representative_tone": "neutral"
-    },
-    {
-      "event_id": "evt-10b79c66f233",
-      "event_title": "Vocero: se quita la subvención del diésel, pero no se quita la protección al pueblo boliviano",
-      "documents": 1,
-      "unique_sources": 1,
-      "sources": "[\"ABI\"]",
-      "effective_at": "2026-09-20T23:02:37+00:00",
-      "average_stress": 74.0,
-      "maximum_stress": 74.0,
-      "dominant_topic": "Comercio exterior, desarrollo y empresas",
-      "dominant_indicator": "inflación",
-      "dominant_entity": "",
-      "representative_source": "ABI",
-      "representative_url": "https://abi.bo/vocero-se-quita-la-subvencion-del-diesel-pero-no-se-quita-la-proteccion-al-pueblo-boliviano",
-      "representative_tone": "neutral"
-    },
-    {
-      "event_id": "evt-2dd8375e517c",
-      "event_title": "Estudiante de la UPEA crea la primera motocicleta híbrida a gas y gasolina en Bolivia",
-      "documents": 1,
-      "unique_sources": 1,
-      "sources": "[\"ABI\"]",
-      "effective_at": "2026-09-21T13:35:00+00:00",
-      "average_stress": 70.0,
-      "maximum_stress": 70.0,
-      "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-      "dominant_indicator": "combustibles",
-      "dominant_entity": "",
-      "representative_source": "ABI",
-      "representative_url": "https://abi.bo/estudiante-de-la-upea-crea-la-primera-motocicleta-hibrida-a-gas-y-gasolina-en-bolivia",
       "representative_tone": "neutral"
     },
     {
@@ -1666,7 +1618,7 @@
       "effective_at": "2026-09-22T14:06:33+00:00",
       "average_stress": 62.0,
       "maximum_stress": 62.0,
-      "dominant_topic": "Comercio exterior, desarrollo y empresas",
+      "dominant_topic": "Sector productivo, automotor y actividad empresarial",
       "dominant_indicator": "combustibles",
       "dominant_entity": "YPFB",
       "representative_source": "Unitel",
@@ -1682,7 +1634,7 @@
       "effective_at": "2026-09-21T15:56:26+00:00",
       "average_stress": 62.0,
       "maximum_stress": 62.0,
-      "dominant_topic": "Comercio exterior, desarrollo y empresas",
+      "dominant_topic": "Sector productivo, automotor y actividad empresarial",
       "dominant_indicator": "combustibles",
       "dominant_entity": "YPFB",
       "representative_source": "Unitel",
@@ -1690,12 +1642,12 @@
       "representative_tone": "neutral"
     },
     {
-      "event_id": "evt-68db690222a8",
+      "event_id": "evt-7fd95551a200",
       "event_title": "ASFI: DS 5630 NO NECESITA REGLAMENTACIÓN Y DEBE SER CUMPLIDO DE INMEDIATO POR LAS ENTIDADES DE INTERMEDIACIÓN FINANCIERA | ASFI",
       "documents": 1,
       "unique_sources": 1,
       "sources": "[\"ASFI\"]",
-      "effective_at": "2026-09-23T14:17:48+00:00",
+      "effective_at": "2026-09-24T14:20:00+00:00",
       "average_stress": 60.0,
       "maximum_stress": 60.0,
       "dominant_topic": "Precios, alimentos y servicios básicos",
@@ -1714,22 +1666,38 @@
       "effective_at": "2026-09-22T14:06:34+00:00",
       "average_stress": 60.0,
       "maximum_stress": 60.0,
-      "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+      "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
       "dominant_indicator": "tipo de cambio",
       "dominant_entity": "",
       "representative_source": "Unitel",
       "representative_url": "https://unitel.bo/noticias/economia/economista-sobre-estatales-deficitarias-hemos-perdido-10-meses-falta-voluntad-politica-para-hacer-ajustes-MD23642079",
       "representative_tone": "desfavorable"
+    },
+    {
+      "event_id": "evt-f89aa9e17185",
+      "event_title": "¡ALERTA! ASFI DENUNCIA SUPLANTACIÓN DE IDENTIDAD PARA ESTAFAR A LA POBLACIÓN | ASFI",
+      "documents": 1,
+      "unique_sources": 1,
+      "sources": "[\"ASFI\"]",
+      "effective_at": "2026-09-24T14:20:01+00:00",
+      "average_stress": 59.0,
+      "maximum_stress": 59.0,
+      "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+      "dominant_indicator": "sistema financiero",
+      "dominant_entity": "ASFI",
+      "representative_source": "ASFI",
+      "representative_url": "https://www.asfi.gob.bo/node/1368",
+      "representative_tone": "neutral"
     }
   ],
   "optimism_index": {
-    "score": 44.44,
-    "level": "bajo",
-    "interpretation": "Las señales de optimismo son limitadas dentro del corpus económico analizado.",
+    "score": 47.01,
+    "level": "moderado",
+    "interpretation": "Existen señales favorables, aunque conviven con presión e incertidumbre económica.",
     "components": {
-      "lexical_component": 43.32,
-      "favorable_percentage": 27.78,
-      "low_stress_percentage": 87.04
+      "lexical_component": 49.98,
+      "favorable_percentage": 25.0,
+      "low_stress_percentage": 88.46
     },
     "weights": {
       "lexical_component": 0.5,
@@ -1740,139 +1708,218 @@
   },
   "optimism_signals": {
     "producción": 30,
-    "incremento": 28,
-    "desarrollo": 16,
-    "abastecimiento": 12,
-    "crecimiento": 12,
-    "exportaciones": 11,
-    "inversión": 9,
-    "cooperación": 5,
-    "capital": 5,
-    "competitividad": 3,
-    "financiamiento": 3,
-    "fortalece": 2,
+    "incremento": 27,
+    "desarrollo": 22,
+    "financiamiento": 14,
+    "capital": 14,
+    "inversión": 12,
+    "crecimiento": 9,
+    "abastecimiento": 8,
+    "cooperación": 6,
+    "competitividad": 5,
+    "empleo": 4,
+    "garantiza": 2,
+    "exportaciones": 2,
     "industrialización": 2,
-    "estabilidad": 2,
-    "recuperación": 1
+    "reactivación": 1
   },
   "relevance_ranking": {
     "window_hours": 72,
     "topics": [
       {
-        "name": "Comercio exterior, desarrollo y empresas",
-        "score": 66.54,
-        "current_count": 26,
-        "previous_count": 13,
-        "unique_sources": 5,
-        "average_age_hours": 35.72,
-        "average_stress": 53.62,
-        "momentum": "emergente",
-        "momentum_ratio": 1.93
-      },
-      {
         "name": "Sector productivo, automotor y actividad empresarial",
-        "score": 48.48,
-        "current_count": 6,
-        "previous_count": 3,
-        "unique_sources": 4,
-        "average_age_hours": 38.83,
-        "average_stress": 52.83,
-        "momentum": "emergente",
-        "momentum_ratio": 1.75
-      },
-      {
-        "name": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "score": 47.99,
-        "current_count": 9,
-        "previous_count": 12,
-        "unique_sources": 5,
-        "average_age_hours": 35.47,
-        "average_stress": 46.22,
+        "score": 49.62,
+        "current_count": 20,
+        "previous_count": 22,
+        "unique_sources": 3,
+        "average_age_hours": 38.57,
+        "average_stress": 55.3,
         "momentum": "estable",
-        "momentum_ratio": 0.77
-      },
-      {
-        "name": "Producción, inversión y régimen cambiario",
-        "score": 45.78,
-        "current_count": 1,
-        "previous_count": 0,
-        "unique_sources": 1,
-        "average_age_hours": 66.78,
-        "average_stress": 42.0,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
+        "momentum_ratio": 0.91
       },
       {
         "name": "Precios, alimentos y servicios básicos",
-        "score": 43.33,
-        "current_count": 10,
-        "previous_count": 22,
-        "unique_sources": 4,
-        "average_age_hours": 27.85,
-        "average_stress": 55.3,
-        "momentum": "en descenso",
-        "momentum_ratio": 0.48
+        "score": 48.78,
+        "current_count": 5,
+        "previous_count": 1,
+        "unique_sources": 3,
+        "average_age_hours": 34.03,
+        "average_stress": 53.6,
+        "momentum": "emergente",
+        "momentum_ratio": 3.0
       },
       {
         "name": "Política fiscal, gestión pública y sistema financiero",
-        "score": 40.29,
-        "current_count": 2,
-        "previous_count": 7,
-        "unique_sources": 2,
-        "average_age_hours": 25.21,
-        "average_stress": 55.0,
+        "score": 47.73,
+        "current_count": 11,
+        "previous_count": 14,
+        "unique_sources": 4,
+        "average_age_hours": 22.42,
+        "average_stress": 45.82,
+        "momentum": "estable",
+        "momentum_ratio": 0.8
+      },
+      {
+        "name": "Producción, inversión y régimen cambiario",
+        "score": 46.44,
+        "current_count": 4,
+        "previous_count": 2,
+        "unique_sources": 3,
+        "average_age_hours": 34.05,
+        "average_stress": 51.5,
+        "momentum": "emergente",
+        "momentum_ratio": 1.67
+      },
+      {
+        "name": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "score": 39.67,
+        "current_count": 11,
+        "previous_count": 21,
+        "unique_sources": 3,
+        "average_age_hours": 38.67,
+        "average_stress": 52.0,
         "momentum": "en descenso",
-        "momentum_ratio": 0.38
+        "momentum_ratio": 0.55
+      },
+      {
+        "name": "Comercio exterior, desarrollo y empresas",
+        "score": 33.32,
+        "current_count": 1,
+        "previous_count": 5,
+        "unique_sources": 1,
+        "average_age_hours": 71.36,
+        "average_stress": 50.0,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.33
       }
     ],
     "indicators": [
       {
         "name": "combustibles",
-        "score": 71.65,
-        "current_count": 41,
-        "previous_count": 39,
+        "score": 63.74,
+        "current_count": 33,
+        "previous_count": 50,
         "unique_sources": 5,
-        "average_age_hours": 37.43,
-        "average_stress": 53.98,
-        "momentum": "estable",
-        "momentum_ratio": 1.05
-      },
-      {
-        "name": "hidrocarburos",
-        "score": 57.13,
-        "current_count": 17,
-        "previous_count": 13,
-        "unique_sources": 5,
-        "average_age_hours": 39.41,
-        "average_stress": 52.53,
-        "momentum": "estable",
-        "momentum_ratio": 1.29
-      },
-      {
-        "name": "exportaciones",
-        "score": 53.18,
-        "current_count": 5,
-        "previous_count": 0,
-        "unique_sources": 4,
-        "average_age_hours": 36.1,
-        "average_stress": 45.8,
-        "momentum": "emergente",
-        "momentum_ratio": 6.0
-      },
-      {
-        "name": "sistema financiero",
-        "score": 51.54,
-        "current_count": 16,
-        "previous_count": 26,
-        "unique_sources": 5,
-        "average_age_hours": 36.58,
-        "average_stress": 50.69,
+        "average_age_hours": 40.4,
+        "average_stress": 54.03,
         "momentum": "en descenso",
-        "momentum_ratio": 0.63
+        "momentum_ratio": 0.67
       },
       {
         "name": "salarios",
-        "score": 50.62,
+        "score": 52.12,
+        "current_count": 2,
+        "previous_count": 1,
+        "unique_sources": 2,
+        "average_age_hours": 12.15,
+        "average_stress": 50.0,
+        "momentum": "emergente",
+        "momentum_ratio": 1.5
+      },
+      {
+        "name": "sistema financiero",
+        "score": 49.43,
+        "current_count": 16,
+        "previous_count": 27,
+        "unique_sources": 4,
+        "average_age_hours": 27.24,
+        "average_stress": 51.94,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.61
+      },
+      {
+        "name": "tipo de cambio",
+        "score": 46.97,
+        "current_count": 12,
+        "previous_count": 20,
+        "unique_sources": 4,
+        "average_age_hours": 25.46,
+        "average_stress": 52.25,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.62
+      },
+      {
+        "name": "litio",
+        "score": 46.74,
+        "current_count": 1,
+        "previous_count": 0,
+        "unique_sources": 1,
+        "average_age_hours": 50.22,
+        "average_stress": 36.0,
+        "momentum": "emergente",
+        "momentum_ratio": 2.0
+      },
+      {
+        "name": "exportaciones",
+        "score": 46.31,
+        "current_count": 3,
+        "previous_count": 2,
+        "unique_sources": 3,
+        "average_age_hours": 46.16,
+        "average_stress": 43.0,
+        "momentum": "estable",
+        "momentum_ratio": 1.33
+      },
+      {
+        "name": "hidrocarburos",
+        "score": 43.92,
+        "current_count": 11,
+        "previous_count": 16,
+        "unique_sources": 4,
+        "average_age_hours": 49.32,
+        "average_stress": 52.09,
+        "momentum": "estable",
+        "momentum_ratio": 0.71
+      },
+      {
+        "name": "inflación",
+        "score": 43.41,
+        "current_count": 2,
+        "previous_count": 6,
+        "unique_sources": 2,
+        "average_age_hours": 33.16,
+        "average_stress": 77.0,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.43
+      },
+      {
+        "name": "importaciones",
+        "score": 42.98,
+        "current_count": 5,
+        "previous_count": 12,
+        "unique_sources": 5,
+        "average_age_hours": 32.71,
+        "average_stress": 49.4,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.46
+      },
+      {
+        "name": "producto interno bruto",
+        "score": 40.33,
+        "current_count": 1,
+        "previous_count": 3,
+        "unique_sources": 1,
+        "average_age_hours": 23.25,
+        "average_stress": 38.0,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.5
+      }
+    ],
+    "entities": [
+      {
+        "name": "SIN",
+        "score": 51.39,
+        "current_count": 1,
+        "previous_count": 0,
+        "unique_sources": 1,
+        "average_age_hours": 24.18,
+        "average_stress": 50.0,
+        "momentum": "emergente",
+        "momentum_ratio": 2.0
+      },
+      {
+        "name": "CAF",
+        "score": 50.65,
         "current_count": 1,
         "previous_count": 1,
         "unique_sources": 1,
@@ -1882,183 +1929,126 @@
         "momentum_ratio": 1.0
       },
       {
-        "name": "litio",
-        "score": 49.68,
-        "current_count": 1,
-        "previous_count": 0,
+        "name": "ASFI",
+        "score": 47.36,
+        "current_count": 8,
+        "previous_count": 1,
         "unique_sources": 1,
-        "average_age_hours": 26.16,
-        "average_stress": 36.0,
+        "average_age_hours": 14.95,
+        "average_stress": 52.38,
         "momentum": "emergente",
-        "momentum_ratio": 2.0
-      },
-      {
-        "name": "tipo de cambio",
-        "score": 49.53,
-        "current_count": 12,
-        "previous_count": 19,
-        "unique_sources": 5,
-        "average_age_hours": 37.42,
-        "average_stress": 54.25,
-        "momentum": "en descenso",
-        "momentum_ratio": 0.65
-      },
-      {
-        "name": "empleo",
-        "score": 46.79,
-        "current_count": 10,
-        "previous_count": 15,
-        "unique_sources": 5,
-        "average_age_hours": 50.19,
-        "average_stress": 52.6,
-        "momentum": "en descenso",
-        "momentum_ratio": 0.69
-      },
-      {
-        "name": "producto interno bruto",
-        "score": 39.87,
-        "current_count": 1,
-        "previous_count": 2,
-        "unique_sources": 1,
-        "average_age_hours": 49.49,
-        "average_stress": 46.0,
-        "momentum": "en descenso",
-        "momentum_ratio": 0.67
-      },
-      {
-        "name": "inflación",
-        "score": 37.27,
-        "current_count": 3,
-        "previous_count": 4,
-        "unique_sources": 2,
-        "average_age_hours": 58.66,
-        "average_stress": 68.67,
-        "momentum": "estable",
-        "momentum_ratio": 0.8
-      }
-    ],
-    "entities": [
-      {
-        "name": "SIN",
-        "score": 55.62,
-        "current_count": 1,
-        "previous_count": 0,
-        "unique_sources": 1,
-        "average_age_hours": 0.12,
-        "average_stress": 50.0,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
+        "momentum_ratio": 4.5
       },
       {
         "name": "Aduana Nacional",
-        "score": 55.41,
-        "current_count": 2,
-        "previous_count": 0,
-        "unique_sources": 2,
-        "average_age_hours": 25.49,
+        "score": 46.39,
+        "current_count": 1,
+        "previous_count": 1,
+        "unique_sources": 1,
+        "average_age_hours": 24.18,
         "average_stress": 50.0,
-        "momentum": "emergente",
-        "momentum_ratio": 3.0
+        "momentum": "estable",
+        "momentum_ratio": 1.0
       },
       {
-        "name": "YPFB",
-        "score": 50.95,
-        "current_count": 15,
-        "previous_count": 7,
-        "unique_sources": 3,
-        "average_age_hours": 40.26,
-        "average_stress": 54.13,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
+        "name": "Banco Mundial",
+        "score": 45.22,
+        "current_count": 3,
+        "previous_count": 3,
+        "unique_sources": 2,
+        "average_age_hours": 0.63,
+        "average_stress": 50.0,
+        "momentum": "estable",
+        "momentum_ratio": 1.0
       },
       {
         "name": "BCB",
-        "score": 44.62,
-        "current_count": 3,
-        "previous_count": 5,
-        "unique_sources": 3,
-        "average_age_hours": 30.58,
-        "average_stress": 51.33,
-        "momentum": "en descenso",
-        "momentum_ratio": 0.67
-      },
-      {
-        "name": "ASFI",
-        "score": 40.32,
-        "current_count": 6,
-        "previous_count": 3,
-        "unique_sources": 1,
-        "average_age_hours": 11.88,
-        "average_stress": 53.17,
-        "momentum": "emergente",
-        "momentum_ratio": 1.75
-      },
-      {
-        "name": "BID",
-        "score": 38.1,
-        "current_count": 3,
-        "previous_count": 6,
-        "unique_sources": 2,
-        "average_age_hours": 16.25,
-        "average_stress": 47.33,
-        "momentum": "en descenso",
-        "momentum_ratio": 0.57
-      },
-      {
-        "name": "MEFP",
-        "score": 36.73,
+        "score": 42.53,
         "current_count": 2,
-        "previous_count": 7,
+        "previous_count": 5,
         "unique_sources": 2,
-        "average_age_hours": 47.98,
-        "average_stress": 48.0,
+        "average_age_hours": 25.54,
+        "average_stress": 50.0,
         "momentum": "en descenso",
-        "momentum_ratio": 0.38
+        "momentum_ratio": 0.5
       },
       {
         "name": "FMI",
-        "score": 36.09,
-        "current_count": 1,
-        "previous_count": 11,
-        "unique_sources": 1,
-        "average_age_hours": 26.11,
+        "score": 37.83,
+        "current_count": 3,
+        "previous_count": 7,
+        "unique_sources": 2,
+        "average_age_hours": 16.8,
         "average_stress": 50.0,
         "momentum": "en descenso",
-        "momentum_ratio": 0.17
+        "momentum_ratio": 0.5
+      },
+      {
+        "name": "BID",
+        "score": 37.75,
+        "current_count": 4,
+        "previous_count": 4,
+        "unique_sources": 2,
+        "average_age_hours": 30.26,
+        "average_stress": 48.0,
+        "momentum": "estable",
+        "momentum_ratio": 1.0
+      },
+      {
+        "name": "YPFB",
+        "score": 37.14,
+        "current_count": 10,
+        "previous_count": 10,
+        "unique_sources": 2,
+        "average_age_hours": 57.12,
+        "average_stress": 54.6,
+        "momentum": "estable",
+        "momentum_ratio": 1.0
+      },
+      {
+        "name": "MEFP",
+        "score": 32.27,
+        "current_count": 1,
+        "previous_count": 6,
+        "unique_sources": 1,
+        "average_age_hours": 70.54,
+        "average_stress": 50.0,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.29
       }
     ],
     "top_topic": {
-      "name": "Comercio exterior, desarrollo y empresas",
-      "score": 66.54,
-      "current_count": 26,
-      "previous_count": 13,
-      "unique_sources": 5,
-      "average_age_hours": 35.72,
-      "average_stress": 53.62,
-      "momentum": "emergente",
-      "momentum_ratio": 1.93
+      "name": "Sector productivo, automotor y actividad empresarial",
+      "score": 49.62,
+      "current_count": 20,
+      "previous_count": 22,
+      "unique_sources": 3,
+      "average_age_hours": 38.57,
+      "average_stress": 55.3,
+      "momentum": "estable",
+      "momentum_ratio": 0.91
     },
     "top_indicator": {
       "name": "combustibles",
-      "score": 71.65,
-      "current_count": 41,
-      "previous_count": 39,
+      "score": 63.74,
+      "current_count": 33,
+      "previous_count": 50,
       "unique_sources": 5,
-      "average_age_hours": 37.43,
-      "average_stress": 53.98,
-      "momentum": "estable",
-      "momentum_ratio": 1.05
+      "average_age_hours": 40.4,
+      "average_stress": 54.03,
+      "momentum": "en descenso",
+      "momentum_ratio": 0.67
     },
     "top_entity": {
-      "name": "Aduana Nacional",
-      "score": 55.41,
-      "current_count": 2,
-      "previous_count": 0,
-      "unique_sources": 2,
-      "average_age_hours": 25.49,
-      "average_stress": 50.0,
+      "name": "ASFI",
+      "score": 47.36,
+      "current_count": 8,
+      "previous_count": 1,
+      "unique_sources": 1,
+      "average_age_hours": 14.95,
+      "average_stress": 52.38,
       "momentum": "emergente",
-      "momentum_ratio": 3.0
+      "momentum_ratio": 4.5
     },
     "selection_policy": {
       "topics": {
@@ -2079,135 +2069,135 @@
     }
   },
   "daily_snapshot": {
-    "date": "2026-09-23",
-    "generated_at": "2026-09-23T14:24:59.354707+00:00",
-    "documents": 54,
-    "historical_documents": 1164,
+    "date": "2026-09-24",
+    "generated_at": "2026-09-24T14:28:36.713440+00:00",
+    "documents": 52,
+    "historical_documents": 1177,
     "operational_window_hours": 72,
-    "pulsobo_index": 41.02,
+    "pulsobo_index": 40.87,
     "pulsobo_level": "moderado",
-    "optimism_index": 44.44,
-    "optimism_level": "bajo",
-    "stress_average": 52.44,
-    "favorable_percentage": 27.78,
-    "neutral_percentage": 68.52,
-    "unfavorable_percentage": 3.7,
-    "top_topic": "Comercio exterior, desarrollo y empresas",
-    "top_entity": "Aduana Nacional",
+    "optimism_index": 47.01,
+    "optimism_level": "moderado",
+    "stress_average": 52.04,
+    "favorable_percentage": 25.0,
+    "neutral_percentage": 73.08,
+    "unfavorable_percentage": 1.92,
+    "top_topic": "Sector productivo, automotor y actividad empresarial",
+    "top_entity": "ASFI",
     "top_indicator": "combustibles",
-    "top_topic_score": 66.54,
-    "top_topic_momentum": "emergente",
-    "top_entity_score": 55.41,
+    "top_topic_score": 49.62,
+    "top_topic_momentum": "estable",
+    "top_entity_score": 47.36,
     "top_entity_momentum": "emergente",
-    "top_indicator_score": 71.65,
-    "top_indicator_momentum": "estable",
+    "top_indicator_score": 63.74,
+    "top_indicator_momentum": "en descenso",
     "top_topics": {
-      "Comercio exterior, desarrollo y empresas": 26,
-      "Precios, alimentos y servicios básicos": 10,
-      "Tipo de cambio, divisas y abastecimiento de combustibles": 9,
-      "Sector productivo, automotor y actividad empresarial": 6,
-      "Política fiscal, gestión pública y sistema financiero": 2
+      "Sector productivo, automotor y actividad empresarial": 20,
+      "Tipo de cambio, divisas y abastecimiento de combustibles": 11,
+      "Política fiscal, gestión pública y sistema financiero": 11,
+      "Precios, alimentos y servicios básicos": 5,
+      "Producción, inversión y régimen cambiario": 4
     },
     "top_entities": {
-      "YPFB": 15,
-      "ASFI": 6,
-      "BCB": 3,
-      "BID": 3,
-      "Aduana Nacional": 2
+      "YPFB": 10,
+      "ASFI": 8,
+      "BID": 4,
+      "FMI": 3,
+      "Banco Mundial": 3
     },
     "top_indicators": {
-      "combustibles": 41,
-      "hidrocarburos": 17,
+      "combustibles": 33,
       "sistema financiero": 16,
       "tipo de cambio": 12,
-      "empleo": 10
+      "hidrocarburos": 11,
+      "empleo": 6
     },
     "top_optimism_signals": {
       "producción": 30,
-      "incremento": 28,
-      "desarrollo": 16,
-      "abastecimiento": 12,
-      "crecimiento": 12
+      "incremento": 27,
+      "desarrollo": 22,
+      "financiamiento": 14,
+      "capital": 14
     },
-    "event_top_topic": "Comercio exterior, desarrollo y empresas",
+    "event_top_topic": "Sector productivo, automotor y actividad empresarial",
     "event_top_indicator": "combustibles",
     "event_top_entity": "YPFB",
-    "economic_events": 51,
-    "multi_source_events": 2
+    "economic_events": 49,
+    "multi_source_events": 1
   },
   "event_relevance_ranking": {
     "window_hours": 72,
     "ranking_unit": "economic_events",
     "topics": [
       {
-        "name": "Comercio exterior, desarrollo y empresas",
-        "score": 59.75,
-        "current_events": 23,
+        "name": "Sector productivo, automotor y actividad empresarial",
+        "score": 49.69,
+        "current_events": 19,
         "previous_events": 0,
-        "documents": 26,
-        "unique_sources": 5,
+        "documents": 20,
+        "unique_sources": 3,
         "average_age_hours": null,
-        "average_stress": 53.91,
+        "average_stress": 55.58,
         "momentum": "emergente",
-        "momentum_ratio": 24.0
+        "momentum_ratio": 20.0
       },
       {
-        "name": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "score": 50.75,
-        "current_events": 9,
-        "previous_events": 0,
-        "documents": 9,
-        "unique_sources": 5,
-        "average_age_hours": null,
-        "average_stress": 46.22,
-        "momentum": "emergente",
-        "momentum_ratio": 10.0
-      },
-      {
-        "name": "Precios, alimentos y servicios básicos",
-        "score": 48.08,
+        "name": "Política fiscal, gestión pública y sistema financiero",
+        "score": 47.41,
         "current_events": 10,
         "previous_events": 0,
-        "documents": 10,
+        "documents": 11,
         "unique_sources": 4,
         "average_age_hours": null,
-        "average_stress": 55.3,
+        "average_stress": 46.2,
         "momentum": "emergente",
         "momentum_ratio": 11.0
       },
       {
-        "name": "Sector productivo, automotor y actividad empresarial",
-        "score": 45.48,
-        "current_events": 6,
+        "name": "Tipo de cambio, divisas y abastecimiento de combustibles",
+        "score": 43.84,
+        "current_events": 10,
         "previous_events": 0,
-        "documents": 6,
-        "unique_sources": 4,
+        "documents": 11,
+        "unique_sources": 3,
         "average_age_hours": null,
-        "average_stress": 52.83,
+        "average_stress": 52.2,
         "momentum": "emergente",
-        "momentum_ratio": 7.0
+        "momentum_ratio": 11.0
       },
       {
-        "name": "Política fiscal, gestión pública y sistema financiero",
-        "score": 37.1,
-        "current_events": 2,
+        "name": "Precios, alimentos y servicios básicos",
+        "score": 40.92,
+        "current_events": 5,
         "previous_events": 0,
-        "documents": 2,
-        "unique_sources": 2,
+        "documents": 5,
+        "unique_sources": 3,
         "average_age_hours": null,
-        "average_stress": 55.0,
+        "average_stress": 53.6,
         "momentum": "emergente",
-        "momentum_ratio": 3.0
+        "momentum_ratio": 6.0
       },
       {
         "name": "Producción, inversión y régimen cambiario",
-        "score": 32.29,
+        "score": 40.1,
+        "current_events": 4,
+        "previous_events": 0,
+        "documents": 4,
+        "unique_sources": 3,
+        "average_age_hours": null,
+        "average_stress": 51.5,
+        "momentum": "emergente",
+        "momentum_ratio": 5.0
+      },
+      {
+        "name": "Comercio exterior, desarrollo y empresas",
+        "score": 33.11,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
         "unique_sources": 1,
         "average_age_hours": null,
-        "average_stress": 42.0,
+        "average_stress": 50.0,
         "momentum": "emergente",
         "momentum_ratio": 2.0
       }
@@ -2215,55 +2205,55 @@
     "indicators": [
       {
         "name": "combustibles",
-        "score": 61.42,
-        "current_events": 26,
+        "score": 59.54,
+        "current_events": 22,
         "previous_events": 0,
-        "documents": 29,
+        "documents": 23,
         "unique_sources": 5,
         "average_age_hours": null,
-        "average_stress": 52.92,
+        "average_stress": 52.36,
         "momentum": "emergente",
-        "momentum_ratio": 27.0
+        "momentum_ratio": 23.0
       },
       {
         "name": "tipo de cambio",
-        "score": 52.55,
+        "score": 48.65,
         "current_events": 11,
         "previous_events": 0,
-        "documents": 11,
-        "unique_sources": 5,
+        "documents": 12,
+        "unique_sources": 4,
         "average_age_hours": null,
         "average_stress": 52.45,
         "momentum": "emergente",
         "momentum_ratio": 12.0
       },
       {
-        "name": "inflación",
-        "score": 36.96,
-        "current_events": 3,
+        "name": "sistema financiero",
+        "score": 41.94,
+        "current_events": 7,
         "previous_events": 0,
-        "documents": 3,
-        "unique_sources": 2,
+        "documents": 8,
+        "unique_sources": 3,
         "average_age_hours": null,
-        "average_stress": 68.67,
+        "average_stress": 51.57,
         "momentum": "emergente",
-        "momentum_ratio": 4.0
+        "momentum_ratio": 8.0
       },
       {
-        "name": "sistema financiero",
-        "score": 36.01,
-        "current_events": 5,
+        "name": "inflación",
+        "score": 39.35,
+        "current_events": 2,
         "previous_events": 0,
-        "documents": 5,
+        "documents": 2,
         "unique_sources": 2,
         "average_age_hours": null,
-        "average_stress": 47.4,
+        "average_stress": 77.0,
         "momentum": "emergente",
-        "momentum_ratio": 6.0
+        "momentum_ratio": 3.0
       },
       {
         "name": "salarios",
-        "score": 33.09,
+        "score": 33.11,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
@@ -2275,7 +2265,7 @@
       },
       {
         "name": "reservas internacionales",
-        "score": 33.09,
+        "score": 33.11,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
@@ -2286,32 +2276,20 @@
         "momentum_ratio": 2.0
       },
       {
-        "name": "hidrocarburos",
-        "score": 33.09,
+        "name": "producto interno bruto",
+        "score": 31.91,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
         "unique_sources": 1,
         "average_age_hours": null,
-        "average_stress": 50.0,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
-      },
-      {
-        "name": "déficit fiscal",
-        "score": 32.69,
-        "current_events": 1,
-        "previous_events": 0,
-        "documents": 1,
-        "unique_sources": 1,
-        "average_age_hours": null,
-        "average_stress": 46.0,
+        "average_stress": 38.0,
         "momentum": "emergente",
         "momentum_ratio": 2.0
       },
       {
         "name": "exportaciones",
-        "score": 31.69,
+        "score": 31.71,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
@@ -2320,129 +2298,129 @@
         "average_stress": 36.0,
         "momentum": "emergente",
         "momentum_ratio": 2.0
+      },
+      {
+        "name": "déficit fiscal",
+        "score": 30.2,
+        "current_events": 2,
+        "previous_events": 0,
+        "documents": 2,
+        "unique_sources": 1,
+        "average_age_hours": null,
+        "average_stress": 48.0,
+        "momentum": "emergente",
+        "momentum_ratio": 3.0
       }
     ],
     "entities": [
       {
         "name": "YPFB",
-        "score": 45.59,
-        "current_events": 13,
+        "score": 39.92,
+        "current_events": 10,
         "previous_events": 0,
-        "documents": 15,
-        "unique_sources": 3,
+        "documents": 10,
+        "unique_sources": 2,
         "average_age_hours": null,
-        "average_stress": 54.46,
+        "average_stress": 54.6,
         "momentum": "emergente",
-        "momentum_ratio": 14.0
+        "momentum_ratio": 11.0
+      },
+      {
+        "name": "Banco Mundial",
+        "score": 36.65,
+        "current_events": 2,
+        "previous_events": 0,
+        "documents": 3,
+        "unique_sources": 2,
+        "average_age_hours": null,
+        "average_stress": 50.0,
+        "momentum": "emergente",
+        "momentum_ratio": 3.0
       },
       {
         "name": "BCB",
-        "score": 39.4,
+        "score": 36.65,
+        "current_events": 2,
+        "previous_events": 0,
+        "documents": 2,
+        "unique_sources": 2,
+        "average_age_hours": null,
+        "average_stress": 50.0,
+        "momentum": "emergente",
+        "momentum_ratio": 3.0
+      },
+      {
+        "name": "FMI",
+        "score": 35.17,
         "current_events": 3,
         "previous_events": 0,
         "documents": 3,
-        "unique_sources": 3,
+        "unique_sources": 2,
         "average_age_hours": null,
-        "average_stress": 51.33,
+        "average_stress": 50.0,
         "momentum": "emergente",
         "momentum_ratio": 4.0
       },
       {
-        "name": "BID",
-        "score": 33.09,
-        "current_events": 1,
-        "previous_events": 0,
-        "documents": 1,
-        "unique_sources": 1,
-        "average_age_hours": null,
-        "average_stress": 50.0,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
-      },
-      {
-        "name": "FMI",
-        "score": 33.09,
-        "current_events": 1,
-        "previous_events": 0,
-        "documents": 1,
-        "unique_sources": 1,
-        "average_age_hours": null,
-        "average_stress": 50.0,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
-      },
-      {
-        "name": "Aduana Nacional",
-        "score": 33.09,
-        "current_events": 1,
-        "previous_events": 0,
-        "documents": 1,
-        "unique_sources": 1,
-        "average_age_hours": null,
-        "average_stress": 50.0,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
-      },
-      {
-        "name": "MEFP",
-        "score": 32.69,
-        "current_events": 1,
-        "previous_events": 0,
-        "documents": 1,
-        "unique_sources": 1,
-        "average_age_hours": null,
-        "average_stress": 46.0,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
-      },
-      {
         "name": "ASFI",
-        "score": 32.49,
-        "current_events": 5,
+        "score": 33.72,
+        "current_events": 7,
         "previous_events": 0,
-        "documents": 5,
+        "documents": 7,
         "unique_sources": 1,
         "average_age_hours": null,
-        "average_stress": 53.8,
+        "average_stress": 52.71,
         "momentum": "emergente",
-        "momentum_ratio": 6.0
+        "momentum_ratio": 8.0
+      },
+      {
+        "name": "BID",
+        "score": 33.11,
+        "current_events": 1,
+        "previous_events": 0,
+        "documents": 1,
+        "unique_sources": 1,
+        "average_age_hours": null,
+        "average_stress": 50.0,
+        "momentum": "emergente",
+        "momentum_ratio": 2.0
       }
     ],
     "top_topic": {
-      "name": "Comercio exterior, desarrollo y empresas",
-      "score": 59.75,
-      "current_events": 23,
+      "name": "Sector productivo, automotor y actividad empresarial",
+      "score": 49.69,
+      "current_events": 19,
       "previous_events": 0,
-      "documents": 26,
-      "unique_sources": 5,
+      "documents": 20,
+      "unique_sources": 3,
       "average_age_hours": null,
-      "average_stress": 53.91,
+      "average_stress": 55.58,
       "momentum": "emergente",
-      "momentum_ratio": 24.0
+      "momentum_ratio": 20.0
     },
     "top_indicator": {
       "name": "combustibles",
-      "score": 61.42,
-      "current_events": 26,
+      "score": 59.54,
+      "current_events": 22,
       "previous_events": 0,
-      "documents": 29,
+      "documents": 23,
       "unique_sources": 5,
       "average_age_hours": null,
-      "average_stress": 52.92,
+      "average_stress": 52.36,
       "momentum": "emergente",
-      "momentum_ratio": 27.0
+      "momentum_ratio": 23.0
     },
     "top_entity": {
       "name": "YPFB",
-      "score": 45.59,
-      "current_events": 13,
+      "score": 39.92,
+      "current_events": 10,
       "previous_events": 0,
-      "documents": 15,
-      "unique_sources": 3,
+      "documents": 10,
+      "unique_sources": 2,
       "average_age_hours": null,
-      "average_stress": 54.46,
+      "average_stress": 54.6,
       "momentum": "emergente",
-      "momentum_ratio": 14.0
+      "momentum_ratio": 11.0
     }
   },
   "temporal_analysis": {
@@ -2450,11 +2428,11 @@
     "frequency": "monthly",
     "minimum_documents_per_period": 2,
     "minimum_date": "2025-01-01",
-    "maximum_date": "2026-09-23",
-    "parsed_documents": 529,
-    "dated_documents": 525,
-    "out_of_range_documents": 4,
-    "undated_documents": 635,
+    "maximum_date": "2026-09-24",
+    "parsed_documents": 537,
+    "dated_documents": 531,
+    "out_of_range_documents": 6,
+    "undated_documents": 640,
     "series": [
       {
         "period": "2026-07",
@@ -2476,90 +2454,90 @@
       },
       {
         "period": "2026-09",
-        "documents": 184,
-        "stress_average": 54.28,
-        "unfavorable_percentage": 7.61,
-        "high_stress_percentage": 22.28,
-        "model_disagreement_percentage": 34.78,
-        "pulsobo_index": 35.13
+        "documents": 190,
+        "stress_average": 53.99,
+        "unfavorable_percentage": 7.37,
+        "high_stress_percentage": 21.58,
+        "model_disagreement_percentage": 33.68,
+        "pulsobo_index": 34.73
       }
     ]
   },
   "indicator_map": [
     {
       "name": "combustibles",
-      "count": 623,
-      "percentage": 53.52
+      "count": 630,
+      "percentage": 53.53
     },
     {
       "name": "tipo de cambio",
-      "count": 462,
-      "percentage": 39.69
+      "count": 467,
+      "percentage": 39.68
     },
     {
       "name": "hidrocarburos",
-      "count": 324,
-      "percentage": 27.84
+      "count": 325,
+      "percentage": 27.61
     },
     {
       "name": "sistema financiero",
-      "count": 320,
-      "percentage": 27.49
+      "count": 324,
+      "percentage": 27.53
     },
     {
       "name": "importaciones",
-      "count": 213,
-      "percentage": 18.3
+      "count": 215,
+      "percentage": 18.27
     },
     {
       "name": "empleo",
-      "count": 203,
-      "percentage": 17.44
+      "count": 207,
+      "percentage": 17.59
     },
     {
       "name": "reservas internacionales",
       "count": 124,
-      "percentage": 10.65
+      "percentage": 10.54
     },
     {
       "name": "exportaciones",
       "count": 120,
-      "percentage": 10.31
+      "percentage": 10.2
     },
     {
       "name": "inflación",
-      "count": 76,
-      "percentage": 6.53
+      "count": 77,
+      "percentage": 6.54
     },
     {
       "name": "déficit fiscal",
-      "count": 75,
-      "percentage": 6.44
+      "count": 76,
+      "percentage": 6.46
     },
     {
       "name": "producto interno bruto",
-      "count": 59,
-      "percentage": 5.07
+      "count": 60,
+      "percentage": 5.1
     },
     {
       "name": "deuda pública",
       "count": 26,
-      "percentage": 2.23
+      "percentage": 2.21
     },
     {
       "name": "salarios",
-      "count": 21,
-      "percentage": 1.8
+      "count": 22,
+      "percentage": 1.87
     },
     {
       "name": "balanza comercial",
       "count": 15,
-      "percentage": 1.29
+      "percentage": 1.27
     },
     {
       "name": "litio",
       "count": 13,
-      "percentage": 1.12
+      "percentage": 1.1
     }
   ],
   "source_analysis": {
@@ -2585,11 +2563,11 @@
       "stress_average": 48.0
     },
     "Economy": {
-      "documents": 219,
+      "documents": 222,
       "favorable": 69,
-      "neutral": 121,
+      "neutral": 124,
       "desfavorable": 29,
-      "stress_average": 52.32
+      "stress_average": 52.19
     },
     "El Deber": {
       "documents": 103,
@@ -2620,11 +2598,11 @@
       "stress_average": 51.04
     },
     "Los Tiempos": {
-      "documents": 170,
-      "favorable": 38,
-      "neutral": 105,
+      "documents": 175,
+      "favorable": 39,
+      "neutral": 109,
       "desfavorable": 27,
-      "stress_average": 57.55
+      "stress_average": 57.29
     },
     "MEFP": {
       "documents": 17,
@@ -2634,11 +2612,11 @@
       "stress_average": 47.59
     },
     "Unitel": {
-      "documents": 489,
-      "favorable": 101,
-      "neutral": 254,
+      "documents": 494,
+      "favorable": 102,
+      "neutral": 258,
       "desfavorable": 134,
-      "stress_average": 59.44
+      "stress_average": 59.4
     }
   }
 }
