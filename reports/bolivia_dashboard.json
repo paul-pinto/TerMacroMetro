@@ -1,14 +1,14 @@
 {
-  "total_documents": 1595,
+  "total_documents": 1601,
   "pulsobo_index": {
-    "score": 40.68,
+    "score": 40.71,
     "level": "moderado",
     "interpretation": "Existen señales mixtas con tensión económica relevante.",
     "components": {
-      "stress_average": 56.24,
-      "unfavorable_percentage": 19.62,
-      "high_stress_percentage": 28.03,
-      "model_disagreement_percentage": 38.75
+      "stress_average": 56.23,
+      "unfavorable_percentage": 19.68,
+      "high_stress_percentage": 28.04,
+      "model_disagreement_percentage": 38.85
     },
     "weights": {
       "stress_average": 0.5,
@@ -20,40 +20,40 @@
   },
   "sources": {
     "Unitel": {
-      "count": 631,
-      "percentage": 39.56
+      "count": 632,
+      "percentage": 39.48
     },
     "Economy": {
-      "count": 266,
-      "percentage": 16.68
+      "count": 268,
+      "percentage": 16.74
     },
     "Los Tiempos": {
       "count": 220,
-      "percentage": 13.79
+      "percentage": 13.74
     },
     "El Deber": {
-      "count": 216,
-      "percentage": 13.54
+      "count": 218,
+      "percentage": 13.62
     },
     "ABI": {
       "count": 157,
-      "percentage": 9.84
+      "percentage": 9.81
     },
     "La Razón": {
-      "count": 48,
-      "percentage": 3.01
+      "count": 49,
+      "percentage": 3.06
     },
     "MEFP": {
       "count": 17,
-      "percentage": 1.07
+      "percentage": 1.06
     },
     "ASFI": {
       "count": 13,
-      "percentage": 0.82
+      "percentage": 0.81
     },
     "El País": {
       "count": 10,
-      "percentage": 0.63
+      "percentage": 0.62
     },
     "BCB": {
       "count": 9,
@@ -66,130 +66,130 @@
   },
   "tones": {
     "neutral": {
-      "count": 915,
-      "percentage": 57.37
+      "count": 916,
+      "percentage": 57.21
     },
     "favorable": {
-      "count": 367,
-      "percentage": 23.01
+      "count": 370,
+      "percentage": 23.11
     },
     "desfavorable": {
-      "count": 313,
-      "percentage": 19.62
+      "count": 315,
+      "percentage": 19.68
     }
   },
   "naive_bayes_tones": {
     "neutral": {
-      "count": 1471,
-      "percentage": 92.23
+      "count": 1476,
+      "percentage": 92.19
     },
     "desfavorable": {
-      "count": 91,
-      "percentage": 5.71
+      "count": 92,
+      "percentage": 5.75
     },
     "favorable": {
       "count": 33,
-      "percentage": 2.07
+      "percentage": 2.06
     }
   },
   "transformer_tones": {
     "neutral": {
-      "count": 915,
-      "percentage": 57.37
+      "count": 916,
+      "percentage": 57.21
     },
     "favorable": {
-      "count": 367,
-      "percentage": 23.01
+      "count": 370,
+      "percentage": 23.11
     },
     "desfavorable": {
-      "count": 313,
-      "percentage": 19.62
+      "count": 315,
+      "percentage": 19.68
     }
   },
   "topics": {
-    "Precios, alimentos y servicios básicos": {
-      "count": 588,
-      "percentage": 36.87
-    },
-    "Política fiscal, gestión pública y sistema financiero": {
-      "count": 329,
-      "percentage": 20.63
-    },
     "Sector productivo, automotor y actividad empresarial": {
-      "count": 226,
-      "percentage": 14.17
+      "count": 542,
+      "percentage": 33.85
     },
-    "Producción, inversión y régimen cambiario": {
-      "count": 188,
-      "percentage": 11.79
-    },
-    "Comercio exterior, desarrollo y empresas": {
-      "count": 156,
-      "percentage": 9.78
+    "Precios, alimentos y servicios básicos": {
+      "count": 307,
+      "percentage": 19.18
     },
     "Tipo de cambio, divisas y abastecimiento de combustibles": {
-      "count": 108,
-      "percentage": 6.77
+      "count": 250,
+      "percentage": 15.62
+    },
+    "Producción, inversión y régimen cambiario": {
+      "count": 232,
+      "percentage": 14.49
+    },
+    "Política fiscal, gestión pública y sistema financiero": {
+      "count": 156,
+      "percentage": 9.74
+    },
+    "Comercio exterior, desarrollo y empresas": {
+      "count": 114,
+      "percentage": 7.12
     }
   },
   "entities": {
-    "YPFB": 360,
+    "YPFB": 363,
     "BCB": 305,
     "FMI": 169,
-    "MEFP": 104,
-    "INE": 92,
+    "MEFP": 105,
+    "INE": 93,
     "BID": 62,
     "Banco Mundial": 57,
     "CAF": 51,
+    "Aduana Nacional": 38,
     "ASFI": 37,
-    "Aduana Nacional": 37,
-    "IBCE": 36,
+    "IBCE": 37,
     "SIN": 16
   },
   "indicators": {
-    "combustibles": 866,
-    "tipo de cambio": 601,
-    "hidrocarburos": 445,
-    "sistema financiero": 435,
+    "combustibles": 867,
+    "tipo de cambio": 602,
+    "hidrocarburos": 447,
+    "sistema financiero": 436,
     "empleo": 289,
-    "importaciones": 259,
-    "exportaciones": 184,
-    "reservas internacionales": 165,
+    "importaciones": 261,
+    "exportaciones": 186,
+    "reservas internacionales": 166,
     "inflación": 125,
-    "déficit fiscal": 113,
+    "déficit fiscal": 114,
     "producto interno bruto": 92,
     "deuda pública": 41,
     "salarios": 40,
     "litio": 23,
-    "balanza comercial": 21
+    "balanza comercial": 22
   },
   "stress": {
-    "average": 56.24,
+    "average": 56.23,
     "minimum": 0.0,
     "maximum": 100.0,
     "levels": {
       "moderado": {
-        "count": 1057,
-        "percentage": 66.27
+        "count": 1060,
+        "percentage": 66.21
       },
       "alto": {
-        "count": 271,
+        "count": 272,
         "percentage": 16.99
       },
       "crítico": {
-        "count": 176,
-        "percentage": 11.03
+        "count": 177,
+        "percentage": 11.06
       },
       "bajo": {
-        "count": 91,
-        "percentage": 5.71
+        "count": 92,
+        "percentage": 5.75
       }
     }
   },
   "model_agreement": {
-    "agreements": 977,
-    "disagreements": 618,
-    "agreement_rate": 61.25
+    "agreements": 979,
+    "disagreements": 622,
+    "agreement_rate": 61.15
   },
   "highest_stress_news": [
     {
@@ -198,7 +198,7 @@
       "fecha": "2026-10-14T17:08:35-04:00",
       "published_at": "2026-10-14T21:08:35Z",
       "effective_at": "2026-10-14T21:08:35Z",
-      "age_hours": 41.0,
+      "age_hours": 63.99,
       "stress_score": 87,
       "stress_nivel": "crítico",
       "tema": "Política fiscal, gestión pública y sistema financiero",
@@ -211,7 +211,7 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-15T14:12:54Z",
-      "age_hours": 23.92,
+      "age_hours": 46.92,
       "stress_score": 84,
       "stress_nivel": "crítico",
       "tema": "Política fiscal, gestión pública y sistema financiero",
@@ -224,7 +224,7 @@
       "fecha": "2026-10-15T09:32:37-04:00",
       "published_at": "2026-10-15T13:32:37Z",
       "effective_at": "2026-10-15T13:32:37Z",
-      "age_hours": 24.6,
+      "age_hours": 47.59,
       "stress_score": 81,
       "stress_nivel": "crítico",
       "tema": "Política fiscal, gestión pública y sistema financiero",
@@ -232,69 +232,43 @@
       "url": "https://www.lostiempos.com/actualidad/economia/20261015/exportaciones-madera-cerraran-2026-su-nivel-mas-30-anos"
     },
     {
-      "titulo": "FMI: la economía de Bolivia se contraerá en un 3% este año",
-      "fuente": "Los Tiempos",
-      "fecha": "2026-10-13T22:00:43-04:00",
-      "published_at": "2026-10-14T02:00:43Z",
-      "effective_at": "2026-10-14T02:00:43Z",
-      "age_hours": 60.13,
-      "stress_score": 81,
-      "stress_nivel": "crítico",
-      "tema": "Política fiscal, gestión pública y sistema financiero",
-      "tono_consolidado": "desfavorable",
-      "url": "https://www.lostiempos.com/actualidad/economia/20261013/fmi-economia-bolivia-se-contraera-3-este-ano"
-    },
-    {
-      "titulo": "Diez empresas públicas en crisis podrían ser liquidadas por decreto",
-      "fuente": "El Deber",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-13T17:00:28Z",
-      "age_hours": 69.13,
-      "stress_score": 81,
-      "stress_nivel": "crítico",
-      "tema": "Sector productivo, automotor y actividad empresarial",
-      "tono_consolidado": "neutral",
-      "url": "https://eldeber.com.bo/economia/diez-empresas-publicas-crisis-podrian-ser-liquidadas-decreto_1791823018"
-    },
-    {
       "titulo": "Exportadores apelan a Kast por el conflicto de la madera",
       "fuente": "El Deber",
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-14T14:34:05Z",
-      "age_hours": 47.57,
+      "age_hours": 70.56,
       "stress_score": 79,
       "stress_nivel": "crítico",
-      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "desfavorable",
       "url": "https://eldeber.com.bo/economia/exportadores-apelan-kast-conflicto-madera_1791974331"
-    },
-    {
-      "titulo": "Bolivia tendrá el peor desempeño económico de Sudamérica, según el FMI",
-      "fuente": "El Deber",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-13T17:00:25Z",
-      "age_hours": 69.13,
-      "stress_score": 79,
-      "stress_nivel": "crítico",
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "desfavorable",
-      "url": "https://eldeber.com.bo/economia/bolivia-tendra-peor-desempeno-economico-sudamerica-fmi_1791906679"
     },
     {
       "titulo": "âTenemos que manifestarnosâ: COB rechaza decretos del Gobierno, pero no menciona marchas ni movilizaciones",
       "fuente": "Unitel",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-10-16T14:01:40Z",
-      "age_hours": 0.11,
+      "effective_at": "2026-10-17T13:01:39Z",
+      "age_hours": 0.1,
       "stress_score": 75,
       "stress_nivel": "crítico",
-      "tema": "Precios, alimentos y servicios básicos",
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "neutral",
       "url": "https://unitel.bo/noticias/economia/tenemos-que-manifestarnos-cob-rechaza-decretos-del-gobierno-pero-no-menciona-marchas-ni-movilizaciones-JB24168166"
+    },
+    {
+      "titulo": "Santa Cruz registra tres años consecutivos de caída en la producción de hidrocarburos",
+      "fuente": "Economy",
+      "fecha": "2026-10-16T16:37:16-04:00",
+      "published_at": "2026-10-16T20:37:16Z",
+      "effective_at": "2026-10-16T20:37:16Z",
+      "age_hours": 16.51,
+      "stress_score": 75,
+      "stress_nivel": "crítico",
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "desfavorable",
+      "url": "https://www.economy.com.bo/articulo/economia/santa-cruz-registra-tres-anos-consecutivos-caida-produccion-hidrocarburos/20261016163716024487.html"
     },
     {
       "titulo": "Exportadores tendrán devolución digital de impuestos desde junio de 2027",
@@ -302,25 +276,51 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-15T14:12:54Z",
-      "age_hours": 23.92,
+      "age_hours": 46.92,
       "stress_score": 74,
       "stress_nivel": "alto",
-      "tema": "Producción, inversión y régimen cambiario",
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "url": "https://eldeber.com.bo/economia/exportadores-tendran-devolucion-digital-impuestos-junio-2027_1791994038"
     },
     {
-      "titulo": "CNC plantea diálogo tripartito para definir aumento salarial de 2027",
-      "fuente": "Los Tiempos",
-      "fecha": "2026-10-13T21:05:22-04:00",
-      "published_at": "2026-10-14T01:05:22Z",
-      "effective_at": "2026-10-14T01:05:22Z",
-      "age_hours": 61.05,
-      "stress_score": 73,
+      "titulo": "Exportadores piden reunión con Paz por madera quemada en Chile",
+      "fuente": "El Deber",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-16T14:01:26Z",
+      "age_hours": 23.11,
+      "stress_score": 71,
+      "stress_nivel": "alto",
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "url": "https://eldeber.com.bo/economia/exportadores-piden-reunion-paz-madera-quemada-chile_1792014712"
+    },
+    {
+      "titulo": "Cámara inmobiliaria reporta un alza de casi 60% en costos de construcción",
+      "fuente": "El Deber",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-15T14:12:54Z",
+      "age_hours": 46.92,
+      "stress_score": 68,
       "stress_nivel": "alto",
       "tema": "Precios, alimentos y servicios básicos",
+      "tono_consolidado": "favorable",
+      "url": "https://eldeber.com.bo/economia/camara-inmobiliaria-reporta-alza-casi-60-costos-construccion_1791997300"
+    },
+    {
+      "titulo": "Gobierno añade tres factores para calcular tarifas eléctricas en Bolivia con el Decreto 5770",
+      "fuente": "Los Tiempos",
+      "fecha": "2026-10-15T09:30:20-04:00",
+      "published_at": "2026-10-15T13:30:20Z",
+      "effective_at": "2026-10-15T13:30:20Z",
+      "age_hours": 47.63,
+      "stress_score": 67,
+      "stress_nivel": "alto",
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "neutral",
-      "url": "https://www.lostiempos.com/actualidad/economia/20261013/cnc-plantea-dialogo-tripartito-definir-aumento-salarial-2027"
+      "url": "https://www.lostiempos.com/actualidad/economia/20261015/gobierno-anade-tres-factores-calcular-tarifas-electricas-bolivia"
     }
   ],
   "news": [
@@ -329,13 +329,169 @@
       "fuente": "Unitel",
       "fecha": NaN,
       "published_at": NaN,
-      "effective_at": "2026-10-16T14:01:40Z",
-      "age_hours": 0.11,
-      "tema": "Precios, alimentos y servicios básicos",
+      "effective_at": "2026-10-17T13:01:39Z",
+      "age_hours": 0.1,
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "neutral",
       "stress_score": 75,
       "stress_nivel": "crítico",
       "url": "https://unitel.bo/noticias/economia/tenemos-que-manifestarnos-cob-rechaza-decretos-del-gobierno-pero-no-menciona-marchas-ni-movilizaciones-JB24168166"
+    },
+    {
+      "titulo": "Paz y Kast sellan acuerdo para el impulso del ducto OSSA II y el corredor binacional de fibra óptica",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:01:39Z",
+      "age_hours": 0.1,
+      "tema": "Precios, alimentos y servicios básicos",
+      "tono_consolidado": "favorable",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/paz-y-kast-sellan-acuerdo-para-el-impulso-del-ducto-ossa-ii-y-el-corredor-binacional-de-fibra-optica-BP24183839"
+    },
+    {
+      "titulo": "Visita de Kast a Bolivia: Sector industrial ve oportunidad para abrir mercados y atraer inversiones",
+      "fuente": "Unitel",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:01:39Z",
+      "age_hours": 0.1,
+      "tema": "Precios, alimentos y servicios básicos",
+      "tono_consolidado": "favorable",
+      "stress_score": 42,
+      "stress_nivel": "moderado",
+      "url": "https://unitel.bo/noticias/economia/visita-de-kast-a-bolivia-sector-industrial-ve-oportunidad-para-abrir-mercados-y-atraer-inversiones-FB24166650"
+    },
+    {
+      "titulo": "CRE habilita el pago de facturas de octubre tras la aprobación de la estructura tarifaria",
+      "fuente": "El Deber",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:01:29Z",
+      "age_hours": 0.11,
+      "tema": "Comercio exterior, desarrollo y empresas",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://eldeber.com.bo/economia/cre-habilita-pago-facturas-octubre-aprobacion-estructura-tarifaria_1792075519"
+    },
+    {
+      "titulo": "Bolivia acumula un déficit comercial de casi $us 8.000 millones con Chile desde el año 2000",
+      "fuente": "El Deber",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:01:28Z",
+      "age_hours": 0.11,
+      "tema": "Precios, alimentos y servicios básicos",
+      "tono_consolidado": "desfavorable",
+      "stress_score": 62,
+      "stress_nivel": "alto",
+      "url": "https://eldeber.com.bo/economia/bolivia-acumula-deficit-comercial-casi-us-8-000-millones-chile-ano-2000_1792205417"
+    },
+    {
+      "titulo": "Diego Barboza: “La UIF estaba siendo utilizada para corromper y también para extorsionar”",
+      "fuente": "El Deber",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:01:28Z",
+      "age_hours": 0.11,
+      "tema": "Sector productivo, automotor y actividad empresarial",
+      "tono_consolidado": "neutral",
+      "stress_score": 49,
+      "stress_nivel": "moderado",
+      "url": "https://eldeber.com.bo/economia/diego-barboza-uif-estaba-siendo-utilizada-corromper-extorsionar_1792195904"
+    },
+    {
+      "titulo": "Bolivia logra $us 1,5 millones para fortalecer el agro",
+      "fuente": "El Deber",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:01:28Z",
+      "age_hours": 0.11,
+      "tema": "Precios, alimentos y servicios básicos",
+      "tono_consolidado": "neutral",
+      "stress_score": 40,
+      "stress_nivel": "moderado",
+      "url": "https://eldeber.com.bo/economia/bolivia-logra-us-1-5-millones-fortalecer-agro_1792147600"
+    },
+    {
+      "titulo": "EL DECRETO SUPREMO N° 5630 ESTÁ VIGENTE: ASFI SUPERVISA QUE LAS ENTIDADES FINANCIERAS CUMPLAN CON SU APLICACIÓN | ASFI",
+      "fuente": "ASFI",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:00:07Z",
+      "age_hours": 0.13,
+      "tema": "Comercio exterior, desarrollo y empresas",
+      "tono_consolidado": "neutral",
+      "stress_score": 54,
+      "stress_nivel": "moderado",
+      "url": "https://www.asfi.gob.bo/node/1393"
+    },
+    {
+      "titulo": "ASFI Y BID FORTALECEN LA PROTECCIÓN DEL CONSUMIDOR CON EXPERIENCIA Y CONOCIMIENTO INTERNACIONAL | ASFI",
+      "fuente": "ASFI",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:00:06Z",
+      "age_hours": 0.13,
+      "tema": "Precios, alimentos y servicios básicos",
+      "tono_consolidado": "neutral",
+      "stress_score": 46,
+      "stress_nivel": "moderado",
+      "url": "https://www.asfi.gob.bo/node/1460"
+    },
+    {
+      "titulo": "Cajeros automáticos para personas con discapacidad | ASFI",
+      "fuente": "ASFI",
+      "fecha": NaN,
+      "published_at": NaN,
+      "effective_at": "2026-10-17T13:00:03Z",
+      "age_hours": 0.13,
+      "tema": "Comercio exterior, desarrollo y empresas",
+      "tono_consolidado": "neutral",
+      "stress_score": 50,
+      "stress_nivel": "moderado",
+      "url": "https://www.asfi.gob.bo/la/cajeros-automaticos-para-personas-discapacidad"
+    },
+    {
+      "titulo": "Agroproductores piden más tecnología y mejores condiciones para competir",
+      "fuente": "Economy",
+      "fecha": "2026-10-16T21:40:22-04:00",
+      "published_at": "2026-10-17T01:40:22Z",
+      "effective_at": "2026-10-17T01:40:22Z",
+      "age_hours": 11.46,
+      "tema": "Precios, alimentos y servicios básicos",
+      "tono_consolidado": "favorable",
+      "stress_score": 38,
+      "stress_nivel": "bajo",
+      "url": "https://www.economy.com.bo/articulo/business/agroproductores-piden-mas-tecnologia-mejores-condiciones-competir/20261016214022024500.html"
+    },
+    {
+      "titulo": "Bolivia y Chile firman cuatro acuerdos para impulsar comercio, minería, fibra óptica y energía",
+      "fuente": "La Razón",
+      "fecha": "2026-10-16T21:52:41+00:00",
+      "published_at": "2026-10-16T21:52:41Z",
+      "effective_at": "2026-10-16T21:52:41Z",
+      "age_hours": 15.25,
+      "tema": "Precios, alimentos y servicios básicos",
+      "tono_consolidado": "favorable",
+      "stress_score": 45,
+      "stress_nivel": "moderado",
+      "url": "https://larazon.bo/economia-y-empresa/2026/10/16/bolivia-y-chile-firman-cuatro-acuerdos-para-impulsar-comercio-mineria-fibra-optica-y-energia"
+    },
+    {
+      "titulo": "Santa Cruz registra tres años consecutivos de caída en la producción de hidrocarburos",
+      "fuente": "Economy",
+      "fecha": "2026-10-16T16:37:16-04:00",
+      "published_at": "2026-10-16T20:37:16Z",
+      "effective_at": "2026-10-16T20:37:16Z",
+      "age_hours": 16.51,
+      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "tono_consolidado": "desfavorable",
+      "stress_score": 75,
+      "stress_nivel": "crítico",
+      "url": "https://www.economy.com.bo/articulo/economia/santa-cruz-registra-tres-anos-consecutivos-caida-produccion-hidrocarburos/20261016163716024487.html"
     },
     {
       "titulo": "Director de Fiscalízación proyecta alza de 1,44% en tarifas de electricidad",
@@ -343,7 +499,7 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:01:40Z",
-      "age_hours": 0.11,
+      "age_hours": 23.1,
       "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "favorable",
       "stress_score": 50,
@@ -351,26 +507,13 @@
       "url": "https://unitel.bo/noticias/economia/director-de-fiscalizacion-proyecta-alza-de-144-en-tarifas-de-electricidad-NC24152690"
     },
     {
-      "titulo": "Visita de Kast a Bolivia: Sector industrial ve oportunidad para abrir mercados y atraer inversiones",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-16T14:01:40Z",
-      "age_hours": 0.11,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
-      "tono_consolidado": "favorable",
-      "stress_score": 42,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/visita-de-kast-a-bolivia-sector-industrial-ve-oportunidad-para-abrir-mercados-y-atraer-inversiones-FB24166650"
-    },
-    {
       "titulo": "Exportadores piden reunión con Paz por madera quemada en Chile",
       "fuente": "El Deber",
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "age_hours": 23.11,
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "neutral",
       "stress_score": 71,
       "stress_nivel": "alto",
@@ -382,8 +525,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
-      "tema": "Precios, alimentos y servicios básicos",
+      "age_hours": 23.11,
+      "tema": "Sector productivo, automotor y actividad empresarial",
       "tono_consolidado": "favorable",
       "stress_score": 63,
       "stress_nivel": "alto",
@@ -395,8 +538,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "age_hours": 23.11,
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "neutral",
       "stress_score": 58,
       "stress_nivel": "moderado",
@@ -408,8 +551,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
-      "tema": "Producción, inversión y régimen cambiario",
+      "age_hours": 23.11,
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "stress_score": 55,
       "stress_nivel": "moderado",
@@ -421,8 +564,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
-      "tema": "Precios, alimentos y servicios básicos",
+      "age_hours": 23.11,
+      "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "desfavorable",
       "stress_score": 54,
       "stress_nivel": "moderado",
@@ -434,25 +577,12 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
-      "tema": "Comercio exterior, desarrollo y empresas",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://eldeber.com.bo/economia/bcb-activa-nueva-etapa-retiros-us-8-001-us-10-000_1792091763"
-    },
-    {
-      "titulo": "CRE habilita el pago de facturas de octubre tras la aprobación de la estructura tarifaria",
-      "fuente": "El Deber",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
+      "age_hours": 23.11,
       "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
-      "url": "https://eldeber.com.bo/economia/cre-habilita-pago-facturas-octubre-aprobacion-estructura-tarifaria_1792075519"
+      "url": "https://eldeber.com.bo/economia/bcb-activa-nueva-etapa-retiros-us-8-001-us-10-000_1792091763"
     },
     {
       "titulo": "Agro Vidas 2026 abre con más de 400 empresas y la pitahaya entre sus novedades",
@@ -460,25 +590,12 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "age_hours": 23.11,
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "neutral",
       "stress_score": 41,
       "stress_nivel": "moderado",
       "url": "https://eldeber.com.bo/economia/agro-vidas-2026-abre-400-empresas-pitahaya-novedades_1792104368"
-    },
-    {
-      "titulo": "Bolivia logra $us 1,5 millones para fortalecer el agro",
-      "fuente": "El Deber",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-16T14:01:26Z",
-      "age_hours": 0.11,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
-      "tono_consolidado": "neutral",
-      "stress_score": 40,
-      "stress_nivel": "moderado",
-      "url": "https://eldeber.com.bo/economia/bolivia-logra-us-1-5-millones-fortalecer-agro_1792147600"
     },
     {
       "titulo": "ASFI PROMUEVE UNA ESTRATEGIA FINANCIERA MÁS INCLUSIVA CON EL APORTE MULTISECTORIAL | ASFI",
@@ -486,8 +603,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:00:03Z",
-      "age_hours": 0.14,
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "age_hours": 23.13,
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
@@ -499,7 +616,7 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:00:03Z",
-      "age_hours": 0.14,
+      "age_hours": 23.13,
       "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "neutral",
       "stress_score": 50,
@@ -507,26 +624,13 @@
       "url": "https://www.asfi.gob.bo/node/1402"
     },
     {
-      "titulo": "ASFI Y BID FORTALECEN LA PROTECCIÓN DEL CONSUMIDOR CON EXPERIENCIA Y CONOCIMIENTO INTERNACIONAL | ASFI",
-      "fuente": "ASFI",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-16T14:00:03Z",
-      "age_hours": 0.14,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
-      "tono_consolidado": "neutral",
-      "stress_score": 46,
-      "stress_nivel": "moderado",
-      "url": "https://www.asfi.gob.bo/node/1460"
-    },
-    {
       "titulo": "ASFI LLEVÓ LA SUPERVISIÓN FINANCIERA BOLIVIANA A LA MESA DE LOS REGULADORES INTERNACIONALES | ASFI",
       "fuente": "ASFI",
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:00:02Z",
-      "age_hours": 0.14,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
+      "age_hours": 23.13,
+      "tema": "Precios, alimentos y servicios básicos",
       "tono_consolidado": "neutral",
       "stress_score": 42,
       "stress_nivel": "moderado",
@@ -538,25 +642,12 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-16T14:00:00Z",
-      "age_hours": 0.14,
-      "tema": "Sector productivo, automotor y actividad empresarial",
+      "age_hours": 23.13,
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
       "url": "https://www.asfi.gob.bo/la/derechos-del-consumidor-financiero"
-    },
-    {
-      "titulo": "Cajeros automáticos para personas con discapacidad | ASFI",
-      "fuente": "ASFI",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-16T14:00:00Z",
-      "age_hours": 0.14,
-      "tema": "Sector productivo, automotor y actividad empresarial",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://www.asfi.gob.bo/la/cajeros-automaticos-para-personas-discapacidad"
     },
     {
       "titulo": "Inversión de calidad y gobernanza: el 78,4% de las empresas referentes en Bolivia alcanza puntajes de excelencia en el ICC 2026",
@@ -564,7 +655,7 @@
       "fecha": "2026-10-15T15:52:01-04:00",
       "published_at": "2026-10-15T19:52:01Z",
       "effective_at": "2026-10-15T19:52:01Z",
-      "age_hours": 18.27,
+      "age_hours": 41.26,
       "tema": "Política fiscal, gestión pública y sistema financiero",
       "tono_consolidado": "neutral",
       "stress_score": 62,
@@ -577,7 +668,7 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-15T14:13:33Z",
-      "age_hours": 23.91,
+      "age_hours": 46.91,
       "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "favorable",
       "stress_score": 55,
@@ -590,8 +681,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-15T14:13:33Z",
-      "age_hours": 23.91,
-      "tema": "Producción, inversión y régimen cambiario",
+      "age_hours": 46.91,
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
@@ -603,8 +694,8 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-15T14:13:33Z",
-      "age_hours": 23.91,
-      "tema": "Producción, inversión y régimen cambiario",
+      "age_hours": 46.91,
+      "tema": "Comercio exterior, desarrollo y empresas",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
@@ -616,119 +707,28 @@
       "fecha": NaN,
       "published_at": NaN,
       "effective_at": "2026-10-15T14:13:33Z",
-      "age_hours": 23.91,
+      "age_hours": 46.91,
       "tema": "Producción, inversión y régimen cambiario",
       "tono_consolidado": "neutral",
       "stress_score": 50,
       "stress_nivel": "moderado",
       "url": "https://unitel.bo/noticias/economia/gobierno-decreto-de-electricidad-es-para-que-las-tarifas-no-suban-de-manera-abrupta-AE24134370"
-    },
-    {
-      "titulo": "¿Habrá incremento en las tarifas de electricidad en Santa Cruz? Esto responde la CRE",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-15T14:13:33Z",
-      "age_hours": 23.91,
-      "tema": "Producción, inversión y régimen cambiario",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/habra-incremento-en-las-tarifas-de-electricidad-en-santa-cruz-esto-responde-la-cre-CE24133405"
-    },
-    {
-      "titulo": "Economista explica cómo puede influir el nuevo cálculo de la tarifa de la electricidad",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-15T14:13:32Z",
-      "age_hours": 23.91,
-      "tema": "Producción, inversión y régimen cambiario",
-      "tono_consolidado": "neutral",
-      "stress_score": 58,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/economista-explica-como-puede-influir-el-nuevo-calculo-de-la-tarifa-de-la-electricidad-KE24139452"
-    },
-    {
-      "titulo": "El Gobierno anula decreto de Arce y deja sin efecto “la obligación del BCB de adquirir” o vender de oro",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-15T14:13:32Z",
-      "age_hours": 23.91,
-      "tema": "Producción, inversión y régimen cambiario",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/el-gobierno-anula-decreto-de-arce-y-deja-sin-efecto-la-obligacion-del-bcb-de-adquirir-o-vender-de-oro-AE24135225"
-    },
-    {
-      "titulo": "ATT y choferes no llegan a un acuerdo sobre el incremento de las tarifas interdepartamentales",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-15T14:13:32Z",
-      "age_hours": 23.91,
-      "tema": "Precios, alimentos y servicios básicos",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/att-y-choferes-no-llegan-a-un-acuerdo-sobre-el-incremento-de-las-tarifas-interdepartamentales-OE24137339"
-    },
-    {
-      "titulo": "BCB concluye el pago de operaciones de venta anticipada de oro heredada del gobierno de Arce",
-      "fuente": "Unitel",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-15T14:13:32Z",
-      "age_hours": 23.91,
-      "tema": "Producción, inversión y régimen cambiario",
-      "tono_consolidado": "neutral",
-      "stress_score": 50,
-      "stress_nivel": "moderado",
-      "url": "https://unitel.bo/noticias/economia/bcb-concluye-el-pago-de-operaciones-de-venta-anticipada-de-oro-heredada-del-gobierno-de-arce-FD24142799"
-    },
-    {
-      "titulo": "&#39;Caso maderas&#39; golpea al sector forestal y amenaza con hundir las exportaciones bolivianas en 2026",
-      "fuente": "El Deber",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-15T14:12:54Z",
-      "age_hours": 23.92,
-      "tema": "Política fiscal, gestión pública y sistema financiero",
-      "tono_consolidado": "desfavorable",
-      "stress_score": 84,
-      "stress_nivel": "crítico",
-      "url": "https://eldeber.com.bo/economia/caso-maderas-golpea-sector-forestal-amenaza-hundir-exportaciones-bolivianas-2026_1792009971"
-    },
-    {
-      "titulo": "Exportadores tendrán devolución digital de impuestos desde junio de 2027",
-      "fuente": "El Deber",
-      "fecha": NaN,
-      "published_at": NaN,
-      "effective_at": "2026-10-15T14:12:54Z",
-      "age_hours": 23.92,
-      "tema": "Producción, inversión y régimen cambiario",
-      "tono_consolidado": "neutral",
-      "stress_score": 74,
-      "stress_nivel": "alto",
-      "url": "https://eldeber.com.bo/economia/exportadores-tendran-devolucion-digital-impuestos-junio-2027_1791994038"
     }
   ],
   "temporal_quality": {
-    "historical_documents": 1595,
-    "operational_documents": 79,
-    "excluded_documents": 1516,
+    "historical_documents": 1601,
+    "operational_documents": 61,
+    "excluded_documents": 1540,
     "recent_window_hours": 72,
     "date_quality": {
-      "inferred_collected": 777,
-      "published": 703,
+      "inferred_collected": 780,
+      "published": 706,
       "missing": 115
     },
     "exclusion_reasons": {
-      "outside_operational_window": 1401,
+      "outside_operational_window": 1425,
       "missing_date": 115,
-      "recent": 79
+      "recent": 61
     }
   },
   "operational_window": {
@@ -736,11 +736,11 @@
     "description": "Indicadores actuales calculados sobre noticias publicadas o recolectadas durante las últimas 72 horas."
   },
   "event_analysis": {
-    "documents": 79,
-    "events": 70,
-    "compression_ratio": 11.39,
+    "documents": 61,
+    "events": 55,
+    "compression_ratio": 9.84,
     "similarity_threshold": 0.48,
-    "multi_source_events": 4,
+    "multi_source_events": 3,
     "items": [
       {
         "event_id": "evt-1f8b626ee0b5",
@@ -751,7 +751,7 @@
         "effective_at": "2026-10-15T14:13:33+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "BCB",
         "representative_source": "Unitel",
@@ -775,22 +775,6 @@
         "representative_tone": "desfavorable"
       },
       {
-        "event_id": "evt-c4a74b522479",
-        "event_title": "IBCE sobre madera retenida: “Chile está quemando la evidencia de nuestra inocencia”",
-        "documents": 2,
-        "unique_sources": 2,
-        "sources": "[\"Los Tiempos\", \"Unitel\"]",
-        "effective_at": "2026-10-14T14:34:21+00:00",
-        "average_stress": 56.0,
-        "maximum_stress": 56.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "INE",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/ibce-sobre-madera-retenida-chile-esta-quemando-la-evidencia-de-nuestra-inocencia-JG24111910",
-        "representative_tone": "neutral"
-      },
-      {
         "event_id": "evt-9a77644b74b7",
         "event_title": "Gobierno modifica por decreto la fórmula para calcular las tarifas de electricidad con base en el dólar y otros factores",
         "documents": 2,
@@ -807,22 +791,6 @@
         "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-a946c5ea64bb",
-        "event_title": "FMI: la economía de Bolivia se contraerá en un 3% este año",
-        "documents": 2,
-        "unique_sources": 1,
-        "sources": "[\"Los Tiempos\"]",
-        "effective_at": "2026-10-14T12:30:50+00:00",
-        "average_stress": 66.5,
-        "maximum_stress": 81.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "inflación",
-        "dominant_entity": "FMI",
-        "representative_source": "Los Tiempos",
-        "representative_url": "https://www.lostiempos.com/actualidad/economia/20261013/fmi-economia-bolivia-se-contraera-3-este-ano",
-        "representative_tone": "desfavorable"
-      },
-      {
         "event_id": "evt-3747221362e4",
         "event_title": "Ministerio de Hidrocarburos dice que nueva fórmula amortiguará el impacto del dólar en las tarifas eléctricas",
         "documents": 2,
@@ -831,43 +799,11 @@
         "effective_at": "2026-10-16T14:01:26+00:00",
         "average_stress": 55.0,
         "maximum_stress": 55.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "inflación",
         "dominant_entity": "BCB",
         "representative_source": "El Deber",
         "representative_url": "https://eldeber.com.bo/economia/ministerio-hidrocarburos-dice-nueva-formula-amortiguara-impacto-dolar-tarifas-electricas_1792011481",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-d1ed56b8a604",
-        "event_title": "Zamora sobre tarifas interdepartamentales: “Sí habrá un incremento, pero vamos a cuidar el bolsillo de la gente”",
-        "documents": 2,
-        "unique_sources": 1,
-        "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-14T14:34:21+00:00",
-        "average_stress": 48.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/zamora-sobre-tarifas-interdepartamentales-si-habra-un-incremento-pero-vamos-a-cuidar-el-bolsillo-de-la-gente-HG24116643",
-        "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-639f2a4e06cf",
-        "event_title": "Diez empresas públicas en crisis podrían ser liquidadas por decreto",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-13T17:00:28+00:00",
-        "average_stress": 81.0,
-        "maximum_stress": 81.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "BCB",
-        "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/diez-empresas-publicas-crisis-podrian-ser-liquidadas-decreto_1791823018",
         "representative_tone": "neutral"
       },
       {
@@ -879,7 +815,7 @@
         "effective_at": "2026-10-14T14:34:05+00:00",
         "average_stress": 79.0,
         "maximum_stress": 79.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "exportaciones",
         "dominant_entity": "IBCE",
         "representative_source": "El Deber",
@@ -887,36 +823,36 @@
         "representative_tone": "desfavorable"
       },
       {
-        "event_id": "evt-907aeb8f61bc",
-        "event_title": "Bolivia tendrá el peor desempeño económico de Sudamérica, según el FMI",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-13T17:00:25+00:00",
-        "average_stress": 79.0,
-        "maximum_stress": 79.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
-        "dominant_indicator": "inflación",
-        "dominant_entity": "FMI",
-        "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/bolivia-tendra-peor-desempeno-economico-sudamerica-fmi_1791906679",
-        "representative_tone": "desfavorable"
-      },
-      {
-        "event_id": "evt-924419bed285",
+        "event_id": "evt-afc16ae3ef98",
         "event_title": "âTenemos que manifestarnosâ: COB rechaza decretos del Gobierno, pero no menciona marchas ni movilizaciones",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-16T14:01:40+00:00",
+        "effective_at": "2026-10-17T13:01:39+00:00",
         "average_stress": 75.0,
         "maximum_stress": 75.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "exportaciones",
         "dominant_entity": "",
         "representative_source": "Unitel",
         "representative_url": "https://unitel.bo/noticias/economia/tenemos-que-manifestarnos-cob-rechaza-decretos-del-gobierno-pero-no-menciona-marchas-ni-movilizaciones-JB24168166",
         "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-51fd9b97b5f7",
+        "event_title": "Santa Cruz registra tres años consecutivos de caída en la producción de hidrocarburos",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Economy\"]",
+        "effective_at": "2026-10-16T20:37:16+00:00",
+        "average_stress": 75.0,
+        "maximum_stress": 75.0,
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_indicator": "reservas internacionales",
+        "dominant_entity": "YPFB",
+        "representative_source": "Economy",
+        "representative_url": "https://www.economy.com.bo/articulo/economia/santa-cruz-registra-tres-anos-consecutivos-caida-produccion-hidrocarburos/20261016163716024487.html",
+        "representative_tone": "desfavorable"
       },
       {
         "event_id": "evt-bb8223bdfe8b",
@@ -927,27 +863,11 @@
         "effective_at": "2026-10-15T14:12:54+00:00",
         "average_stress": 74.0,
         "maximum_stress": 74.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "SIN",
         "representative_source": "El Deber",
         "representative_url": "https://eldeber.com.bo/economia/exportadores-tendran-devolucion-digital-impuestos-junio-2027_1791994038",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-ebb28b0f598c",
-        "event_title": "CNC plantea diálogo tripartito para definir aumento salarial de 2027",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Los Tiempos\"]",
-        "effective_at": "2026-10-14T01:05:22+00:00",
-        "average_stress": 73.0,
-        "maximum_stress": 73.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "inflación",
-        "dominant_entity": "INE",
-        "representative_source": "Los Tiempos",
-        "representative_url": "https://www.lostiempos.com/actualidad/economia/20261013/cnc-plantea-dialogo-tripartito-definir-aumento-salarial-2027",
         "representative_tone": "neutral"
       },
       {
@@ -959,7 +879,7 @@
         "effective_at": "2026-10-16T14:01:26+00:00",
         "average_stress": 71.0,
         "maximum_stress": 71.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "",
         "representative_source": "El Deber",
@@ -975,7 +895,7 @@
         "effective_at": "2026-10-15T14:12:54+00:00",
         "average_stress": 68.0,
         "maximum_stress": 68.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "inflación",
         "dominant_entity": "",
         "representative_source": "El Deber",
@@ -1007,12 +927,28 @@
         "effective_at": "2026-10-16T14:01:26+00:00",
         "average_stress": 63.0,
         "maximum_stress": 63.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "El Deber",
         "representative_url": "https://eldeber.com.bo/economia/ypfb-cisterneros-logran-acuerdo-ajustar-fletes-garantiza-abastecimiento-combustibles_1792093125",
         "representative_tone": "favorable"
+      },
+      {
+        "event_id": "evt-086456ef26fe",
+        "event_title": "Bolivia acumula un déficit comercial de casi $us 8.000 millones con Chile desde el año 2000",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"El Deber\"]",
+        "effective_at": "2026-10-17T13:01:28+00:00",
+        "average_stress": 62.0,
+        "maximum_stress": 62.0,
+        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_indicator": "tipo de cambio",
+        "dominant_entity": "INE",
+        "representative_source": "El Deber",
+        "representative_url": "https://eldeber.com.bo/economia/bolivia-acumula-deficit-comercial-casi-us-8-000-millones-chile-ano-2000_1792205417",
+        "representative_tone": "desfavorable"
       },
       {
         "event_id": "evt-f10953285be2",
@@ -1031,38 +967,6 @@
         "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-8d5fce478c91",
-        "event_title": "Gobierno y una federación de choferes de La Paz acuerdan levantar el bloqueo de placas para el carguío de combustible",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-13T17:00:43+00:00",
-        "average_stress": 62.0,
-        "maximum_stress": 62.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "Aduana Nacional",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/gobierno-y-una-federacion-de-choferes-de-la-paz-acuerdan-levantar-el-bloqueo-de-placas-para-el-carguio-de-combustible-KO24085807",
-        "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-82c2cea69ed2",
-        "event_title": "YPFB refuerza el control del suministro de combustibles con 1.200 cámaras de seguridad",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-13T17:00:43+00:00",
-        "average_stress": 61.0,
-        "maximum_stress": 61.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "YPFB",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/ypfb-refuerza-el-control-del-suministro-de-combustibles-con-1200-camaras-de-seguridad-JB24078450",
-        "representative_tone": "neutral"
-      },
-      {
         "event_id": "evt-6fbe8b0c089b",
         "event_title": "ASFI: DS 5630 NO NECESITA REGLAMENTACIÓN Y DEBE SER CUMPLIDO DE INMEDIATO POR LAS ENTIDADES DE INTERMEDIACIÓN FINANCIERA | ASFI",
         "documents": 1,
@@ -1071,7 +975,7 @@
         "effective_at": "2026-10-15T14:11:31+00:00",
         "average_stress": 60.0,
         "maximum_stress": 60.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
@@ -1087,7 +991,7 @@
         "effective_at": "2026-10-16T14:01:26+00:00",
         "average_stress": 58.0,
         "maximum_stress": 58.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "déficit fiscal",
         "dominant_entity": "INE",
         "representative_source": "El Deber",
@@ -1111,6 +1015,22 @@
         "representative_tone": "neutral"
       },
       {
+        "event_id": "evt-55286ff44767",
+        "event_title": "IBCE sobre madera retenida: “Chile está quemando la evidencia de nuestra inocencia”",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Unitel\"]",
+        "effective_at": "2026-10-14T14:34:21+00:00",
+        "average_stress": 56.0,
+        "maximum_stress": 56.0,
+        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_indicator": "tipo de cambio",
+        "dominant_entity": "INE",
+        "representative_source": "Unitel",
+        "representative_url": "https://unitel.bo/noticias/economia/ibce-sobre-madera-retenida-chile-esta-quemando-la-evidencia-de-nuestra-inocencia-JG24111910",
+        "representative_tone": "neutral"
+      },
+      {
         "event_id": "evt-3add61454d28",
         "event_title": "Decreto 5750 busca estabilizar la tarifa eléctrica frente a la volatilidad del dólar, dice exministro Ríos",
         "documents": 1,
@@ -1127,52 +1047,20 @@
         "representative_tone": "favorable"
       },
       {
-        "event_id": "evt-6317d71eef81",
-        "event_title": "El dólar oficial se cotiza este lunes en Bs 11,73 y acumula caída de 27 centavos en una semana",
+        "event_id": "evt-dc804d5c51bd",
+        "event_title": "EL DECRETO SUPREMO N° 5630 ESTÁ VIGENTE: ASFI SUPERVISA QUE LAS ENTIDADES FINANCIERAS CUMPLAN CON SU APLICACIÓN | ASFI",
         "documents": 1,
         "unique_sources": 1,
-        "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-13T17:00:43+00:00",
-        "average_stress": 55.0,
-        "maximum_stress": 55.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "BCB",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/el-dolar-oficial-se-cotiza-este-lunes-en-bs-1173-y-acumula-caida-de-27-centavos-en-una-semana-DB24077051",
-        "representative_tone": "desfavorable"
-      },
-      {
-        "event_id": "evt-d974c38260a2",
-        "event_title": "Incremento salarial: Gobierno evalúa el escenario y gremiales dicen que 85 de cada 100 trabajadores no se benefician",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-13T17:00:42+00:00",
-        "average_stress": 55.0,
-        "maximum_stress": 55.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/incremento-salarial-gobierno-evalua-el-escenario-y-gremiales-dicen-que-85-de-cada-100-trabajadores-no-se-benefician-CP24092312",
+        "sources": "[\"ASFI\"]",
+        "effective_at": "2026-10-17T13:00:07+00:00",
+        "average_stress": 54.0,
+        "maximum_stress": 54.0,
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_indicator": "sistema financiero",
+        "dominant_entity": "ASFI",
+        "representative_source": "ASFI",
+        "representative_url": "https://www.asfi.gob.bo/node/1393",
         "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-7b2354d27f1b",
-        "event_title": "Cámara Forestal reclama gestiones del Gobierno para evitar más quemas de madera",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-13T17:00:26+00:00",
-        "average_stress": 55.0,
-        "maximum_stress": 55.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
-        "dominant_indicator": "exportaciones",
-        "dominant_entity": "",
-        "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/camara-forestal-reclama-gestiones-gobierno-evitar-quemas-madera_1791846289",
-        "representative_tone": "desfavorable"
       },
       {
         "event_id": "evt-13aa48ae99ab",
@@ -1183,7 +1071,7 @@
         "effective_at": "2026-10-16T14:01:26+00:00",
         "average_stress": 54.0,
         "maximum_stress": 54.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Producción, inversión y régimen cambiario",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "El Deber",
@@ -1191,35 +1079,51 @@
         "representative_tone": "desfavorable"
       },
       {
-        "event_id": "evt-a757060dfef9",
-        "event_title": "En la previa de movilización evista, agropecuarios piden al Gobierno hacer cumplir el Estado de excepción",
+        "event_id": "evt-b83817b7cfe6",
+        "event_title": "Paz y Kast sellan acuerdo para el impulso del ducto OSSA II y el corredor binacional de fibra óptica",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-13T17:00:42+00:00",
-        "average_stress": 54.0,
-        "maximum_stress": 54.0,
+        "effective_at": "2026-10-17T13:01:39+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
         "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "",
-        "dominant_entity": "",
+        "dominant_indicator": "combustibles",
+        "dominant_entity": "YPFB",
         "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/en-la-previa-de-movilizacion-evista-agropecuarios-piden-al-gobierno-hacer-cumplir-el-estado-de-excepcion-HO24087303",
+        "representative_url": "https://unitel.bo/noticias/economia/paz-y-kast-sellan-acuerdo-para-el-impulso-del-ducto-ossa-ii-y-el-corredor-binacional-de-fibra-optica-BP24183839",
+        "representative_tone": "favorable"
+      },
+      {
+        "event_id": "evt-4c60ac835dcc",
+        "event_title": "CRE habilita el pago de facturas de octubre tras la aprobación de la estructura tarifaria",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"El Deber\"]",
+        "effective_at": "2026-10-17T13:01:29+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_indicator": "tipo de cambio",
+        "dominant_entity": "",
+        "representative_source": "El Deber",
+        "representative_url": "https://eldeber.com.bo/economia/cre-habilita-pago-facturas-octubre-aprobacion-estructura-tarifaria_1792075519",
         "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-57d14128118e",
-        "event_title": "EL DECRETO SUPREMO N° 5630 ESTÁ VIGENTE: ASFI SUPERVISA QUE LAS ENTIDADES FINANCIERAS CUMPLAN CON SU APLICACIÓN | ASFI",
+        "event_id": "evt-ce354fabf874",
+        "event_title": "Cajeros automáticos para personas con discapacidad | ASFI",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"ASFI\"]",
-        "effective_at": "2026-10-13T16:59:00+00:00",
-        "average_stress": 54.0,
-        "maximum_stress": 54.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "effective_at": "2026-10-17T13:00:03+00:00",
+        "average_stress": 50.0,
+        "maximum_stress": 50.0,
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
-        "representative_url": "https://www.asfi.gob.bo/node/1393",
+        "representative_url": "https://www.asfi.gob.bo/la/cajeros-automaticos-para-personas-discapacidad",
         "representative_tone": "neutral"
       },
       {
@@ -1247,27 +1151,11 @@
         "effective_at": "2026-10-16T14:01:26+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Producción, inversión y régimen cambiario",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "BCB",
         "representative_source": "El Deber",
         "representative_url": "https://eldeber.com.bo/economia/bcb-activa-nueva-etapa-retiros-us-8-001-us-10-000_1792091763",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-c4c6c55a3be3",
-        "event_title": "CRE habilita el pago de facturas de octubre tras la aprobación de la estructura tarifaria",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-16T14:01:26+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "",
-        "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/cre-habilita-pago-facturas-octubre-aprobacion-estructura-tarifaria_1792075519",
         "representative_tone": "neutral"
       },
       {
@@ -1279,7 +1167,7 @@
         "effective_at": "2026-10-16T14:00:03+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "BCB",
         "representative_source": "ASFI",
@@ -1311,27 +1199,11 @@
         "effective_at": "2026-10-16T14:00:00+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
         "representative_url": "https://www.asfi.gob.bo/la/derechos-del-consumidor-financiero",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-36df643e332c",
-        "event_title": "Cajeros automáticos para personas con discapacidad | ASFI",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"ASFI\"]",
-        "effective_at": "2026-10-16T14:00:00+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
-        "dominant_indicator": "sistema financiero",
-        "dominant_entity": "ASFI",
-        "representative_source": "ASFI",
-        "representative_url": "https://www.asfi.gob.bo/la/cajeros-automaticos-para-personas-discapacidad",
         "representative_tone": "neutral"
       },
       {
@@ -1343,7 +1215,7 @@
         "effective_at": "2026-10-15T14:13:33+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "combustibles",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -1391,7 +1263,7 @@
         "effective_at": "2026-10-15T14:13:32+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "BCB",
         "representative_source": "Unitel",
@@ -1407,7 +1279,7 @@
         "effective_at": "2026-10-15T14:13:32+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -1423,7 +1295,7 @@
         "effective_at": "2026-10-15T14:13:32+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "BCB",
         "representative_source": "Unitel",
@@ -1439,7 +1311,7 @@
         "effective_at": "2026-10-15T14:12:54+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "combustibles",
         "dominant_entity": "YPFB",
         "representative_source": "El Deber",
@@ -1471,7 +1343,7 @@
         "effective_at": "2026-10-15T01:59:40+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "BCB",
         "representative_source": "Los Tiempos",
@@ -1487,7 +1359,7 @@
         "effective_at": "2026-10-14T23:57:05+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "",
         "representative_source": "Economy",
@@ -1503,7 +1375,7 @@
         "effective_at": "2026-10-14T14:34:21+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Producción, inversión y régimen cambiario",
+        "dominant_topic": "Comercio exterior, desarrollo y empresas",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "FMI",
         "representative_source": "Unitel",
@@ -1519,7 +1391,7 @@
         "effective_at": "2026-10-14T14:34:21+00:00",
         "average_stress": 50.0,
         "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "exportaciones",
         "dominant_entity": "",
         "representative_source": "Unitel",
@@ -1527,132 +1399,52 @@
         "representative_tone": "favorable"
       },
       {
-        "event_id": "evt-bcc14c9abaa2",
-        "event_title": "BCP destaca por su fortaleza en inversión e integridad y alcanza la máxima calificación en el índice de Milenio",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Economy\"]",
-        "effective_at": "2026-10-13T21:53:59+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
-        "dominant_indicator": "empleo",
-        "dominant_entity": "",
-        "representative_source": "Economy",
-        "representative_url": "https://www.economy.com.bo/articulo/banca-finanzas/bcb-destaca-fortaleza-inversion-integridad-alcanza-maxima-calificacion-indice-milenio/20261013175359024459.html",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-8c005bc464cf",
-        "event_title": "¿Subirán las tarifas eléctricas en Bolivia? Esto dice el Ministro de Hidrocarburos",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-13T17:00:43+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "reservas internacionales",
-        "dominant_entity": "",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/subiran-las-tarifas-electricas-en-bolivia-esto-dice-el-ministro-de-hidrocarburos-HO24086320",
-        "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-aaee86f1d51b",
-        "event_title": "Gobernaciones, municipios y autonomías indígenas apoyarán el despliegue de las brigadas del Censo Agropecuario",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-13T17:00:43+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "INE",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/gobernaciones-municipios-y-autonomias-indigenas-apoyaran-el-despliegue-de-las-brigadas-del-censo-agropecuario-FO24082520",
-        "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-9a8f87ad4f87",
-        "event_title": "Artesanos de La Paz reportan alza en el flete de trajes folclóricos por el incremento del dólar y el diésel",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-13T17:00:42+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Precios, alimentos y servicios básicos",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "Aduana Nacional",
-        "representative_source": "Unitel",
-        "representative_url": "https://unitel.bo/noticias/economia/artesanos-de-la-paz-reportan-alza-en-el-flete-de-trajes-folcloricos-por-el-incremento-del-dolar-y-el-diesel-NO24089352",
-        "representative_tone": "favorable"
-      },
-      {
-        "event_id": "evt-31f1e1a69f4f",
-        "event_title": "Durante la gestión de Arce, el BCB monetizó casi 57 toneladas de oro por $us 4.690 millones",
+        "event_id": "evt-fc147a9116a5",
+        "event_title": "Diego Barboza: “La UIF estaba siendo utilizada para corromper y también para extorsionar”",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-13T17:00:28+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
-        "dominant_indicator": "tipo de cambio",
-        "dominant_entity": "BCB",
-        "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/gestion-arce-bcb-monetizo-casi-57-toneladas-oro-us-4-690-millones_1791824251",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-0705ed18da86",
-        "event_title": "Gobierno no prevé alza de tarifas eléctricas, pero evita garantizarlo a futuro",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-13T17:00:27+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "combustibles",
-        "dominant_entity": "",
-        "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/gobierno-no-preve-alza-tarifas-electricas-evita-garantizarlo-futuro_1791826523",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-604eca398c43",
-        "event_title": "Santa Cruz suma a sus municipios al Censo Agropecuario 2026",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-13T17:00:25+00:00",
-        "average_stress": 50.0,
-        "maximum_stress": 50.0,
+        "effective_at": "2026-10-17T13:01:28+00:00",
+        "average_stress": 49.0,
+        "maximum_stress": 49.0,
         "dominant_topic": "Sector productivo, automotor y actividad empresarial",
         "dominant_indicator": "",
-        "dominant_entity": "INE",
+        "dominant_entity": "MEFP",
         "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/santa-cruz-suma-municipios-censo-agropecuario-2026_1791904673",
-        "representative_tone": "favorable"
+        "representative_url": "https://eldeber.com.bo/economia/diego-barboza-uif-estaba-siendo-utilizada-corromper-extorsionar_1792195904",
+        "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-27633392fd58",
+        "event_id": "evt-f65d84968e39",
         "event_title": "ASFI Y BID FORTALECEN LA PROTECCIÓN DEL CONSUMIDOR CON EXPERIENCIA Y CONOCIMIENTO INTERNACIONAL | ASFI",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"ASFI\"]",
-        "effective_at": "2026-10-16T14:00:03+00:00",
+        "effective_at": "2026-10-17T13:00:06+00:00",
         "average_stress": 46.0,
         "maximum_stress": 46.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
         "representative_url": "https://www.asfi.gob.bo/node/1460",
         "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-bd0114e50329",
+        "event_title": "Zamora sobre tarifas interdepartamentales: “Sí habrá un incremento, pero vamos a cuidar el bolsillo de la gente”",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Unitel\"]",
+        "effective_at": "2026-10-14T14:34:21+00:00",
+        "average_stress": 46.0,
+        "maximum_stress": 46.0,
+        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+        "dominant_indicator": "combustibles",
+        "dominant_entity": "",
+        "representative_source": "Unitel",
+        "representative_url": "https://unitel.bo/noticias/economia/zamora-sobre-tarifas-interdepartamentales-si-habra-un-incremento-pero-vamos-a-cuidar-el-bolsillo-de-la-gente-HG24116643",
+        "representative_tone": "favorable"
       },
       {
         "event_id": "evt-4a9dc50f2217",
@@ -1671,20 +1463,20 @@
         "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-13f649f92e4b",
-        "event_title": "Gobierno impulsa reforma eléctrica y descarta alza de tarifas, por ahora",
+        "event_id": "evt-b2594a8b5068",
+        "event_title": "Bolivia y Chile firman cuatro acuerdos para impulsar comercio, minería, fibra óptica y energía",
         "documents": 1,
         "unique_sources": 1,
-        "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-13T17:00:26+00:00",
-        "average_stress": 46.0,
-        "maximum_stress": 46.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "combustibles",
+        "sources": "[\"La Razón\"]",
+        "effective_at": "2026-10-16T21:52:41+00:00",
+        "average_stress": 45.0,
+        "maximum_stress": 45.0,
+        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_indicator": "",
         "dominant_entity": "",
-        "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/gobierno-impulsa-reforma-electrica-descarta-alza-tarifas-ahora_1791888235",
-        "representative_tone": "neutral"
+        "representative_source": "La Razón",
+        "representative_url": "https://larazon.bo/economia-y-empresa/2026/10/16/bolivia-y-chile-firman-cuatro-acuerdos-para-impulsar-comercio-mineria-fibra-optica-y-energia",
+        "representative_tone": "favorable"
       },
       {
         "event_id": "evt-0c640f43bdb9",
@@ -1695,7 +1487,7 @@
         "effective_at": "2026-10-14T14:34:05+00:00",
         "average_stress": 45.0,
         "maximum_stress": 45.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "",
         "representative_source": "El Deber",
@@ -1703,15 +1495,15 @@
         "representative_tone": "neutral"
       },
       {
-        "event_id": "evt-dde77af753ca",
+        "event_id": "evt-40b797cbbb8f",
         "event_title": "Visita de Kast a Bolivia: Sector industrial ve oportunidad para abrir mercados y atraer inversiones",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"Unitel\"]",
-        "effective_at": "2026-10-16T14:01:40+00:00",
+        "effective_at": "2026-10-17T13:01:39+00:00",
         "average_stress": 42.0,
         "maximum_stress": 42.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "exportaciones",
         "dominant_entity": "Aduana Nacional",
         "representative_source": "Unitel",
@@ -1727,28 +1519,12 @@
         "effective_at": "2026-10-16T14:00:02+00:00",
         "average_stress": 42.0,
         "maximum_stress": 42.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "sistema financiero",
         "dominant_entity": "ASFI",
         "representative_source": "ASFI",
         "representative_url": "https://www.asfi.gob.bo/node/1470",
         "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-efff6bd0bca2",
-        "event_title": "Mineros se oponen al cierre de empresas estatales que anunció el Gobierno",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"La Razón\"]",
-        "effective_at": "2026-10-13T19:25:03+00:00",
-        "average_stress": 42.0,
-        "maximum_stress": 42.0,
-        "dominant_topic": "Sector productivo, automotor y actividad empresarial",
-        "dominant_indicator": "déficit fiscal",
-        "dominant_entity": "",
-        "representative_source": "La Razón",
-        "representative_url": "https://larazon.bo/economia-y-empresa/2026/10/13/mineros-se-oponen-al-cierre-de-empresas-estatales-que-anuncio-el-gobierno",
-        "representative_tone": "favorable"
       },
       {
         "event_id": "evt-644e28e71f59",
@@ -1759,7 +1535,7 @@
         "effective_at": "2026-10-16T14:01:26+00:00",
         "average_stress": 41.0,
         "maximum_stress": 41.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "",
         "dominant_entity": "",
         "representative_source": "El Deber",
@@ -1775,7 +1551,7 @@
         "effective_at": "2026-10-14T20:08:29+00:00",
         "average_stress": 41.0,
         "maximum_stress": 41.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "empleo",
         "dominant_entity": "",
         "representative_source": "Economy",
@@ -1783,36 +1559,36 @@
         "representative_tone": "favorable"
       },
       {
-        "event_id": "evt-12e41332978d",
-        "event_title": "Carlos Kempff Bruno: liderazgo, resiliencia y decisiones que marcan una trayectoria empresarial",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"Economy\"]",
-        "effective_at": "2026-10-13T20:44:37+00:00",
-        "average_stress": 41.0,
-        "maximum_stress": 41.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
-        "dominant_indicator": "litio",
-        "dominant_entity": "",
-        "representative_source": "Economy",
-        "representative_url": "https://www.economy.com.bo/articulo/gerencia/carlos-kempff-bruno-liderazgo-resiliencia-decisiones-que-marcan-trayectoria-empresarial/20261013164437024457.html",
-        "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-a17a8ec08a06",
+        "event_id": "evt-fc29fd56f2d5",
         "event_title": "Bolivia logra $us 1,5 millones para fortalecer el agro",
         "documents": 1,
         "unique_sources": 1,
         "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-16T14:01:26+00:00",
+        "effective_at": "2026-10-17T13:01:28+00:00",
         "average_stress": 40.0,
         "maximum_stress": 40.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "",
         "dominant_entity": "",
         "representative_source": "El Deber",
         "representative_url": "https://eldeber.com.bo/economia/bolivia-logra-us-1-5-millones-fortalecer-agro_1792147600",
         "representative_tone": "neutral"
+      },
+      {
+        "event_id": "evt-f4c056bde623",
+        "event_title": "Agroproductores piden más tecnología y mejores condiciones para competir",
+        "documents": 1,
+        "unique_sources": 1,
+        "sources": "[\"Economy\"]",
+        "effective_at": "2026-10-17T01:40:22+00:00",
+        "average_stress": 38.0,
+        "maximum_stress": 38.0,
+        "dominant_topic": "Precios, alimentos y servicios básicos",
+        "dominant_indicator": "sistema financiero",
+        "dominant_entity": "YPFB",
+        "representative_source": "Economy",
+        "representative_url": "https://www.economy.com.bo/articulo/business/agroproductores-piden-mas-tecnologia-mejores-condiciones-competir/20261016214022024500.html",
+        "representative_tone": "favorable"
       },
       {
         "event_id": "evt-2a42503dbb3d",
@@ -1823,7 +1599,7 @@
         "effective_at": "2026-10-14T14:34:21+00:00",
         "average_stress": 37.0,
         "maximum_stress": 37.0,
-        "dominant_topic": "Comercio exterior, desarrollo y empresas",
+        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
         "dominant_indicator": "producto interno bruto",
         "dominant_entity": "FMI",
         "representative_source": "Unitel",
@@ -1839,28 +1615,12 @@
         "effective_at": "2026-10-14T14:34:05+00:00",
         "average_stress": 34.0,
         "maximum_stress": 34.0,
-        "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+        "dominant_topic": "Precios, alimentos y servicios básicos",
         "dominant_indicator": "tipo de cambio",
         "dominant_entity": "BCB",
         "representative_source": "El Deber",
         "representative_url": "https://eldeber.com.bo/economia/cainco-propone-bajar-iva-iue-10-grandes-inversiones_1791923375",
         "representative_tone": "neutral"
-      },
-      {
-        "event_id": "evt-0fea3725a53e",
-        "event_title": "Guyana lidera el crecimiento regional; Bolivia ocupa el último puesto",
-        "documents": 1,
-        "unique_sources": 1,
-        "sources": "[\"El Deber\"]",
-        "effective_at": "2026-10-13T17:00:27+00:00",
-        "average_stress": 28.0,
-        "maximum_stress": 28.0,
-        "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "dominant_indicator": "deuda pública",
-        "dominant_entity": "Banco Mundial",
-        "representative_source": "El Deber",
-        "representative_url": "https://eldeber.com.bo/economia/guyana-lidera-crecimiento-regional-bolivia-ocupa-ultimo-puesto_1791838208",
-        "representative_tone": "favorable"
       }
     ]
   },
@@ -1874,7 +1634,7 @@
       "effective_at": "2026-10-15T14:13:33+00:00",
       "average_stress": 50.0,
       "maximum_stress": 50.0,
-      "dominant_topic": "Producción, inversión y régimen cambiario",
+      "dominant_topic": "Comercio exterior, desarrollo y empresas",
       "dominant_indicator": "tipo de cambio",
       "dominant_entity": "BCB",
       "representative_source": "Unitel",
@@ -1898,22 +1658,6 @@
       "representative_tone": "desfavorable"
     },
     {
-      "event_id": "evt-c4a74b522479",
-      "event_title": "IBCE sobre madera retenida: “Chile está quemando la evidencia de nuestra inocencia”",
-      "documents": 2,
-      "unique_sources": 2,
-      "sources": "[\"Los Tiempos\", \"Unitel\"]",
-      "effective_at": "2026-10-14T14:34:21+00:00",
-      "average_stress": 56.0,
-      "maximum_stress": 56.0,
-      "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
-      "dominant_indicator": "tipo de cambio",
-      "dominant_entity": "INE",
-      "representative_source": "Unitel",
-      "representative_url": "https://unitel.bo/noticias/economia/ibce-sobre-madera-retenida-chile-esta-quemando-la-evidencia-de-nuestra-inocencia-JG24111910",
-      "representative_tone": "neutral"
-    },
-    {
       "event_id": "evt-9a77644b74b7",
       "event_title": "Gobierno modifica por decreto la fórmula para calcular las tarifas de electricidad con base en el dólar y otros factores",
       "documents": 2,
@@ -1930,22 +1674,6 @@
       "representative_tone": "neutral"
     },
     {
-      "event_id": "evt-a946c5ea64bb",
-      "event_title": "FMI: la economía de Bolivia se contraerá en un 3% este año",
-      "documents": 2,
-      "unique_sources": 1,
-      "sources": "[\"Los Tiempos\"]",
-      "effective_at": "2026-10-14T12:30:50+00:00",
-      "average_stress": 66.5,
-      "maximum_stress": 81.0,
-      "dominant_topic": "Tipo de cambio, divisas y abastecimiento de combustibles",
-      "dominant_indicator": "inflación",
-      "dominant_entity": "FMI",
-      "representative_source": "Los Tiempos",
-      "representative_url": "https://www.lostiempos.com/actualidad/economia/20261013/fmi-economia-bolivia-se-contraera-3-este-ano",
-      "representative_tone": "desfavorable"
-    },
-    {
       "event_id": "evt-3747221362e4",
       "event_title": "Ministerio de Hidrocarburos dice que nueva fórmula amortiguará el impacto del dólar en las tarifas eléctricas",
       "documents": 2,
@@ -1954,43 +1682,11 @@
       "effective_at": "2026-10-16T14:01:26+00:00",
       "average_stress": 55.0,
       "maximum_stress": 55.0,
-      "dominant_topic": "Producción, inversión y régimen cambiario",
+      "dominant_topic": "Comercio exterior, desarrollo y empresas",
       "dominant_indicator": "inflación",
       "dominant_entity": "BCB",
       "representative_source": "El Deber",
       "representative_url": "https://eldeber.com.bo/economia/ministerio-hidrocarburos-dice-nueva-formula-amortiguara-impacto-dolar-tarifas-electricas_1792011481",
-      "representative_tone": "neutral"
-    },
-    {
-      "event_id": "evt-d1ed56b8a604",
-      "event_title": "Zamora sobre tarifas interdepartamentales: “Sí habrá un incremento, pero vamos a cuidar el bolsillo de la gente”",
-      "documents": 2,
-      "unique_sources": 1,
-      "sources": "[\"Unitel\"]",
-      "effective_at": "2026-10-14T14:34:21+00:00",
-      "average_stress": 48.0,
-      "maximum_stress": 50.0,
-      "dominant_topic": "Precios, alimentos y servicios básicos",
-      "dominant_indicator": "combustibles",
-      "dominant_entity": "",
-      "representative_source": "Unitel",
-      "representative_url": "https://unitel.bo/noticias/economia/zamora-sobre-tarifas-interdepartamentales-si-habra-un-incremento-pero-vamos-a-cuidar-el-bolsillo-de-la-gente-HG24116643",
-      "representative_tone": "favorable"
-    },
-    {
-      "event_id": "evt-639f2a4e06cf",
-      "event_title": "Diez empresas públicas en crisis podrían ser liquidadas por decreto",
-      "documents": 1,
-      "unique_sources": 1,
-      "sources": "[\"El Deber\"]",
-      "effective_at": "2026-10-13T17:00:28+00:00",
-      "average_stress": 81.0,
-      "maximum_stress": 81.0,
-      "dominant_topic": "Sector productivo, automotor y actividad empresarial",
-      "dominant_indicator": "tipo de cambio",
-      "dominant_entity": "BCB",
-      "representative_source": "El Deber",
-      "representative_url": "https://eldeber.com.bo/economia/diez-empresas-publicas-crisis-podrian-ser-liquidadas-decreto_1791823018",
       "representative_tone": "neutral"
     },
     {
@@ -2002,7 +1698,7 @@
       "effective_at": "2026-10-14T14:34:05+00:00",
       "average_stress": 79.0,
       "maximum_stress": 79.0,
-      "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+      "dominant_topic": "Precios, alimentos y servicios básicos",
       "dominant_indicator": "exportaciones",
       "dominant_entity": "IBCE",
       "representative_source": "El Deber",
@@ -2010,30 +1706,94 @@
       "representative_tone": "desfavorable"
     },
     {
-      "event_id": "evt-907aeb8f61bc",
-      "event_title": "Bolivia tendrá el peor desempeño económico de Sudamérica, según el FMI",
+      "event_id": "evt-afc16ae3ef98",
+      "event_title": "âTenemos que manifestarnosâ: COB rechaza decretos del Gobierno, pero no menciona marchas ni movilizaciones",
+      "documents": 1,
+      "unique_sources": 1,
+      "sources": "[\"Unitel\"]",
+      "effective_at": "2026-10-17T13:01:39+00:00",
+      "average_stress": 75.0,
+      "maximum_stress": 75.0,
+      "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+      "dominant_indicator": "exportaciones",
+      "dominant_entity": "",
+      "representative_source": "Unitel",
+      "representative_url": "https://unitel.bo/noticias/economia/tenemos-que-manifestarnos-cob-rechaza-decretos-del-gobierno-pero-no-menciona-marchas-ni-movilizaciones-JB24168166",
+      "representative_tone": "neutral"
+    },
+    {
+      "event_id": "evt-51fd9b97b5f7",
+      "event_title": "Santa Cruz registra tres años consecutivos de caída en la producción de hidrocarburos",
+      "documents": 1,
+      "unique_sources": 1,
+      "sources": "[\"Economy\"]",
+      "effective_at": "2026-10-16T20:37:16+00:00",
+      "average_stress": 75.0,
+      "maximum_stress": 75.0,
+      "dominant_topic": "Política fiscal, gestión pública y sistema financiero",
+      "dominant_indicator": "reservas internacionales",
+      "dominant_entity": "YPFB",
+      "representative_source": "Economy",
+      "representative_url": "https://www.economy.com.bo/articulo/economia/santa-cruz-registra-tres-anos-consecutivos-caida-produccion-hidrocarburos/20261016163716024487.html",
+      "representative_tone": "desfavorable"
+    },
+    {
+      "event_id": "evt-bb8223bdfe8b",
+      "event_title": "Exportadores tendrán devolución digital de impuestos desde junio de 2027",
       "documents": 1,
       "unique_sources": 1,
       "sources": "[\"El Deber\"]",
-      "effective_at": "2026-10-13T17:00:25+00:00",
-      "average_stress": 79.0,
-      "maximum_stress": 79.0,
+      "effective_at": "2026-10-15T14:12:54+00:00",
+      "average_stress": 74.0,
+      "maximum_stress": 74.0,
       "dominant_topic": "Comercio exterior, desarrollo y empresas",
-      "dominant_indicator": "inflación",
-      "dominant_entity": "FMI",
+      "dominant_indicator": "sistema financiero",
+      "dominant_entity": "SIN",
       "representative_source": "El Deber",
-      "representative_url": "https://eldeber.com.bo/economia/bolivia-tendra-peor-desempeno-economico-sudamerica-fmi_1791906679",
-      "representative_tone": "desfavorable"
+      "representative_url": "https://eldeber.com.bo/economia/exportadores-tendran-devolucion-digital-impuestos-junio-2027_1791994038",
+      "representative_tone": "neutral"
+    },
+    {
+      "event_id": "evt-d5bf7ba96c81",
+      "event_title": "Exportadores piden reunión con Paz por madera quemada en Chile",
+      "documents": 1,
+      "unique_sources": 1,
+      "sources": "[\"El Deber\"]",
+      "effective_at": "2026-10-16T14:01:26+00:00",
+      "average_stress": 71.0,
+      "maximum_stress": 71.0,
+      "dominant_topic": "Sector productivo, automotor y actividad empresarial",
+      "dominant_indicator": "tipo de cambio",
+      "dominant_entity": "",
+      "representative_source": "El Deber",
+      "representative_url": "https://eldeber.com.bo/economia/exportadores-piden-reunion-paz-madera-quemada-chile_1792014712",
+      "representative_tone": "neutral"
+    },
+    {
+      "event_id": "evt-e03dfb2da58b",
+      "event_title": "Cámara inmobiliaria reporta un alza de casi 60% en costos de construcción",
+      "documents": 1,
+      "unique_sources": 1,
+      "sources": "[\"El Deber\"]",
+      "effective_at": "2026-10-15T14:12:54+00:00",
+      "average_stress": 68.0,
+      "maximum_stress": 68.0,
+      "dominant_topic": "Precios, alimentos y servicios básicos",
+      "dominant_indicator": "inflación",
+      "dominant_entity": "",
+      "representative_source": "El Deber",
+      "representative_url": "https://eldeber.com.bo/economia/camara-inmobiliaria-reporta-alza-casi-60-costos-construccion_1791997300",
+      "representative_tone": "favorable"
     }
   ],
   "optimism_index": {
-    "score": 53.64,
+    "score": 54.96,
     "level": "moderado",
     "interpretation": "Existen señales favorables, aunque conviven con presión e incertidumbre económica.",
     "components": {
-      "lexical_component": 69.06,
-      "favorable_percentage": 21.52,
-      "low_stress_percentage": 77.22
+      "lexical_component": 71.88,
+      "favorable_percentage": 21.31,
+      "low_stress_percentage": 77.05
     },
     "weights": {
       "lexical_component": 0.5,
@@ -2044,344 +1804,333 @@
   },
   "optimism_signals": {
     "exportaciones": 53,
-    "inversión": 38,
-    "incremento": 35,
-    "crecimiento": 35,
-    "producción": 25,
-    "desarrollo": 20,
-    "capital": 16,
-    "empleo": 13,
-    "financiamiento": 10,
-    "abastecimiento": 8,
-    "cooperación": 8,
-    "estabilidad": 8,
+    "producción": 37,
+    "incremento": 26,
+    "inversión": 26,
+    "desarrollo": 17,
+    "crecimiento": 15,
+    "capital": 12,
+    "cooperación": 10,
+    "empleo": 7,
+    "abastecimiento": 6,
     "recuperación": 6,
+    "competitividad": 5,
     "mejora": 5,
-    "competitividad": 5
+    "financiamiento": 5,
+    "estabilidad": 5
   },
   "relevance_ranking": {
     "window_hours": 72,
     "topics": [
       {
-        "name": "Producción, inversión y régimen cambiario",
-        "score": 67.34,
-        "current_count": 26,
+        "name": "Comercio exterior, desarrollo y empresas",
+        "score": 63.01,
+        "current_count": 18,
         "previous_count": 5,
         "unique_sources": 5,
-        "average_age_hours": 27.76,
-        "average_stress": 53.19,
+        "average_age_hours": 39.66,
+        "average_stress": 52.67,
         "momentum": "emergente",
-        "momentum_ratio": 4.5
-      },
-      {
-        "name": "Política fiscal, gestión pública y sistema financiero",
-        "score": 61.73,
-        "current_count": 23,
-        "previous_count": 10,
-        "unique_sources": 5,
-        "average_age_hours": 31.72,
-        "average_stress": 56.78,
-        "momentum": "emergente",
-        "momentum_ratio": 2.18
-      },
-      {
-        "name": "Sector productivo, automotor y actividad empresarial",
-        "score": 52.33,
-        "current_count": 9,
-        "previous_count": 5,
-        "unique_sources": 5,
-        "average_age_hours": 40.03,
-        "average_stress": 52.56,
-        "momentum": "emergente",
-        "momentum_ratio": 1.67
+        "momentum_ratio": 3.17
       },
       {
         "name": "Precios, alimentos y servicios básicos",
-        "score": 39.44,
-        "current_count": 12,
-        "previous_count": 17,
-        "unique_sources": 3,
-        "average_age_hours": 45.64,
-        "average_stress": 57.75,
-        "momentum": "estable",
-        "momentum_ratio": 0.72
+        "score": 58.5,
+        "current_count": 17,
+        "previous_count": 10,
+        "unique_sources": 5,
+        "average_age_hours": 33.02,
+        "average_stress": 49.24,
+        "momentum": "emergente",
+        "momentum_ratio": 1.64
       },
       {
-        "name": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "score": 34.84,
-        "current_count": 5,
-        "previous_count": 5,
-        "unique_sources": 3,
-        "average_age_hours": 65.23,
-        "average_stress": 45.2,
-        "momentum": "estable",
-        "momentum_ratio": 1.0
+        "name": "Producción, inversión y régimen cambiario",
+        "score": 49.28,
+        "current_count": 11,
+        "previous_count": 7,
+        "unique_sources": 4,
+        "average_age_hours": 40.38,
+        "average_stress": 53.09,
+        "momentum": "emergente",
+        "momentum_ratio": 1.5
       },
       {
-        "name": "Comercio exterior, desarrollo y empresas",
-        "score": 34.41,
-        "current_count": 4,
-        "previous_count": 5,
+        "name": "Política fiscal, gestión pública y sistema financiero",
+        "score": 44.34,
+        "current_count": 9,
+        "previous_count": 10,
+        "unique_sources": 4,
+        "average_age_hours": 51.72,
+        "average_stress": 63.56,
+        "momentum": "estable",
+        "momentum_ratio": 0.91
+      },
+      {
+        "name": "Sector productivo, automotor y actividad empresarial",
+        "score": 31.8,
+        "current_count": 6,
+        "previous_count": 16,
         "unique_sources": 2,
-        "average_age_hours": 46.49,
-        "average_stress": 54.0,
-        "momentum": "estable",
-        "momentum_ratio": 0.83
+        "average_age_hours": 27.32,
+        "average_stress": 59.0,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.41
       }
     ],
     "indicators": [
       {
-        "name": "tipo de cambio",
-        "score": 64.5,
-        "current_count": 33,
-        "previous_count": 17,
+        "name": "sistema financiero",
+        "score": 63.25,
+        "current_count": 24,
+        "previous_count": 12,
         "unique_sources": 5,
-        "average_age_hours": 32.8,
-        "average_stress": 53.36,
+        "average_age_hours": 35.44,
+        "average_stress": 51.67,
         "momentum": "emergente",
-        "momentum_ratio": 1.89
+        "momentum_ratio": 1.92
       },
       {
-        "name": "sistema financiero",
-        "score": 62.48,
-        "current_count": 27,
-        "previous_count": 14,
+        "name": "tipo de cambio",
+        "score": 63.07,
+        "current_count": 28,
+        "previous_count": 17,
         "unique_sources": 5,
-        "average_age_hours": 27.21,
-        "average_stress": 52.15,
+        "average_age_hours": 45.59,
+        "average_stress": 52.71,
         "momentum": "emergente",
-        "momentum_ratio": 1.87
+        "momentum_ratio": 1.61
       },
       {
         "name": "exportaciones",
-        "score": 59.23,
-        "current_count": 19,
-        "previous_count": 5,
+        "score": 57.61,
+        "current_count": 18,
+        "previous_count": 7,
         "unique_sources": 4,
-        "average_age_hours": 32.02,
-        "average_stress": 60.63,
+        "average_age_hours": 41.59,
+        "average_stress": 61.0,
         "momentum": "emergente",
-        "momentum_ratio": 3.33
-      },
-      {
-        "name": "empleo",
-        "score": 56.64,
-        "current_count": 20,
-        "previous_count": 14,
-        "unique_sources": 5,
-        "average_age_hours": 38.15,
-        "average_stress": 59.8,
-        "momentum": "estable",
-        "momentum_ratio": 1.4
+        "momentum_ratio": 2.38
       },
       {
         "name": "balanza comercial",
-        "score": 53.57,
-        "current_count": 3,
+        "score": 49.44,
+        "current_count": 4,
         "previous_count": 0,
         "unique_sources": 2,
-        "average_age_hours": 21.91,
-        "average_stress": 75.33,
+        "average_age_hours": 33.7,
+        "average_stress": 72.0,
         "momentum": "emergente",
-        "momentum_ratio": 4.0
+        "momentum_ratio": 5.0
       },
       {
-        "name": "déficit fiscal",
-        "score": 50.55,
-        "current_count": 9,
-        "previous_count": 4,
+        "name": "empleo",
+        "score": 46.93,
+        "current_count": 14,
+        "previous_count": 18,
         "unique_sources": 4,
-        "average_age_hours": 43.5,
-        "average_stress": 69.56,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
+        "average_age_hours": 45.74,
+        "average_stress": 61.5,
+        "momentum": "estable",
+        "momentum_ratio": 0.79
       },
       {
         "name": "inflación",
-        "score": 50.26,
-        "current_count": 14,
-        "previous_count": 5,
+        "score": 44.27,
+        "current_count": 10,
+        "previous_count": 6,
         "unique_sources": 3,
-        "average_age_hours": 35.88,
-        "average_stress": 60.21,
+        "average_age_hours": 49.23,
+        "average_stress": 55.8,
         "momentum": "emergente",
-        "momentum_ratio": 2.5
-      },
-      {
-        "name": "combustibles",
-        "score": 48.63,
-        "current_count": 27,
-        "previous_count": 26,
-        "unique_sources": 3,
-        "average_age_hours": 42.01,
-        "average_stress": 55.26,
-        "momentum": "estable",
-        "momentum_ratio": 1.04
-      },
-      {
-        "name": "litio",
-        "score": 45.59,
-        "current_count": 1,
-        "previous_count": 0,
-        "unique_sources": 1,
-        "average_age_hours": 65.4,
-        "average_stress": 41.0,
-        "momentum": "emergente",
-        "momentum_ratio": 2.0
+        "momentum_ratio": 1.57
       },
       {
         "name": "salarios",
-        "score": 45.42,
-        "current_count": 5,
-        "previous_count": 3,
-        "unique_sources": 4,
-        "average_age_hours": 53.23,
-        "average_stress": 65.2,
-        "momentum": "emergente",
-        "momentum_ratio": 1.5
+        "score": 44.02,
+        "current_count": 1,
+        "previous_count": 6,
+        "unique_sources": 1,
+        "average_age_hours": 0.1,
+        "average_stress": 75.0,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.29
+      },
+      {
+        "name": "importaciones",
+        "score": 43.24,
+        "current_count": 7,
+        "previous_count": 6,
+        "unique_sources": 3,
+        "average_age_hours": 36.05,
+        "average_stress": 65.14,
+        "momentum": "estable",
+        "momentum_ratio": 1.14
+      },
+      {
+        "name": "combustibles",
+        "score": 42.38,
+        "current_count": 17,
+        "previous_count": 27,
+        "unique_sources": 3,
+        "average_age_hours": 44.12,
+        "average_stress": 54.18,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.64
+      },
+      {
+        "name": "déficit fiscal",
+        "score": 41.45,
+        "current_count": 6,
+        "previous_count": 6,
+        "unique_sources": 3,
+        "average_age_hours": 42.05,
+        "average_stress": 71.33,
+        "momentum": "estable",
+        "momentum_ratio": 1.0
       }
     ],
     "entities": [
       {
         "name": "ASFI",
-        "score": 58.24,
+        "score": 58.03,
         "current_count": 11,
         "previous_count": 1,
         "unique_sources": 4,
-        "average_age_hours": 17.03,
+        "average_age_hours": 27.48,
         "average_stress": 50.18,
         "momentum": "emergente",
         "momentum_ratio": 6.0
       },
       {
-        "name": "BCB",
-        "score": 56.23,
-        "current_count": 18,
-        "previous_count": 12,
-        "unique_sources": 5,
-        "average_age_hours": 30.61,
-        "average_stress": 51.67,
-        "momentum": "estable",
-        "momentum_ratio": 1.46
-      },
-      {
-        "name": "INE",
-        "score": 52.34,
-        "current_count": 12,
-        "previous_count": 1,
-        "unique_sources": 3,
-        "average_age_hours": 40.7,
-        "average_stress": 60.33,
-        "momentum": "emergente",
-        "momentum_ratio": 6.5
-      },
-      {
-        "name": "IBCE",
-        "score": 52.28,
-        "current_count": 4,
-        "previous_count": 0,
-        "unique_sources": 3,
-        "average_age_hours": 38.38,
-        "average_stress": 62.25,
-        "momentum": "emergente",
-        "momentum_ratio": 5.0
-      },
-      {
         "name": "MEFP",
-        "score": 51.5,
-        "current_count": 6,
-        "previous_count": 4,
+        "score": 55.33,
+        "current_count": 7,
+        "previous_count": 2,
         "unique_sources": 5,
-        "average_age_hours": 21.63,
-        "average_stress": 50.0,
-        "momentum": "estable",
-        "momentum_ratio": 1.4
+        "average_age_hours": 38.27,
+        "average_stress": 49.86,
+        "momentum": "emergente",
+        "momentum_ratio": 2.67
       },
       {
-        "name": "Aduana Nacional",
-        "score": 47.49,
-        "current_count": 8,
-        "previous_count": 2,
-        "unique_sources": 3,
-        "average_age_hours": 45.15,
-        "average_stress": 55.0,
-        "momentum": "emergente",
-        "momentum_ratio": 3.0
+        "name": "BCB",
+        "score": 54.46,
+        "current_count": 15,
+        "previous_count": 10,
+        "unique_sources": 5,
+        "average_age_hours": 45.9,
+        "average_stress": 49.6,
+        "momentum": "estable",
+        "momentum_ratio": 1.45
       },
       {
         "name": "YPFB",
-        "score": 45.06,
-        "current_count": 4,
+        "score": 46.26,
+        "current_count": 6,
         "previous_count": 3,
         "unique_sources": 3,
-        "average_age_hours": 27.86,
-        "average_stress": 59.0,
-        "momentum": "estable",
-        "momentum_ratio": 1.25
-      },
-      {
-        "name": "SIN",
-        "score": 43.6,
-        "current_count": 1,
-        "previous_count": 3,
-        "unique_sources": 1,
-        "average_age_hours": 23.92,
-        "average_stress": 74.0,
-        "momentum": "en descenso",
-        "momentum_ratio": 0.5
+        "average_age_hours": 23.23,
+        "average_stress": 56.33,
+        "momentum": "emergente",
+        "momentum_ratio": 1.75
       },
       {
         "name": "BID",
-        "score": 41.4,
+        "score": 45.6,
         "current_count": 2,
-        "previous_count": 5,
+        "previous_count": 2,
         "unique_sources": 2,
-        "average_age_hours": 23.86,
+        "average_age_hours": 35.34,
         "average_stress": 41.5,
-        "momentum": "en descenso",
-        "momentum_ratio": 0.5
+        "momentum": "estable",
+        "momentum_ratio": 1.0
       },
       {
-        "name": "FMI",
-        "score": 39.21,
-        "current_count": 8,
-        "previous_count": 7,
+        "name": "INE",
+        "score": 45.43,
+        "current_count": 9,
+        "previous_count": 5,
         "unique_sources": 3,
-        "average_age_hours": 54.79,
-        "average_stress": 57.5,
+        "average_age_hours": 46.09,
+        "average_stress": 61.89,
+        "momentum": "emergente",
+        "momentum_ratio": 1.67
+      },
+      {
+        "name": "IBCE",
+        "score": 44.56,
+        "current_count": 4,
+        "previous_count": 1,
+        "unique_sources": 2,
+        "average_age_hours": 41.09,
+        "average_stress": 63.75,
+        "momentum": "emergente",
+        "momentum_ratio": 2.5
+      },
+      {
+        "name": "SIN",
+        "score": 42.87,
+        "current_count": 1,
+        "previous_count": 2,
+        "unique_sources": 1,
+        "average_age_hours": 46.92,
+        "average_stress": 74.0,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.67
+      },
+      {
+        "name": "Banco Mundial",
+        "score": 36.98,
+        "current_count": 1,
+        "previous_count": 2,
+        "unique_sources": 1,
+        "average_age_hours": 70.56,
+        "average_stress": 37.0,
+        "momentum": "en descenso",
+        "momentum_ratio": 0.67
+      },
+      {
+        "name": "Aduana Nacional",
+        "score": 35.42,
+        "current_count": 5,
+        "previous_count": 6,
+        "unique_sources": 2,
+        "average_age_hours": 32.92,
+        "average_stress": 54.2,
         "momentum": "estable",
-        "momentum_ratio": 1.12
+        "momentum_ratio": 0.86
       }
     ],
     "top_topic": {
-      "name": "Producción, inversión y régimen cambiario",
-      "score": 67.34,
-      "current_count": 26,
+      "name": "Comercio exterior, desarrollo y empresas",
+      "score": 63.01,
+      "current_count": 18,
       "previous_count": 5,
       "unique_sources": 5,
-      "average_age_hours": 27.76,
-      "average_stress": 53.19,
+      "average_age_hours": 39.66,
+      "average_stress": 52.67,
       "momentum": "emergente",
-      "momentum_ratio": 4.5
+      "momentum_ratio": 3.17
     },
     "top_indicator": {
-      "name": "tipo de cambio",
-      "score": 64.5,
-      "current_count": 33,
-      "previous_count": 17,
+      "name": "sistema financiero",
+      "score": 63.25,
+      "current_count": 24,
+      "previous_count": 12,
       "unique_sources": 5,
-      "average_age_hours": 32.8,
-      "average_stress": 53.36,
+      "average_age_hours": 35.44,
+      "average_stress": 51.67,
       "momentum": "emergente",
-      "momentum_ratio": 1.89
+      "momentum_ratio": 1.92
     },
     "top_entity": {
       "name": "ASFI",
-      "score": 58.24,
+      "score": 58.03,
       "current_count": 11,
       "previous_count": 1,
       "unique_sources": 4,
-      "average_age_hours": 17.03,
+      "average_age_hours": 27.48,
       "average_stress": 50.18,
       "momentum": "emergente",
       "momentum_ratio": 6.0
@@ -2405,251 +2154,227 @@
     }
   },
   "daily_snapshot": {
-    "date": "2026-10-16",
-    "generated_at": "2026-10-16T14:08:21.319083+00:00",
-    "documents": 79,
-    "historical_documents": 1595,
+    "date": "2026-10-17",
+    "generated_at": "2026-10-17T13:07:54.833539+00:00",
+    "documents": 61,
+    "historical_documents": 1601,
     "operational_window_hours": 72,
-    "pulsobo_index": 40.68,
+    "pulsobo_index": 40.71,
     "pulsobo_level": "moderado",
-    "optimism_index": 53.64,
+    "optimism_index": 54.96,
     "optimism_level": "moderado",
-    "stress_average": 54.39,
-    "favorable_percentage": 21.52,
-    "neutral_percentage": 64.56,
-    "unfavorable_percentage": 13.92,
-    "top_topic": "Producción, inversión y régimen cambiario",
+    "stress_average": 54.02,
+    "favorable_percentage": 21.31,
+    "neutral_percentage": 65.57,
+    "unfavorable_percentage": 13.11,
+    "top_topic": "Comercio exterior, desarrollo y empresas",
     "top_entity": "ASFI",
-    "top_indicator": "tipo de cambio",
-    "top_topic_score": 67.34,
+    "top_indicator": "sistema financiero",
+    "top_topic_score": 63.01,
     "top_topic_momentum": "emergente",
-    "top_entity_score": 58.24,
+    "top_entity_score": 58.03,
     "top_entity_momentum": "emergente",
-    "top_indicator_score": 64.5,
+    "top_indicator_score": 63.25,
     "top_indicator_momentum": "emergente",
     "top_topics": {
-      "Producción, inversión y régimen cambiario": 26,
-      "Política fiscal, gestión pública y sistema financiero": 23,
-      "Precios, alimentos y servicios básicos": 12,
-      "Sector productivo, automotor y actividad empresarial": 9,
-      "Tipo de cambio, divisas y abastecimiento de combustibles": 5
+      "Comercio exterior, desarrollo y empresas": 18,
+      "Precios, alimentos y servicios básicos": 17,
+      "Producción, inversión y régimen cambiario": 11,
+      "Política fiscal, gestión pública y sistema financiero": 9,
+      "Sector productivo, automotor y actividad empresarial": 6
     },
     "top_entities": {
-      "BCB": 18,
-      "INE": 12,
+      "BCB": 15,
       "ASFI": 11,
-      "Aduana Nacional": 8,
-      "FMI": 8
+      "INE": 9,
+      "MEFP": 7,
+      "YPFB": 6
     },
     "top_indicators": {
-      "tipo de cambio": 33,
-      "combustibles": 27,
-      "sistema financiero": 27,
-      "empleo": 20,
-      "exportaciones": 19
+      "tipo de cambio": 28,
+      "sistema financiero": 24,
+      "exportaciones": 18,
+      "combustibles": 17,
+      "empleo": 14
     },
     "top_optimism_signals": {
       "exportaciones": 53,
-      "inversión": 38,
-      "incremento": 35,
-      "crecimiento": 35,
-      "producción": 25
+      "producción": 37,
+      "incremento": 26,
+      "inversión": 26,
+      "desarrollo": 17
     },
-    "event_top_topic": "Producción, inversión y régimen cambiario",
+    "event_top_topic": "Precios, alimentos y servicios básicos",
     "event_top_indicator": "tipo de cambio",
     "event_top_entity": "BCB",
-    "economic_events": 70,
-    "multi_source_events": 4
+    "economic_events": 55,
+    "multi_source_events": 3
   },
   "event_relevance_ranking": {
     "window_hours": 72,
     "ranking_unit": "economic_events",
     "topics": [
       {
-        "name": "Producción, inversión y régimen cambiario",
-        "score": 55.62,
-        "current_events": 22,
-        "previous_events": 0,
-        "documents": 26,
-        "unique_sources": 5,
-        "average_age_hours": null,
-        "average_stress": 53.55,
-        "momentum": "emergente",
-        "momentum_ratio": 23.0
-      },
-      {
-        "name": "Política fiscal, gestión pública y sistema financiero",
-        "score": 54.24,
-        "current_events": 19,
-        "previous_events": 0,
-        "documents": 22,
-        "unique_sources": 5,
-        "average_age_hours": null,
-        "average_stress": 52.68,
-        "momentum": "emergente",
-        "momentum_ratio": 20.0
-      },
-      {
-        "name": "Sector productivo, automotor y actividad empresarial",
-        "score": 49.95,
-        "current_events": 9,
-        "previous_events": 0,
-        "documents": 9,
-        "unique_sources": 5,
-        "average_age_hours": null,
-        "average_stress": 52.56,
-        "momentum": "emergente",
-        "momentum_ratio": 10.0
-      },
-      {
         "name": "Precios, alimentos y servicios básicos",
-        "score": 43.08,
+        "score": 55.03,
+        "current_events": 17,
+        "previous_events": 0,
+        "documents": 17,
+        "unique_sources": 5,
+        "average_age_hours": null,
+        "average_stress": 49.24,
+        "momentum": "emergente",
+        "momentum_ratio": 18.0
+      },
+      {
+        "name": "Comercio exterior, desarrollo y empresas",
+        "score": 53.78,
+        "current_events": 14,
+        "previous_events": 0,
+        "documents": 17,
+        "unique_sources": 5,
+        "average_age_hours": null,
+        "average_stress": 53.07,
+        "momentum": "emergente",
+        "momentum_ratio": 15.0
+      },
+      {
+        "name": "Producción, inversión y régimen cambiario",
+        "score": 47.98,
         "current_events": 11,
         "previous_events": 0,
         "documents": 12,
-        "unique_sources": 3,
+        "unique_sources": 4,
         "average_age_hours": null,
-        "average_stress": 58.64,
+        "average_stress": 53.09,
         "momentum": "emergente",
         "momentum_ratio": 12.0
       },
       {
-        "name": "Tipo de cambio, divisas y abastecimiento de combustibles",
-        "score": 39.45,
-        "current_events": 5,
+        "name": "Política fiscal, gestión pública y sistema financiero",
+        "score": 46.26,
+        "current_events": 7,
         "previous_events": 0,
-        "documents": 6,
-        "unique_sources": 3,
+        "documents": 9,
+        "unique_sources": 4,
         "average_age_hours": null,
-        "average_stress": 48.1,
+        "average_stress": 57.71,
         "momentum": "emergente",
-        "momentum_ratio": 6.0
+        "momentum_ratio": 8.0
       },
       {
-        "name": "Comercio exterior, desarrollo y empresas",
-        "score": 35.45,
-        "current_events": 4,
+        "name": "Sector productivo, automotor y actividad empresarial",
+        "score": 37.51,
+        "current_events": 6,
         "previous_events": 0,
-        "documents": 4,
+        "documents": 6,
         "unique_sources": 2,
         "average_age_hours": null,
-        "average_stress": 54.0,
+        "average_stress": 59.0,
         "momentum": "emergente",
-        "momentum_ratio": 5.0
+        "momentum_ratio": 7.0
       }
     ],
     "indicators": [
       {
         "name": "tipo de cambio",
-        "score": 54.64,
-        "current_events": 20,
+        "score": 54.67,
+        "current_events": 16,
         "previous_events": 0,
-        "documents": 23,
+        "documents": 18,
         "unique_sources": 5,
         "average_age_hours": null,
-        "average_stress": 52.35,
+        "average_stress": 51.12,
         "momentum": "emergente",
-        "momentum_ratio": 21.0
-      },
-      {
-        "name": "inflación",
-        "score": 43.32,
-        "current_events": 11,
-        "previous_events": 0,
-        "documents": 14,
-        "unique_sources": 3,
-        "average_age_hours": null,
-        "average_stress": 61.05,
-        "momentum": "emergente",
-        "momentum_ratio": 12.0
+        "momentum_ratio": 17.0
       },
       {
         "name": "sistema financiero",
-        "score": 41.65,
-        "current_events": 9,
-        "previous_events": 0,
-        "documents": 9,
-        "unique_sources": 3,
-        "average_age_hours": null,
-        "average_stress": 52.89,
-        "momentum": "emergente",
-        "momentum_ratio": 10.0
-      },
-      {
-        "name": "déficit fiscal",
-        "score": 39.92,
-        "current_events": 3,
-        "previous_events": 0,
-        "documents": 5,
-        "unique_sources": 3,
-        "average_age_hours": null,
-        "average_stress": 61.33,
-        "momentum": "emergente",
-        "momentum_ratio": 4.0
-      },
-      {
-        "name": "combustibles",
-        "score": 37.96,
+        "score": 43.09,
         "current_events": 10,
         "previous_events": 0,
-        "documents": 11,
-        "unique_sources": 2,
+        "documents": 10,
+        "unique_sources": 3,
         "average_age_hours": null,
-        "average_stress": 53.4,
+        "average_stress": 51.4,
         "momentum": "emergente",
         "momentum_ratio": 11.0
       },
       {
-        "name": "exportaciones",
-        "score": 36.5,
-        "current_events": 5,
+        "name": "inflación",
+        "score": 42.53,
+        "current_events": 8,
         "previous_events": 0,
-        "documents": 5,
-        "unique_sources": 2,
+        "documents": 10,
+        "unique_sources": 3,
         "average_age_hours": null,
-        "average_stress": 60.2,
+        "average_stress": 56.62,
         "momentum": "emergente",
-        "momentum_ratio": 6.0
+        "momentum_ratio": 9.0
       },
       {
-        "name": "empleo",
-        "score": 35.02,
+        "name": "déficit fiscal",
+        "score": 38.62,
+        "current_events": 2,
+        "previous_events": 0,
+        "documents": 4,
+        "unique_sources": 2,
+        "average_age_hours": null,
+        "average_stress": 71.0,
+        "momentum": "emergente",
+        "momentum_ratio": 3.0
+      },
+      {
+        "name": "combustibles",
+        "score": 36.82,
+        "current_events": 6,
+        "previous_events": 0,
+        "documents": 6,
+        "unique_sources": 2,
+        "average_age_hours": null,
+        "average_stress": 52.17,
+        "momentum": "emergente",
+        "momentum_ratio": 7.0
+      },
+      {
+        "name": "exportaciones",
+        "score": 36.67,
         "current_events": 4,
         "previous_events": 0,
         "documents": 4,
         "unique_sources": 2,
         "average_age_hours": null,
-        "average_stress": 49.75,
+        "average_stress": 61.5,
         "momentum": "emergente",
         "momentum_ratio": 5.0
       },
       {
         "name": "reservas internacionales",
-        "score": 32.93,
+        "score": 35.55,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
         "unique_sources": 1,
         "average_age_hours": null,
-        "average_stress": 50.0,
+        "average_stress": 75.0,
         "momentum": "emergente",
         "momentum_ratio": 2.0
       },
       {
-        "name": "litio",
-        "score": 32.03,
-        "current_events": 1,
+        "name": "empleo",
+        "score": 34.94,
+        "current_events": 3,
         "previous_events": 0,
-        "documents": 1,
-        "unique_sources": 1,
+        "documents": 3,
+        "unique_sources": 2,
         "average_age_hours": null,
-        "average_stress": 41.0,
+        "average_stress": 49.67,
         "momentum": "emergente",
-        "momentum_ratio": 2.0
+        "momentum_ratio": 4.0
       },
       {
         "name": "producto interno bruto",
-        "score": 31.63,
+        "score": 31.75,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
@@ -2663,55 +2388,43 @@
     "entities": [
       {
         "name": "BCB",
-        "score": 52.01,
-        "current_events": 14,
+        "score": 51.73,
+        "current_events": 11,
         "previous_events": 0,
-        "documents": 18,
+        "documents": 15,
         "unique_sources": 5,
         "average_age_hours": null,
-        "average_stress": 51.79,
+        "average_stress": 49.0,
         "momentum": "emergente",
-        "momentum_ratio": 15.0
+        "momentum_ratio": 12.0
       },
       {
-        "name": "INE",
-        "score": 41.25,
+        "name": "YPFB",
+        "score": 41.41,
         "current_events": 6,
         "previous_events": 0,
-        "documents": 9,
+        "documents": 6,
         "unique_sources": 3,
         "average_age_hours": null,
-        "average_stress": 61.83,
+        "average_stress": 56.33,
         "momentum": "emergente",
         "momentum_ratio": 7.0
       },
       {
-        "name": "YPFB",
-        "score": 40.11,
+        "name": "INE",
+        "score": 41.18,
         "current_events": 4,
         "previous_events": 0,
-        "documents": 4,
+        "documents": 6,
         "unique_sources": 3,
         "average_age_hours": null,
-        "average_stress": 59.0,
-        "momentum": "emergente",
-        "momentum_ratio": 5.0
-      },
-      {
-        "name": "FMI",
-        "score": 40.03,
-        "current_events": 4,
-        "previous_events": 0,
-        "documents": 5,
-        "unique_sources": 3,
-        "average_age_hours": null,
-        "average_stress": 58.12,
+        "average_stress": 65.0,
         "momentum": "emergente",
         "momentum_ratio": 5.0
       },
       {
         "name": "IBCE",
-        "score": 35.83,
+        "score": 35.95,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
@@ -2723,7 +2436,7 @@
       },
       {
         "name": "SIN",
-        "score": 35.33,
+        "score": 35.45,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
@@ -2734,8 +2447,20 @@
         "momentum_ratio": 2.0
       },
       {
+        "name": "MEFP",
+        "score": 32.95,
+        "current_events": 1,
+        "previous_events": 0,
+        "documents": 1,
+        "unique_sources": 1,
+        "average_age_hours": null,
+        "average_stress": 49.0,
+        "momentum": "emergente",
+        "momentum_ratio": 2.0
+      },
+      {
         "name": "ASFI",
-        "score": 31.77,
+        "score": 32.47,
         "current_events": 6,
         "previous_events": 0,
         "documents": 6,
@@ -2746,65 +2471,65 @@
         "momentum_ratio": 7.0
       },
       {
-        "name": "Banco Mundial",
-        "score": 30.73,
+        "name": "Aduana Nacional",
+        "score": 32.25,
         "current_events": 1,
         "previous_events": 0,
         "documents": 1,
         "unique_sources": 1,
         "average_age_hours": null,
-        "average_stress": 28.0,
+        "average_stress": 42.0,
         "momentum": "emergente",
         "momentum_ratio": 2.0
       },
       {
-        "name": "Aduana Nacional",
-        "score": 30.59,
-        "current_events": 3,
+        "name": "FMI",
+        "score": 29.62,
+        "current_events": 2,
         "previous_events": 0,
-        "documents": 3,
+        "documents": 2,
         "unique_sources": 1,
         "average_age_hours": null,
-        "average_stress": 51.33,
+        "average_stress": 43.5,
         "momentum": "emergente",
-        "momentum_ratio": 4.0
+        "momentum_ratio": 3.0
       }
     ],
     "top_topic": {
-      "name": "Producción, inversión y régimen cambiario",
-      "score": 55.62,
-      "current_events": 22,
+      "name": "Precios, alimentos y servicios básicos",
+      "score": 55.03,
+      "current_events": 17,
       "previous_events": 0,
-      "documents": 26,
+      "documents": 17,
       "unique_sources": 5,
       "average_age_hours": null,
-      "average_stress": 53.55,
+      "average_stress": 49.24,
       "momentum": "emergente",
-      "momentum_ratio": 23.0
+      "momentum_ratio": 18.0
     },
     "top_indicator": {
       "name": "tipo de cambio",
-      "score": 54.64,
-      "current_events": 20,
-      "previous_events": 0,
-      "documents": 23,
-      "unique_sources": 5,
-      "average_age_hours": null,
-      "average_stress": 52.35,
-      "momentum": "emergente",
-      "momentum_ratio": 21.0
-    },
-    "top_entity": {
-      "name": "BCB",
-      "score": 52.01,
-      "current_events": 14,
+      "score": 54.67,
+      "current_events": 16,
       "previous_events": 0,
       "documents": 18,
       "unique_sources": 5,
       "average_age_hours": null,
-      "average_stress": 51.79,
+      "average_stress": 51.12,
       "momentum": "emergente",
-      "momentum_ratio": 15.0
+      "momentum_ratio": 17.0
+    },
+    "top_entity": {
+      "name": "BCB",
+      "score": 51.73,
+      "current_events": 11,
+      "previous_events": 0,
+      "documents": 15,
+      "unique_sources": 5,
+      "average_age_hours": null,
+      "average_stress": 49.0,
+      "momentum": "emergente",
+      "momentum_ratio": 12.0
     }
   },
   "temporal_analysis": {
@@ -2812,11 +2537,11 @@
     "frequency": "monthly",
     "minimum_documents_per_period": 2,
     "minimum_date": "2025-01-01",
-    "maximum_date": "2026-10-16",
-    "parsed_documents": 703,
-    "dated_documents": 699,
+    "maximum_date": "2026-10-17",
+    "parsed_documents": 706,
+    "dated_documents": 702,
     "out_of_range_documents": 4,
-    "undated_documents": 892,
+    "undated_documents": 895,
     "series": [
       {
         "period": "2026-07",
@@ -2847,80 +2572,80 @@
       },
       {
         "period": "2026-10",
-        "documents": 93,
-        "stress_average": 52.96,
-        "unfavorable_percentage": 12.9,
-        "high_stress_percentage": 21.51,
-        "model_disagreement_percentage": 27.96,
-        "pulsobo_index": 35.3
+        "documents": 96,
+        "stress_average": 52.95,
+        "unfavorable_percentage": 13.54,
+        "high_stress_percentage": 21.88,
+        "model_disagreement_percentage": 29.17,
+        "pulsobo_index": 35.64
       }
     ]
   },
   "indicator_map": [
     {
       "name": "combustibles",
-      "count": 866,
-      "percentage": 54.29
+      "count": 867,
+      "percentage": 54.15
     },
     {
       "name": "tipo de cambio",
-      "count": 601,
-      "percentage": 37.68
+      "count": 602,
+      "percentage": 37.6
     },
     {
       "name": "hidrocarburos",
-      "count": 445,
-      "percentage": 27.9
+      "count": 447,
+      "percentage": 27.92
     },
     {
       "name": "sistema financiero",
-      "count": 435,
-      "percentage": 27.27
+      "count": 436,
+      "percentage": 27.23
     },
     {
       "name": "empleo",
       "count": 289,
-      "percentage": 18.12
+      "percentage": 18.05
     },
     {
       "name": "importaciones",
-      "count": 259,
-      "percentage": 16.24
+      "count": 261,
+      "percentage": 16.3
     },
     {
       "name": "exportaciones",
-      "count": 184,
-      "percentage": 11.54
+      "count": 186,
+      "percentage": 11.62
     },
     {
       "name": "reservas internacionales",
-      "count": 165,
-      "percentage": 10.34
+      "count": 166,
+      "percentage": 10.37
     },
     {
       "name": "inflación",
       "count": 125,
-      "percentage": 7.84
+      "percentage": 7.81
     },
     {
       "name": "déficit fiscal",
-      "count": 113,
-      "percentage": 7.08
+      "count": 114,
+      "percentage": 7.12
     },
     {
       "name": "producto interno bruto",
       "count": 92,
-      "percentage": 5.77
+      "percentage": 5.75
     },
     {
       "name": "deuda pública",
       "count": 41,
-      "percentage": 2.57
+      "percentage": 2.56
     },
     {
       "name": "salarios",
       "count": 40,
-      "percentage": 2.51
+      "percentage": 2.5
     },
     {
       "name": "litio",
@@ -2929,8 +2654,8 @@
     },
     {
       "name": "balanza comercial",
-      "count": 21,
-      "percentage": 1.32
+      "count": 22,
+      "percentage": 1.37
     }
   ],
   "source_analysis": {
@@ -2956,18 +2681,18 @@
       "stress_average": 48.0
     },
     "Economy": {
-      "documents": 266,
-      "favorable": 81,
+      "documents": 268,
+      "favorable": 82,
       "neutral": 154,
-      "desfavorable": 31,
-      "stress_average": 51.47
+      "desfavorable": 32,
+      "stress_average": 51.51
     },
     "El Deber": {
-      "documents": 216,
+      "documents": 218,
       "favorable": 53,
-      "neutral": 111,
-      "desfavorable": 52,
-      "stress_average": 59.59
+      "neutral": 112,
+      "desfavorable": 53,
+      "stress_average": 59.55
     },
     "El País": {
       "documents": 10,
@@ -2984,11 +2709,11 @@
       "stress_average": 48.0
     },
     "La Razón": {
-      "documents": 48,
-      "favorable": 17,
+      "documents": 49,
+      "favorable": 18,
       "neutral": 27,
       "desfavorable": 4,
-      "stress_average": 51.92
+      "stress_average": 51.78
     },
     "Los Tiempos": {
       "documents": 220,
@@ -3005,11 +2730,11 @@
       "stress_average": 47.59
     },
     "Unitel": {
-      "documents": 631,
-      "favorable": 131,
+      "documents": 632,
+      "favorable": 132,
       "neutral": 326,
       "desfavorable": 174,
-      "stress_average": 58.57
+      "stress_average": 58.56
     }
   }
 }
