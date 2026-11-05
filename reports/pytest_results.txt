@@ -1,5 +1,5 @@
 ============================= test session starts ==============================
-platform linux -- Python 3.11.17, pytest-9.2.0, pluggy-1.7.0 -- /opt/hostedtoolcache/Python/3.11.17/x64/bin/python
+platform linux -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- /opt/hostedtoolcache/Python/3.11.18/x64/bin/python
 cachedir: .pytest_cache
 rootdir: /home/runner/work/TerMacroMetro/TerMacroMetro
 plugins: anyio-4.16.0
@@ -46,7 +46,7 @@ tests/test_api.py::test_dashboard_endpoint
 tests/test_api.py::test_analyze_endpoint
 tests/test_api.py::test_analyze_rejects_short_text
 tests/test_inference.py::test_analizador_rechaza_texto_corto
-  /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfTransformer from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  /opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfTransformer from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
   https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
     warnings.warn(
 
@@ -56,7 +56,7 @@ tests/test_api.py::test_dashboard_endpoint
 tests/test_api.py::test_analyze_endpoint
 tests/test_api.py::test_analyze_rejects_short_text
 tests/test_inference.py::test_analizador_rechaza_texto_corto
-  /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfVectorizer from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  /opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator TfidfVectorizer from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
   https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
     warnings.warn(
 
@@ -66,7 +66,7 @@ tests/test_api.py::test_dashboard_endpoint
 tests/test_api.py::test_analyze_endpoint
 tests/test_api.py::test_analyze_rejects_short_text
 tests/test_inference.py::test_analizador_rechaza_texto_corto
-  /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator MultinomialNB from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  /opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator MultinomialNB from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
   https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
     warnings.warn(
 
@@ -76,9 +76,9 @@ tests/test_api.py::test_dashboard_endpoint
 tests/test_api.py::test_analyze_endpoint
 tests/test_api.py::test_analyze_rejects_short_text
 tests/test_inference.py::test_analizador_rechaza_texto_corto
-  /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  /opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/sklearn/base.py:525: InconsistentVersionWarning: Trying to unpickle estimator Pipeline from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
   https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
     warnings.warn(
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================= 33 passed, 24 warnings in 5.37s ========================
+======================= 33 passed, 24 warnings in 5.16s ========================
